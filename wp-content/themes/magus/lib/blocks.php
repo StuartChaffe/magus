@@ -3,20 +3,321 @@
 add_filter( 'block_categories_all', 'magus_block_categories', 10, 2 );
 function magus_block_categories( $categories, $post )
 {
-    return array_merge(
-        $categories,
-        array(
-            array(
-                'slug' => 'magus-blocks',
-                'title' => __( 'Magus Blocks', 'magusblocks-master' ),
-            ),
-        )
-    );
+	return array_merge(
+		$categories,
+		array(
+			array(
+				'slug' => 'magus-blocks',
+				'title' => __( 'Magus Blocks', 'magusblocks-master' ),
+			),
+		)
+	);
 }
 
 add_action('acf/init', 'magus_acf_blocks');
 function magus_acf_blocks() {
 	if( function_exists('acf_register_block') ) {
+		acf_register_block(array(
+			'name'				=> 'accordion',
+			'title'				=> __('Accordion'),
+			'description'		=> __('Add expanding content'),
+			'render_callback'	=> 'magus_acf_block_render_callback',
+			'category'			=> 'magus-blocks',
+			'icon'				=> 'insert',
+			'align' 			=> 'wide',
+			'keywords'			=> array( 'accordion, expanding' ),
+			'example'			=> array(
+				'attributes' => array(
+					'mode' => 'preview',
+				),
+			),
+		));
+		acf_register_block(array(
+			'name'				=> 'awards',
+			'title'				=> __('Awards'),
+			'description'		=> __('Add an award block'),
+			'render_callback'	=> 'magus_acf_block_render_callback',
+			'category'			=> 'magus-blocks',
+			'icon'				=> 'screenoptions',
+			'align' 			=> 'wide',
+			'keywords'			=> array( 'award' ),
+			'example'			=> array(
+				'attributes' => array(
+					'mode' => 'preview',
+				),
+			),
+		));
+		acf_register_block(array(
+			'name'				=> 'banner',
+			'title'				=> __('Banner'),
+			'description'		=> __('Add a banner block'),
+			'render_callback'	=> 'magus_acf_block_render_callback',
+			'category'			=> 'magus-blocks',
+			'icon'				=> 'format-image',
+			'align' 			=> 'full',
+			'keywords'			=> array( 'banner' ),
+			'example'         => array(
+				'attributes' => array(
+					'mode' => 'preview',
+				),
+			),
+		));
+		acf_register_block(array(
+			'name'				=> 'careers',
+			'title'				=> __('Careers'),
+			'description'		=> __('Add a careers block'),
+			'render_callback'	=> 'magus_acf_block_render_callback',
+			'category'			=> 'magus-blocks',
+			'icon'				=> 'admin-users',
+			'align' 			=> 'full',
+			'keywords'			=> array( 'careers, jobs' ),
+			'example'         => array(
+				'attributes' => array(
+					'mode' => 'preview',
+				),
+			),
+		));
+		acf_register_block(array(
+			'name'				=> 'carousel',
+			'title'				=> __('Carousel'),
+			'description'		=> __('Add a carousel'),
+			'render_callback'	=> 'magus_acf_block_render_callback',
+			'category'			=> 'magus-blocks',
+			'icon'				=> 'slides',
+			'align' 			=> 'full',
+			'keywords'			=> array( 'carousel' ),
+			'example'         => array(
+				'attributes' => array(
+					'mode' => 'preview',
+				),
+			),
+		));
+		acf_register_block(array(
+			'name'				=> 'content',
+			'title'				=> __('Content'),
+			'description'		=> __('Add a content block'),
+			'render_callback'	=> 'magus_acf_block_render_callback',
+			'category'			=> 'magus-blocks',
+			'icon'				=> 'format-aside',
+			'align' 			=> 'wide',
+			'mode' => 'auto',
+			'keywords'			=> array( 'content' ),
+			'example'			=> array(
+				'attributes' => array(
+					'mode' => 'auto',
+				),
+			),
+		));
+		acf_register_block(array(
+			'name'				=> 'cta',
+			'title'				=> __('Call to action'),
+			'description'		=> __('Add a CTA block'),
+			'render_callback'	=> 'magus_acf_block_render_callback',
+			'category'			=> 'magus-blocks',
+			'icon'				=> 'megaphone',
+			'align' 			=> 'wide',
+			'keywords'			=> array( 'cta, call to action' ),
+			'example'			=> array(
+				'attributes' => array(
+					'mode' => 'preview',
+				),
+			),
+		));
+		acf_register_block(array(
+			'name'				=> 'download',
+			'title'				=> __('Download'),
+			'description'		=> __('Add a download block'),
+			'render_callback'	=> 'magus_acf_block_render_callback',
+			'category'			=> 'magus-blocks',
+			'icon'				=> 'download',
+			'align' 			=> 'wide',
+			'keywords'			=> array( 'download' ),
+			'example'			=> array(
+				'attributes' => array(
+					'mode' => 'preview',
+				),
+			),
+		));
+		acf_register_block(array(
+			'name'				=> 'featured-posts',
+			'title'				=> __('Featured posts'),
+			'description'		=> __('Add featured posts'),
+			'render_callback'	=> 'magus_acf_block_render_callback',
+			'category'			=> 'magus-blocks',
+			'icon'				=> 'screenoptions',
+			'align' 			=> 'wide',
+			'keywords'			=> array( 'posts, featured' ),
+			'example'			=> array(
+				'attributes' => array(
+					'mode' => 'preview',
+				),
+			),
+		));
+		acf_register_block(array(
+			'name'				=> 'featured-services',
+			'title'				=> __('Featured service(s)'),
+			'description'		=> __('Add featured service(s)'),
+			'render_callback'	=> 'magus_acf_block_render_callback',
+			'category'			=> 'magus-blocks',
+			'icon'				=> 'align-full-width',
+			'align' 			=> 'wide',
+			'keywords'			=> array( 'services, featured' ),
+			'example'			=> array(
+				'attributes' => array(
+					'mode' => 'preview',
+				),
+			),
+		));
+		acf_register_block(array(
+			'name'				=> 'featured-team',
+			'title'				=> __('Featured team members'),
+			'description'		=> __('Add team members'),
+			'render_callback'	=> 'magus_acf_block_render_callback',
+			'category'			=> 'magus-blocks',
+			'icon'				=> 'admin-users',
+			'align' 			=> 'wide',
+			'keywords'			=> array( 'team, featured' ),
+			'example'			=> array(
+				'attributes' => array(
+					'mode' => 'preview',
+				),
+			),
+		));
+		acf_register_block(array(
+			'name'				=> 'form',
+			'title'				=> __('Form'),
+			'description'		=> __('Add a form'),
+			'render_callback'	=> 'magus_acf_block_render_callback',
+			'category'			=> 'magus-blocks',
+			'icon'				=> 'email-alt',
+			'align' 			=> 'wide',
+			'keywords'			=> array( 'form, contact' ),
+			'example'			=> array(
+				'attributes' => array(
+					'mode' => 'preview',
+				),
+			),
+		));
+		acf_register_block(array(
+			'name'				=> 'highlighted-services',
+			'title'				=> __('Highlighted service'),
+			'description'		=> __('Add highlighted service'),
+			'render_callback'	=> 'magus_acf_block_render_callback',
+			'category'			=> 'magus-blocks',
+			'icon'				=> 'align-full-width',
+			'align' 			=> 'wide',
+			'keywords'			=> array( 'services, highlight' ),
+			'example'			=> array(
+				'attributes' => array(
+					'mode' => 'preview',
+				),
+			),
+		));
+		acf_register_block(array(
+			'name'				=> 'highlighted-text',
+			'title'				=> __('Highlighted text'),
+			'description'		=> __('Add highlighted text'),
+			'render_callback'	=> 'magus_acf_block_render_callback',
+			'category'			=> 'magus-blocks',
+			'icon'				=> 'menu-alt3',
+			'align' 			=> 'wide',
+			'keywords'			=> array( 'text, highlight' ),
+			'example'			=> array(
+				'attributes' => array(
+					'mode' => 'preview',
+				),
+			),
+		));
+		acf_register_block(array(
+			'name'				=> 'link-list',
+			'title'				=> __('Link list'),
+			'description'		=> __('Add link list block'),
+			'render_callback'	=> 'magus_acf_block_render_callback',
+			'category'			=> 'magus-blocks',
+			'icon'				=> 'columns',
+			'align' 			=> 'wide',
+			'keywords'			=> array( 'link list, links' ),
+			'example'			=> array(
+				'attributes' => array(
+					'mode' => 'preview',
+				),
+			),
+		));
+		acf_register_block(array(
+			'name'				=> 'offices',
+			'title'				=> __('Office list'),
+			'description'		=> __('Add office list'),
+			'render_callback'	=> 'magus_acf_block_render_callback',
+			'category'			=> 'magus-blocks',
+			'icon'				=> 'columns',
+			'align' 			=> 'wide',
+			'keywords'			=> array( 'office' ),
+			'example'			=> array(
+				'attributes' => array(
+					'mode' => 'preview',
+				),
+			),
+		));
+		acf_register_block(array(
+			'name'				=> 'platforms',
+			'title'				=> __('Platform list'),
+			'description'		=> __('Add platform list'),
+			'render_callback'	=> 'magus_acf_block_render_callback',
+			'category'			=> 'magus-blocks',
+			'icon'				=> 'columns',
+			'align' 			=> 'wide',
+			'keywords'			=> array( 'platform' ),
+			'example'			=> array(
+				'attributes' => array(
+					'mode' => 'preview',
+				),
+			),
+		));
+		acf_register_block(array(
+			'name'				=> 'services',
+			'title'				=> __('Services'),
+			'description'		=> __('Add all services'),
+			'render_callback'	=> 'magus_acf_block_render_callback',
+			'category'			=> 'magus-blocks',
+			'icon'				=> 'align-full-width',
+			'align' 			=> 'wide',
+			'keywords'			=> array( 'services' ),
+			'example'			=> array(
+				'attributes' => array(
+					'mode' => 'preview',
+				),
+			),
+		));
+		acf_register_block(array(
+			'name'				=> 'signup',
+			'title'				=> __('Signup'),
+			'description'		=> __('Add a signup form'),
+			'render_callback'	=> 'magus_acf_block_render_callback',
+			'category'			=> 'magus-blocks',
+			'icon'				=> 'email-alt',
+			'align' 			=> 'wide',
+			'keywords'			=> array( 'form, signup' ),
+			'example'			=> array(
+				'attributes' => array(
+					'mode' => 'preview',
+				),
+			),
+		));
+		acf_register_block(array(
+			'name'				=> 'team',
+			'title'				=> __('Team'),
+			'description'		=> __('Add all team members'),
+			'render_callback'	=> 'magus_acf_block_render_callback',
+			'category'			=> 'magus-blocks',
+			'icon'				=> 'admin-users',
+			'align' 			=> 'wide',
+			'keywords'			=> array( 'team, people' ),
+			'example'			=> array(
+				'attributes' => array(
+					'mode' => 'preview',
+				),
+			),
+		));
 		acf_register_block(array(
 			'name'				=> 'testimonial',
 			'title'				=> __('Testimonial'),
@@ -26,6 +327,21 @@ function magus_acf_blocks() {
 			'icon'				=> 'format-status',
 			'align' 			=> 'wide',
 			'keywords'			=> array( 'testimonial, quote' ),
+			'example'			=> array(
+				'attributes' => array(
+					'mode' => 'preview',
+				),
+			),
+		));
+		acf_register_block(array(
+			'name'				=> 'video',
+			'title'				=> __('Video'),
+			'description'		=> __('Add a video'),
+			'render_callback'	=> 'magus_acf_block_render_callback',
+			'category'			=> 'magus-blocks',
+			'icon'				=> 'video-alt3',
+			'align' 			=> 'wide',
+			'keywords'			=> array( 'video' ),
 			'example'			=> array(
 				'attributes' => array(
 					'mode' => 'preview',
@@ -48,7 +364,25 @@ add_filter( 'allowed_block_types_all', 'magus_allowed_block_types' );
 function magus_allowed_block_types( $allowed_blocks ) {
  
 	return array(
+		'acf/accordion',
+		'acf/awards',
+		'acf/banner',
+		'acf/careers',
+		'acf/carousel',
+		'acf/content',
+		'acf/cta',
+		'acf/download',
+		'acf/featured-posts',
+		'acf/featured-services',
+		'acf/highlight-text',
+		'acf/link-list',
+		'acf/offices',
+		'acf/platforms',
+		'acf/services',
+		'acf/signup',
+		'acf/team',
 		'acf/testimonial',
+		'acf/video'
 	);
  
 }

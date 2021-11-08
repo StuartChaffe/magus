@@ -1,5 +1,10 @@
 <footer class="global-footer">
-	<div class="global-footer__inner">
+	<div class="global-footer--inner">
+		<nav class="global-footer--nav">
+			<?php wp_nav_menu( array('theme_location' => 'footer') ); ?>
+		</nav>
+
+
 		<p>&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
 
 		<ul class="social-links">

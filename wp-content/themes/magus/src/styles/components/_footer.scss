@@ -5,7 +5,7 @@
 	padding: var(--spacing);
 }
 
-.global-footer__inner {
+.global-footer--inner {
 	@extend .container;
 	display: flex;
 	justify-content: space-between;

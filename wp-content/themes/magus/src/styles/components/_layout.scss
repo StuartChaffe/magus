@@ -17,8 +17,6 @@
 
 .main {
 	@extend .container;
-	max-width: var(--content-width);
-	margin-top: var(--spacing-l);
-	margin-bottom: var(--spacing-l);
+	max-width: var(--container);
 	flex: 1;
 }

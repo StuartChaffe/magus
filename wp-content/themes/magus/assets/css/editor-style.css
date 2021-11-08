@@ -16,14 +16,14 @@
   --font-weight-heavy: var(--font-weight-bold);
   --line-height: 1.5;
   --line-height-headings: 1.2;
-  --color-grey-dark: #6a6a6a;
-  --color-grey: #ddd;
-  --color-grey-light: #efefef;
-  --color-primary: #59BACC;
-  --color-secondary: #58AD69;
+  --color-grey-dark: #333333;
+  --color-grey: #E3E3E4;
+  --color-grey-light: #EAEAEB;
+  --color-primary: #62338F;
+  --color-secondary: var(--color-grey-dark);
   --color-tertiary: #FFBC49;
   --color-quaternary: #E2574C;
-  --color-text-base: #333;
+  --color-text-base: var(--color-grey-dark);
   --color-text-dark: #181822;
   --color-text-reversed: #fff;
   --color-text-link: #0087D0;
@@ -33,7 +33,7 @@
   --color-instagram: #262626;
   --color-youtube: #cc181e;
   --color-linkedin: #0077B5;
-  --body-background-color: #fff;
+  --body-background-color: var(--color-grey-light);
   --border-radius: 16px;
   --spacing-xxl: 3em;
   --spacing-xl: 2em;
@@ -41,9 +41,10 @@
   --spacing: 1em;
   --spacing-s: 0.5em;
   --spacing-xs: 0.25em;
-  --container-width: 75rem;
-  --container-width-l: 100rem;
-  --content-width: 50rem;
+  --content-width: 768px;
+  --container-small: 768px;
+  --container: 1200px;
+  --container-large: 1600px;
 }
 @media (min-width: 70em) {
   :root {
