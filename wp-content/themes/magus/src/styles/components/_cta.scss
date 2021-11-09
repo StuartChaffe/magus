@@ -1,0 +1,11 @@
+.cta {
+	@extend .text-white;
+	background-color: var(--color-primary);
+	text-align: center;
+	padding: var(--spacing-l);
+	margin-bottom: var(--spacing-xl);
+
+	.btn {
+		margin-top: 2rem;
+	}
+}

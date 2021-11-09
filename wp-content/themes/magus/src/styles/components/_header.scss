@@ -16,6 +16,7 @@
 	&--logo {
 		z-index: 1;
 		width: 300px;
+		margin-bottom: 0;
 		a {
 			display: block;
 		}
@@ -43,6 +44,7 @@
 				}
 				a {
 					color: var(--color-text-base);
+					font-weight: var(--font-weight-normal);
 					height: 100%;
 					position: relative;
 					display: flex;

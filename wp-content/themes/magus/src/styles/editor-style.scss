@@ -1,5 +1,6 @@
 // Setup
 @import "settings";
+@import "utilities/helpers";
 @import "utilities/mq";
 @import "utilities/mixins";
 @import "variables";
@@ -8,3 +9,7 @@
 @import "base/base";
 @import "base/typography";
 @import "components/*";
+
+body {
+	background-image: none;
+}

@@ -33,7 +33,7 @@ dd {
 }
 
 html, body {
-	height: 100%;
+	// height: 100%;
 }
 
 /* Set core body defaults */
@@ -46,8 +46,16 @@ body {
 	text-rendering: optimizeSpeed;
 	color: var(--color-text-base);
 	background-color: var(--body-background-color);
+	background-image: url('../../src/images/bg.png');
+	background-size: 60%;
+	background-repeat: no-repeat;
+	background-position: bottom left;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+strong {
+	font-weight: var(--font-weight-normal);
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
