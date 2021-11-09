@@ -26,11 +26,6 @@ function magus_acf_blocks() {
 			'icon'				=> 'insert',
 			'align' 			=> 'wide',
 			'keywords'			=> array( 'accordion, expanding' ),
-			'example'			=> array(
-				'attributes' => array(
-					'mode' => 'preview',
-				),
-			),
 		));
 		acf_register_block(array(
 			'name'				=> 'awards',
@@ -41,11 +36,6 @@ function magus_acf_blocks() {
 			'icon'				=> 'screenoptions',
 			'align' 			=> 'wide',
 			'keywords'			=> array( 'award' ),
-			'example'			=> array(
-				'attributes' => array(
-					'mode' => 'preview',
-				),
-			),
 		));
 		acf_register_block(array(
 			'name'				=> 'banner',
@@ -56,11 +46,6 @@ function magus_acf_blocks() {
 			'icon'				=> 'format-image',
 			'align' 			=> 'full',
 			'keywords'			=> array( 'banner' ),
-			'example'         => array(
-				'attributes' => array(
-					'mode' => 'preview',
-				),
-			),
 		));
 		acf_register_block(array(
 			'name'				=> 'careers',
@@ -71,11 +56,6 @@ function magus_acf_blocks() {
 			'icon'				=> 'admin-users',
 			'align' 			=> 'full',
 			'keywords'			=> array( 'careers, jobs' ),
-			'example'         => array(
-				'attributes' => array(
-					'mode' => 'preview',
-				),
-			),
 		));
 		acf_register_block(array(
 			'name'				=> 'carousel',
@@ -86,11 +66,6 @@ function magus_acf_blocks() {
 			'icon'				=> 'slides',
 			'align' 			=> 'full',
 			'keywords'			=> array( 'carousel' ),
-			'example'         => array(
-				'attributes' => array(
-					'mode' => 'preview',
-				),
-			),
 		));
 		acf_register_block(array(
 			'name'				=> 'content',
@@ -102,11 +77,6 @@ function magus_acf_blocks() {
 			'align' 			=> 'wide',
 			'mode' => 'auto',
 			'keywords'			=> array( 'content' ),
-			'example'			=> array(
-				'attributes' => array(
-					'mode' => 'auto',
-				),
-			),
 		));
 		acf_register_block(array(
 			'name'				=> 'cta',
@@ -117,11 +87,6 @@ function magus_acf_blocks() {
 			'icon'				=> 'megaphone',
 			'align' 			=> 'wide',
 			'keywords'			=> array( 'cta, call to action' ),
-			'example'			=> array(
-				'attributes' => array(
-					'mode' => 'preview',
-				),
-			),
 		));
 		acf_register_block(array(
 			'name'				=> 'download',
@@ -132,11 +97,6 @@ function magus_acf_blocks() {
 			'icon'				=> 'download',
 			'align' 			=> 'wide',
 			'keywords'			=> array( 'download' ),
-			'example'			=> array(
-				'attributes' => array(
-					'mode' => 'preview',
-				),
-			),
 		));
 		acf_register_block(array(
 			'name'				=> 'featured-posts',
@@ -147,11 +107,6 @@ function magus_acf_blocks() {
 			'icon'				=> 'screenoptions',
 			'align' 			=> 'wide',
 			'keywords'			=> array( 'posts, featured' ),
-			'example'			=> array(
-				'attributes' => array(
-					'mode' => 'preview',
-				),
-			),
 		));
 		acf_register_block(array(
 			'name'				=> 'featured-services',
@@ -162,11 +117,6 @@ function magus_acf_blocks() {
 			'icon'				=> 'align-full-width',
 			'align' 			=> 'wide',
 			'keywords'			=> array( 'services, featured' ),
-			'example'			=> array(
-				'attributes' => array(
-					'mode' => 'preview',
-				),
-			),
 		));
 		acf_register_block(array(
 			'name'				=> 'featured-team',
@@ -177,11 +127,6 @@ function magus_acf_blocks() {
 			'icon'				=> 'admin-users',
 			'align' 			=> 'wide',
 			'keywords'			=> array( 'team, featured' ),
-			'example'			=> array(
-				'attributes' => array(
-					'mode' => 'preview',
-				),
-			),
 		));
 		acf_register_block(array(
 			'name'				=> 'form',
@@ -192,11 +137,6 @@ function magus_acf_blocks() {
 			'icon'				=> 'email-alt',
 			'align' 			=> 'wide',
 			'keywords'			=> array( 'form, contact' ),
-			'example'			=> array(
-				'attributes' => array(
-					'mode' => 'preview',
-				),
-			),
 		));
 		acf_register_block(array(
 			'name'				=> 'highlighted-services',
@@ -207,11 +147,6 @@ function magus_acf_blocks() {
 			'icon'				=> 'align-full-width',
 			'align' 			=> 'wide',
 			'keywords'			=> array( 'services, highlight' ),
-			'example'			=> array(
-				'attributes' => array(
-					'mode' => 'preview',
-				),
-			),
 		));
 		acf_register_block(array(
 			'name'				=> 'highlighted-text',
@@ -222,11 +157,6 @@ function magus_acf_blocks() {
 			'icon'				=> 'menu-alt3',
 			'align' 			=> 'wide',
 			'keywords'			=> array( 'text, highlight' ),
-			'example'			=> array(
-				'attributes' => array(
-					'mode' => 'preview',
-				),
-			),
 		));
 		acf_register_block(array(
 			'name'				=> 'link-list',
@@ -237,11 +167,6 @@ function magus_acf_blocks() {
 			'icon'				=> 'columns',
 			'align' 			=> 'wide',
 			'keywords'			=> array( 'link list, links' ),
-			'example'			=> array(
-				'attributes' => array(
-					'mode' => 'preview',
-				),
-			),
 		));
 		acf_register_block(array(
 			'name'				=> 'offices',
@@ -252,11 +177,6 @@ function magus_acf_blocks() {
 			'icon'				=> 'columns',
 			'align' 			=> 'wide',
 			'keywords'			=> array( 'office' ),
-			'example'			=> array(
-				'attributes' => array(
-					'mode' => 'preview',
-				),
-			),
 		));
 		acf_register_block(array(
 			'name'				=> 'platforms',
@@ -267,11 +187,6 @@ function magus_acf_blocks() {
 			'icon'				=> 'columns',
 			'align' 			=> 'wide',
 			'keywords'			=> array( 'platform' ),
-			'example'			=> array(
-				'attributes' => array(
-					'mode' => 'preview',
-				),
-			),
 		));
 		acf_register_block(array(
 			'name'				=> 'services',
@@ -282,11 +197,6 @@ function magus_acf_blocks() {
 			'icon'				=> 'align-full-width',
 			'align' 			=> 'wide',
 			'keywords'			=> array( 'services' ),
-			'example'			=> array(
-				'attributes' => array(
-					'mode' => 'preview',
-				),
-			),
 		));
 		acf_register_block(array(
 			'name'				=> 'signup',
@@ -297,11 +207,6 @@ function magus_acf_blocks() {
 			'icon'				=> 'email-alt',
 			'align' 			=> 'wide',
 			'keywords'			=> array( 'form, signup' ),
-			'example'			=> array(
-				'attributes' => array(
-					'mode' => 'preview',
-				),
-			),
 		));
 		acf_register_block(array(
 			'name'				=> 'team',
@@ -312,11 +217,6 @@ function magus_acf_blocks() {
 			'icon'				=> 'admin-users',
 			'align' 			=> 'wide',
 			'keywords'			=> array( 'team, people' ),
-			'example'			=> array(
-				'attributes' => array(
-					'mode' => 'preview',
-				),
-			),
 		));
 		acf_register_block(array(
 			'name'				=> 'testimonial',
@@ -327,11 +227,6 @@ function magus_acf_blocks() {
 			'icon'				=> 'format-status',
 			'align' 			=> 'wide',
 			'keywords'			=> array( 'testimonial, quote' ),
-			'example'			=> array(
-				'attributes' => array(
-					'mode' => 'preview',
-				),
-			),
 		));
 		acf_register_block(array(
 			'name'				=> 'video',
@@ -342,11 +237,6 @@ function magus_acf_blocks() {
 			'icon'				=> 'video-alt3',
 			'align' 			=> 'wide',
 			'keywords'			=> array( 'video' ),
-			'example'			=> array(
-				'attributes' => array(
-					'mode' => 'preview',
-				),
-			),
 		));
 	}
 }
@@ -374,7 +264,7 @@ function magus_allowed_block_types( $allowed_blocks ) {
 		'acf/download',
 		'acf/featured-posts',
 		'acf/featured-services',
-		'acf/highlight-text',
+		'acf/highlighted-text',
 		'acf/link-list',
 		'acf/offices',
 		'acf/platforms',

@@ -22,6 +22,26 @@
 @import "components/footer";
 @import "components/social-links";
 
+@import "components/accordion";
+@import "components/awards";
+@import "components/banner";
+@import "components/careers";
+@import "components/carousel";
+@import "components/cta";
+@import "components/download";
+@import "components/form";
+@import "components/highlighted-service";
+@import "components/highlighted-text";
+@import "components/link-list";
+@import "components/offices";
+@import "components/platforms";
+@import "components/posts";
+@import "components/services";
+@import "components/signup";
+@import "components/team";
+@import "components/testimonial";
+@import "components/video";
+
 @import "utilities/helpers";
 
 @media print { @import "media/print"; }

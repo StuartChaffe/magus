@@ -1,7 +1,27 @@
 {
     "key": "group_618969dc431da",
     "title": "Highlighted text",
-    "fields": [],
+    "fields": [
+        {
+            "key": "field_618a7019f06ab",
+            "label": "Content",
+            "name": "highlighted_text",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
+        }
+    ],
     "location": [
         [
             {
@@ -19,5 +39,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1636395500
+    "modified": 1636462651
 }

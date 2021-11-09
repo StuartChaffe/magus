@@ -1,0 +1,19 @@
+.highlighted-text {
+	position: relative;
+	background-color: var(--color-grey-dark);
+	margin-bottom: var(--spacing-m);
+	padding: var(--spacing-m) var(--spacing-l) var(--spacing-m) calc(var(--spacing-l) * 2);
+	h1, h2, h3, h4, h5, p {
+		color: white;
+	}
+
+	&::before {
+		content: '';
+		position: absolute;
+		height: calc(98% - var(--spacing-m) * 2);
+		width: 10px;
+		background-color: white;
+		top: var(--spacing-m);
+		left: var(--spacing-l);
+	}
+}
