@@ -432,11 +432,6 @@ input[type=button]:focus {
   flex: 1;
 }
 
-.content > * {
-  max-width: var(--content-width);
-  margin-right: auto;
-  margin-left: auto;
-}
 .content h2,
 .content h3,
 .content h4,
@@ -1072,8 +1067,8 @@ body.nav-open {
   fill: var(--color-primary);
 }
 .social-links__item .icon {
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
 }
 
 .social-links__link {
