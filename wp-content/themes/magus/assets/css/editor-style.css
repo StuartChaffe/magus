@@ -82,7 +82,7 @@ img.alignright {
 
 img.alignleft {
   float: left;
-  margin: 0 1em 1em 0;
+  margin: 0 var(--spacing-m) var(--spacing-m) 0;
 }
 
 img.aligncenter {
@@ -116,7 +116,7 @@ img.aligncenter {
   border: 0;
 }
 
-.text-white h1, .testimonial h1, .highlighted-text h1, .cta h1, .text-white h2, .testimonial h2, .highlighted-text h2, .cta h2, .text-white h3, .testimonial h3, .highlighted-text h3, .cta h3, .text-white h4, .testimonial h4, .highlighted-text h4, .cta h4, .text-white h5, .testimonial h5, .highlighted-text h5, .cta h5, .text-white p, .testimonial p, .highlighted-text p, .cta p {
+.text-white h1, .testimonial--inner h1, .highlighted-text h1, .cta h1, .text-white h2, .testimonial--inner h2, .highlighted-text h2, .cta h2, .text-white h3, .testimonial--inner h3, .highlighted-text h3, .cta h3, .text-white h4, .testimonial--inner h4, .highlighted-text h4, .cta h4, .text-white h5, .testimonial--inner h5, .highlighted-text h5, .cta h5, .text-white p, .testimonial--inner p, .highlighted-text p, .cta p {
   color: white;
 }
 
@@ -236,9 +236,9 @@ body {
   color: var(--color-text-base);
   background-color: var(--body-background-color);
   background-image: url("../../src/images/bg.png");
-  background-size: 60%;
+  background-size: 50%;
   background-repeat: no-repeat;
-  background-position: bottom left;
+  background-position: center left;
 }
 
 strong {
@@ -361,6 +361,8 @@ h5 {
   line-height: var(--line-height-headings);
   font-weight: var(--font-weight-normal);
   color: var(--heading-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1, .heading-1 {
@@ -414,8 +416,9 @@ pre {
 
 .banner {
   position: relative;
+  margin-bottom: var(--spacing-m);
 }
-.banner .container, .banner .testimonial, .banner .main, .banner .global-footer--inner {
+.banner .container, .banner .video, .banner .testimonial, .banner .main, .banner .global-footer--inner, .banner .content {
   display: flex;
   align-items: flex-start;
 }
@@ -439,7 +442,6 @@ pre {
   margin-right: 100px;
   z-index: 9;
   margin-top: -320px;
-  margin-bottom: var(--spacing-m);
   padding: var(--spacing-m) var(--spacing-l) var(--spacing-m) calc(var(--spacing-l) * 2);
 }
 .banner--title h1 {
@@ -458,7 +460,7 @@ pre {
 .btn {
   display: inline-block;
   border-radius: 0;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.5rem;
   border: 5px solid white;
   color: white;
   font-family: var(--display-family);
@@ -485,6 +487,9 @@ pre {
   color: white;
 }
 
+.content {
+  margin-bottom: var(--spacing-xl);
+}
 .content h2,
 .content h3,
 .content h4,
@@ -584,6 +589,10 @@ pre {
 }
 .cta .btn {
   margin-top: 2rem;
+}
+.cta--button {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
 }
 
 .global-footer {
@@ -754,14 +763,14 @@ pre {
   color: white;
   transition: all 0.1s ease-in-out;
 }
-.global-header--nav ul .current-menu-item, .global-header--nav ul .current_page_parent {
+.global-header--nav ul .current-menu-item, .global-header--nav ul .current_page_parent, .global-header--nav ul .current-page-ancestor {
   color: var(--color-primary);
   font-weight: bold;
 }
-.global-header--nav ul .current-menu-item a, .global-header--nav ul .current_page_parent a {
+.global-header--nav ul .current-menu-item a, .global-header--nav ul .current_page_parent a, .global-header--nav ul .current-page-ancestor a {
   color: var(--color-primary);
 }
-.global-header--nav ul .current-menu-item a:hover, .global-header--nav ul .current_page_parent a:hover {
+.global-header--nav ul .current-menu-item a:hover, .global-header--nav ul .current_page_parent a:hover, .global-header--nav ul .current-page-ancestor a:hover {
   color: var(--color-primary);
   background-color: white;
 }
@@ -1064,7 +1073,7 @@ ul.menu .sub-menu li a:after {
   min-height: 100%;
 }
 
-.container, .testimonial, .main, .global-footer--inner {
+.container, .video, .testimonial, .main, .content, .global-footer--inner {
   margin: 0 auto;
   padding: 0 1rem;
   width: 100%;
@@ -1133,6 +1142,10 @@ body.nav-open {
 }
 
 .testimonial {
+  text-align: center;
+}
+.testimonial--inner {
+  text-align: left;
   display: flex;
   flex-direction: column;
   background-color: var(--color-primary);
@@ -1142,7 +1155,14 @@ body.nav-open {
 .testimonial--author {
   margin-left: auto;
 }
+.testimonial .btn {
+  margin: -1rem auto var(--spacing-xl) auto;
+}
 
-body {
-  background-image: none;
+.video {
+  margin-bottom: var(--spacing-xl);
+}
+
+html, body {
+  background-image: none !important;
 }

@@ -2,7 +2,7 @@
 	position: relative;
 	// height: 100vh;
 	// min-height: 800px;
-	// margin-bottom: var(--spacing-m);
+	margin-bottom: var(--spacing-m);
 	.container {
 		display: flex;
 		align-items: flex-start;
@@ -31,7 +31,7 @@
 		margin-right: 100px;
 		z-index: 9;
 		margin-top: -320px;
-		margin-bottom: var(--spacing-m);
+		// margin-bottom: var(--spacing-m);
 		padding: var(--spacing-m) var(--spacing-l) var(--spacing-m) calc(var(--spacing-l) * 2);
 
 		h1 {

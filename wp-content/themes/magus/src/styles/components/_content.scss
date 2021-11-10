@@ -1,5 +1,6 @@
 .content {
-
+	@extend .container;
+	margin-bottom: var(--spacing-xl);
 	h2,
 	h3,
 	h4,

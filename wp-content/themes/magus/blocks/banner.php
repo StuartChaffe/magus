@@ -10,9 +10,11 @@ $title = get_field('banner_title', false, false);
 	<div class="banner--image" style="background-image: url('<?php echo $image['url']; ?>')">
 		<img loading="lazy" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 	</div>
+	<?php if ( $title ) { ?>
 	<div class="container">
 		<div class="banner--title">
-			<?php if ( $title ) { ?><h1><?php echo $title ?></h1><?php } ?>
+			<h1><?php echo $title ?></h1>
 		</div>
 	</div>
+	<?php } ?>
 </section>

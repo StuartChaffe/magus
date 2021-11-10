@@ -115,9 +115,9 @@ body {
   color: var(--color-text-base);
   background-color: var(--body-background-color);
   background-image: url("../../src/images/bg.png");
-  background-size: 60%;
+  background-size: 50%;
   background-repeat: no-repeat;
-  background-position: bottom left;
+  background-position: center left;
 }
 
 strong {
@@ -240,6 +240,8 @@ h5 {
   line-height: var(--line-height-headings);
   font-weight: var(--font-weight-normal);
   color: var(--heading-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1, .heading-1 {
@@ -420,7 +422,7 @@ input[type=button]:focus {
   min-height: 100%;
 }
 
-.container, .testimonial, .global-footer--inner, .main {
+.container, .video, .testimonial, .global-footer--inner, .content, .main {
   margin: 0 auto;
   padding: 0 1rem;
   width: 100%;
@@ -432,6 +434,9 @@ input[type=button]:focus {
   flex: 1;
 }
 
+.content {
+  margin-bottom: var(--spacing-xl);
+}
 .content h2,
 .content h3,
 .content h4,
@@ -535,7 +540,7 @@ input[type=button]:focus {
 .btn {
   display: inline-block;
   border-radius: 0;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.5rem;
   border: 5px solid white;
   color: white;
   font-family: var(--display-family);
@@ -674,14 +679,14 @@ input[type=button]:focus {
   color: white;
   transition: all 0.1s ease-in-out;
 }
-.global-header--nav ul .current-menu-item, .global-header--nav ul .current_page_parent {
+.global-header--nav ul .current-menu-item, .global-header--nav ul .current_page_parent, .global-header--nav ul .current-page-ancestor {
   color: var(--color-primary);
   font-weight: bold;
 }
-.global-header--nav ul .current-menu-item a, .global-header--nav ul .current_page_parent a {
+.global-header--nav ul .current-menu-item a, .global-header--nav ul .current_page_parent a, .global-header--nav ul .current-page-ancestor a {
   color: var(--color-primary);
 }
-.global-header--nav ul .current-menu-item a:hover, .global-header--nav ul .current_page_parent a:hover {
+.global-header--nav ul .current-menu-item a:hover, .global-header--nav ul .current_page_parent a:hover, .global-header--nav ul .current-page-ancestor a:hover {
   color: var(--color-primary);
   background-color: white;
 }
@@ -1077,8 +1082,9 @@ body.nav-open {
 
 .banner {
   position: relative;
+  margin-bottom: var(--spacing-m);
 }
-.banner .container, .banner .testimonial, .banner .main, .banner .global-footer--inner {
+.banner .container, .banner .video, .banner .testimonial, .banner .main, .banner .content, .banner .global-footer--inner {
   display: flex;
   align-items: flex-start;
 }
@@ -1102,7 +1108,6 @@ body.nav-open {
   margin-right: 100px;
   z-index: 9;
   margin-top: -320px;
-  margin-bottom: var(--spacing-m);
   padding: var(--spacing-m) var(--spacing-l) var(--spacing-m) calc(var(--spacing-l) * 2);
 }
 .banner--title h1 {
@@ -1127,6 +1132,10 @@ body.nav-open {
 .cta .btn {
   margin-top: 2rem;
 }
+.cta--button {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
 
 .highlighted-text {
   position: relative;
@@ -1146,6 +1155,10 @@ body.nav-open {
 }
 
 .testimonial {
+  text-align: center;
+}
+.testimonial--inner {
+  text-align: left;
   display: flex;
   flex-direction: column;
   background-color: var(--color-primary);
@@ -1154,6 +1167,13 @@ body.nav-open {
 }
 .testimonial--author {
   margin-left: auto;
+}
+.testimonial .btn {
+  margin: -1rem auto var(--spacing-xl) auto;
+}
+
+.video {
+  margin-bottom: var(--spacing-xl);
 }
 
 .u-bold {
@@ -1239,7 +1259,7 @@ img.alignright {
 
 img.alignleft {
   float: left;
-  margin: 0 1em 1em 0;
+  margin: 0 var(--spacing-m) var(--spacing-m) 0;
 }
 
 img.aligncenter {
@@ -1273,7 +1293,7 @@ img.aligncenter {
   border: 0;
 }
 
-.text-white h1, .cta h1, .highlighted-text h1, .testimonial h1, .text-white h2, .cta h2, .highlighted-text h2, .testimonial h2, .text-white h3, .cta h3, .highlighted-text h3, .testimonial h3, .text-white h4, .cta h4, .highlighted-text h4, .testimonial h4, .text-white h5, .cta h5, .highlighted-text h5, .testimonial h5, .text-white p, .cta p, .highlighted-text p, .testimonial p {
+.text-white h1, .cta h1, .highlighted-text h1, .testimonial--inner h1, .text-white h2, .cta h2, .highlighted-text h2, .testimonial--inner h2, .text-white h3, .cta h3, .highlighted-text h3, .testimonial--inner h3, .text-white h4, .cta h4, .highlighted-text h4, .testimonial--inner h4, .text-white h5, .cta h5, .highlighted-text h5, .testimonial--inner h5, .text-white p, .cta p, .highlighted-text p, .testimonial--inner p {
   color: white;
 }
 

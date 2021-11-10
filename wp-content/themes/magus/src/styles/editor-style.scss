@@ -10,6 +10,6 @@
 @import "base/typography";
 @import "components/*";
 
-body {
-	background-image: none;
+html, body  {
+	background-image: none !important;
 }

@@ -39,6 +39,21 @@
             "prepend": "",
             "append": "",
             "maxlength": ""
+        },
+        {
+            "key": "field_618bf4685910a",
+            "label": "Button",
+            "name": "button",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
         }
     ],
     "location": [
@@ -58,5 +73,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1636473441
+    "modified": 1636562067
 }

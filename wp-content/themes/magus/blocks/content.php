@@ -4,8 +4,6 @@
 */
 $content = get_field('content');
 ?>
-<div class="container">
-	<section class="content">
-		<?php echo $content; ?>
-	</section>
-</div>
+<section class="content">
+	<?php echo $content; ?>
+</section>
