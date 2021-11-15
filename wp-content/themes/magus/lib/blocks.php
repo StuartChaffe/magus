@@ -189,6 +189,16 @@ function magus_acf_blocks() {
 			'keywords'			=> array( 'platform' ),
 		));
 		acf_register_block(array(
+			'name'				=> 'posts',
+			'title'				=> __('Posts'),
+			'description'		=> __('Add all posts'),
+			'render_callback'	=> 'magus_acf_block_render_callback',
+			'category'			=> 'magus-blocks',
+			'icon'				=> 'calendar-alt',
+			'align' 			=> 'wide',
+			'keywords'			=> array( 'posts, blogs' ),
+		));
+		acf_register_block(array(
 			'name'				=> 'services',
 			'title'				=> __('Services'),
 			'description'		=> __('Add all services'),
@@ -268,6 +278,7 @@ function magus_allowed_block_types( $allowed_blocks ) {
 		'acf/link-list',
 		'acf/offices',
 		'acf/platforms',
+		'acf/posts',
 		'acf/services',
 		'acf/signup',
 		'acf/team',
@@ -277,15 +288,15 @@ function magus_allowed_block_types( $allowed_blocks ) {
  
 }
   
-// add_action('acf/render_field_settings/type=image', 'add_default_value_to_image_field');
-// function add_default_value_to_image_field($field) {
-// 	acf_render_field_setting( $field, array(
-// 		'label'			=> 'Default Image',
-// 		'instructions'		=> 'Appears when creating a new post',
-// 		'type'			=> 'image',
-// 		'name'			=> 'default_value',
-// 	));
-// }
+add_action('acf/render_field_settings/type=image', 'add_default_value_to_image_field');
+function add_default_value_to_image_field($field) {
+	acf_render_field_setting( $field, array(
+		'label'			=> 'Default Image',
+		'instructions'		=> 'Appears when creating a new post',
+		'type'			=> 'image',
+		'name'			=> 'default_value',
+	));
+}
 // add_action('acf/render_field_settings/type=file', 'add_default_value_to_file_field');
 // function add_default_value_to_file_field($field) {
 // 	acf_render_field_setting( $field, array(

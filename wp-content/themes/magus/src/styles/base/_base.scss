@@ -47,9 +47,10 @@ body {
 	color: var(--color-text-base);
 	background-color: var(--body-background-color);
 	background-image: url('../../src/images/bg.png');
-	background-size: 50%;
+	background-size: 40%;
 	background-repeat: no-repeat;
 	background-position: center left;
+	background-attachment: fixed;
 	// -webkit-font-smoothing: antialiased;
 	// -moz-osx-font-smoothing: grayscale;
 }

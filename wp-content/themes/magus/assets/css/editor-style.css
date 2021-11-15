@@ -236,9 +236,10 @@ body {
   color: var(--color-text-base);
   background-color: var(--body-background-color);
   background-image: url("../../src/images/bg.png");
-  background-size: 50%;
+  background-size: 40%;
   background-repeat: no-repeat;
   background-position: center left;
+  background-attachment: fixed;
 }
 
 strong {
@@ -1083,6 +1084,100 @@ ul.menu .sub-menu li a:after {
 .main {
   max-width: var(--container);
   flex: 1;
+}
+
+.link-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+@media (min-width: 50em) {
+  .link-list {
+    margin: 0 -10px var(--spacing-xl) -10px;
+  }
+}
+.link-list--intro {
+  margin-bottom: var(--spacing);
+}
+.link-list-item {
+  width: 100%;
+  margin: 0 0 var(--spacing) 0;
+}
+@media (min-width: 50em) {
+  .link-list-item {
+    width: calc(100% / 3 - 20px);
+    margin: 10px;
+  }
+}
+.link-list-item--link {
+  position: relative;
+  background: white;
+  height: 100%;
+  color: var(--color-text-base);
+  z-index: 1;
+  transition: all 0.1s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  font-weight: var(--font-weight-normal);
+}
+.link-list-item--link:hover {
+  text-decoration: none;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
+}
+.link-list-item--image {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: calc(100vw - 123px);
+}
+@media (min-width: 50em) {
+  .link-list-item--image {
+    height: calc(33vw - 60px);
+    max-height: 370px;
+  }
+}
+.link-list-item--image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: none;
+  min-width: calc(100% + 2px);
+  min-height: calc(100% + 2px);
+}
+@media (max-width: 29.99em) {
+  .link-list-item--image img {
+    max-width: 100%;
+  }
+}
+@media (min-width: 50em) {
+  .link-list-item--image img {
+    max-width: none;
+  }
+}
+.link-list-item--content {
+  padding: var(--spacing);
+}
+.link-list-item--content-title {
+  position: relative;
+  padding-left: var(--spacing);
+  min-height: 60px;
+  height: 100%;
+}
+.link-list-item--content-title::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 5px;
+  background-color: var(--color-primary);
+  top: 0;
+  left: 0;
+}
+.link-list--button {
+  width: 100%;
+  display: flex;
 }
 
 body.nav-open {
