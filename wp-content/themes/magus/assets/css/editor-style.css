@@ -50,7 +50,7 @@
   --spacing-xs: 0.25rem;
   --content-width: 768px;
   --container-small: 768px;
-  --container: 1255px;
+  --container: 1285px;
   --container-large: 1600px;
   --font-size: calc(1rem + 0.15vw);
   --font-size-p: calc(1rem + 0.15vw);
@@ -313,7 +313,7 @@ select {
   }
 }
 p {
-  font-size: 15px;
+  font-size: var(--font-size);
   margin-bottom: var(--spacing);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -445,11 +445,15 @@ pre {
   position: relative;
   width: 100%;
   height: 90vh;
-  min-height: 600px;
+  max-height: 600px;
   overflow: hidden;
   background-color: var(--color-primary);
   background-size: cover;
   background-position: center center;
+}
+.banner--image__single {
+  height: auto;
+  min-height: 100vw;
 }
 @media (min-width: 50em) {
   .banner--image {
@@ -1160,7 +1164,7 @@ ul.menu .sub-menu li a:after {
 
 .container, .video, .testimonial, .main, .content, .global-footer--inner {
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 2rem;
   width: 100%;
   max-width: var(--container);
 }
@@ -1174,7 +1178,7 @@ ul.menu .sub-menu li a:after {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 0 -10px;
+  margin: 0 -10px var(--spacing-l) -10px;
 }
 @media (min-width: 50em) {
   .link-list {
@@ -1248,8 +1252,8 @@ ul.menu .sub-menu li a:after {
   margin-bottom: var(--spacing);
 }
 .link-list-item {
-  width: 100%;
-  margin: 0 0 var(--spacing) 0;
+  width: calc(100% / 2 - 20px);
+  margin: 10px;
 }
 @media (min-width: 50em) {
   .link-list-item {
@@ -1277,12 +1281,18 @@ ul.menu .sub-menu li a:after {
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: calc(100vw - 123px);
+  height: calc(50vw - 44px);
 }
 @media (min-width: 50em) {
   .link-list-item--image {
-    height: calc(33vw - 60px);
-    max-height: 370px;
+    height: calc(33vw - 33px);
+    max-height: 390px;
+  }
+}
+@media (min-width: 80em) {
+  .link-list-item--image {
+    height: calc(33vw - 175px);
+    max-height: 390px;
   }
 }
 .link-list-item--image img {
@@ -1306,13 +1316,23 @@ ul.menu .sub-menu li a:after {
   }
 }
 .link-list-item--content {
-  padding: var(--spacing);
+  padding: calc(var(--spacing) / 2);
+}
+@media (min-width: 50em) {
+  .link-list-item--content {
+    padding: var(--spacing);
+  }
 }
 .link-list-item--content-title {
   position: relative;
-  padding-left: var(--spacing);
+  padding-left: calc(var(--spacing) / 2 + 5px);
   min-height: 60px;
   height: 100%;
+}
+@media (min-width: 50em) {
+  .link-list-item--content-title {
+    padding-left: var(--spacing);
+  }
 }
 .link-list-item--content-title::before {
   content: "";

@@ -2,7 +2,7 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	margin: 0 -10px;
+	margin: 0 -10px var(--spacing-l) -10px;
 	@include mq(medium) {
 		margin: 0 -10px var(--spacing-xl) -10px;
 	}
@@ -23,8 +23,6 @@
 				width: calc(100% / 2 - 20px);
 				margin: 10px;
 			}
-
-
 			&--image {
 				position: relative;
 				overflow: hidden;
@@ -87,8 +85,8 @@
 	}
 
 	&-item {
-		width: 100%;
-		margin: 0 0 var(--spacing) 0;
+		width: calc(100% / 2 - 20px);
+		margin: 10px;
 
 		@include mq(medium) {
 			width: calc(100% / 3 - 20px);
@@ -123,10 +121,18 @@
 			position: relative;
 			overflow: hidden;
 			width: 100%;
-			height: calc(100vw - 123px); 
+			height: calc(50vw - 44px); 
+			// @include mq($until: medium) {
+			// 	height: calc(33vw - 175px); 
+			// 	max-height: 390px;
+			// }
 			@include mq(medium) {
-				height: calc(33vw - 60px); 
-				max-height: 370px;
+				height: calc(33vw - 33px); 
+				max-height: 390px;
+			}
+			@include mq(xlarge) {
+				height: calc(33vw - 175px); 
+				max-height: 390px;
 			}
 			img {
 				position: absolute;
@@ -149,13 +155,19 @@
 		}
 
 		&--content {
-			padding: var(--spacing);
+			padding: calc(var(--spacing) / 2);
+			@include mq(medium) {
+				padding: var(--spacing);
+			}
 			&-title {
 				position: relative;
 				// padding-bottom: var(--spacing);
-				padding-left: var(--spacing);
+				padding-left: calc(var(--spacing) / 2 + 5px);
 				min-height: 60px;
 				height: 100%;
+				@include mq(medium) {
+					padding-left: var(--spacing);
+				}
 				&::before {
 					content: '';
 					position: absolute;

@@ -1,5 +1,5 @@
 p {
-	font-size: 15px;
+	font-size: var(--font-size);
 	margin-bottom: var(--spacing);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;

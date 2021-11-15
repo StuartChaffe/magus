@@ -8,12 +8,9 @@ $title = get_field('banner_title', false, false);
 ?>
 
 <section class="banner">
-	<!-- <div class="banner--image" style="background-image: url('<?php echo $image['url']; ?>')"> -->
-	<div class="banner--image">
+	<div class="banner--image" style="background-image: url('<?php echo $image['url']; ?>')">
 		<img loading="lazy" class="hidemobile" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-		<?php if ( $imagemobile ) { ?>
-			<img loading="lazy" class="hidedesktop" src="<?php echo $imagemobile['url']; ?>" alt="<?php echo $imagemobile['alt']; ?>" />
-		<?php } ?>
+		<?php if ( $imagemobile ) { ?><img loading="lazy" class="hidedesktop" src="<?php echo $imagemobile['url']; ?>" alt="<?php echo $imagemobile['alt']; ?>" /><?php } ?>
 	</div>
 	<?php if ( $title ) { ?>
 	<div class="container">

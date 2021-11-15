@@ -10,7 +10,7 @@
 
 <section class="banner">
 	<!-- <div class="banner--image" style="background-image: url('<?php echo $image['url']; ?>')"> -->
-	<div class="banner--image">
+	<div class="banner--image banner--image__single">
 		<img loading="lazy" class="hidemobile" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 		<img loading="lazy" class="hidedesktop" src="<?php echo $imagesquare['url']; ?>" alt="<?php echo $imagesquare['alt']; ?>" />
 	</div>
