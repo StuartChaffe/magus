@@ -1186,8 +1186,8 @@ ul.menu .sub-menu li a:after {
   }
 }
 .link-list--featured-item {
-  width: 100%;
-  margin: 0 0 var(--spacing) 0;
+  width: calc(100% / 2 - 20px);
+  margin: 0 10px var(--spacing) 10px;
 }
 @media (min-width: 50em) {
   .link-list--featured-item {
@@ -1199,7 +1199,7 @@ ul.menu .sub-menu li a:after {
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: calc(100vw - 123px);
+  height: calc(50vw - 44px);
 }
 @media (min-width: 50em) {
   .link-list--featured-item--image {
@@ -1213,6 +1213,7 @@ ul.menu .sub-menu li a:after {
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: none;
+  width: 100%;
   min-width: calc(100% + 2px);
   min-height: calc(100% + 2px);
 }
@@ -1227,17 +1228,27 @@ ul.menu .sub-menu li a:after {
   }
 }
 .link-list--featured-item--content {
-  position: absolute;
-  padding: var(--spacing);
-  bottom: var(--spacing);
-  left: var(--spacing);
-  width: 50%;
-  background: white;
+  padding: calc(var(--spacing) / 2);
+}
+@media (min-width: 50em) {
+  .link-list--featured-item--content {
+    position: absolute;
+    padding: var(--spacing);
+    bottom: var(--spacing);
+    left: var(--spacing);
+    width: 50%;
+    background: white;
+  }
 }
 .link-list--featured-item--content-title {
   position: relative;
-  padding-left: var(--spacing);
+  padding-left: calc(var(--spacing) / 2 + 5px);
   height: 100%;
+}
+@media (min-width: 50em) {
+  .link-list--featured-item--content-title {
+    padding-left: var(--spacing);
+  }
 }
 .link-list--featured-item--content-title::before {
   content: "";
@@ -1291,7 +1302,7 @@ ul.menu .sub-menu li a:after {
 }
 @media (min-width: 80em) {
   .link-list-item--image {
-    height: calc(33vw - 175px);
+    height: calc(33vw - 72px);
     max-height: 390px;
   }
 }

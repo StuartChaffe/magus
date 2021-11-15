@@ -17,8 +17,8 @@
 
 	&--featured {
 		&-item {
-			width: 100%;
-			margin: 0 0 var(--spacing) 0;
+			width: calc(100% / 2 - 20px);
+			margin: 0 10px var(--spacing) 10px;
 			@include mq(medium) {
 				width: calc(100% / 2 - 20px);
 				margin: 10px;
@@ -27,7 +27,7 @@
 				position: relative;
 				overflow: hidden;
 				width: 100%;
-				height: calc(100vw - 123px); 
+				height: calc(50vw - 44px); 
 				@include mq(medium) {
 					height: calc(50vw - 30px); 
 					max-height: calc(var(--container) / 2);
@@ -38,6 +38,7 @@
 					left: 50%;
 					transform: translate(-50%, -50%);
 					max-width: none;
+					width: 100%;
 					min-width: calc(100% + 2px);
 					min-height: calc(100% + 2px);
 	
@@ -52,19 +53,23 @@
 			}
 
 			&--content {
-				position: absolute;
-				padding: var(--spacing);
-				bottom: var(--spacing);
-				left: var(--spacing);
-				width: 50%;
-				background: white;
+				padding: calc(var(--spacing) / 2);
+				@include mq(medium) {
+					position: absolute;
+					padding: var(--spacing);
+					bottom: var(--spacing);
+					left: var(--spacing);
+					width: 50%;
+					background: white;
+				}
 
 				&-title {
 					position: relative;
-					// padding-bottom: var(--spacing);
-					padding-left: var(--spacing);
-					// min-height: 60px;
+					padding-left: calc(var(--spacing) / 2 + 5px);
 					height: 100%;
+					@include mq(medium) {
+						padding-left: var(--spacing);
+					}
 					&::before {
 						content: '';
 						position: absolute;
@@ -131,7 +136,7 @@
 				max-height: 390px;
 			}
 			@include mq(xlarge) {
-				height: calc(33vw - 175px); 
+				height: calc(33vw - 72px); 
 				max-height: 390px;
 			}
 			img {
