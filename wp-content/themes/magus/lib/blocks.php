@@ -109,14 +109,14 @@ function magus_acf_blocks() {
 			'keywords'			=> array( 'posts, featured' ),
 		));
 		acf_register_block(array(
-			'name'				=> 'featured-services',
-			'title'				=> __('Featured service(s)'),
-			'description'		=> __('Add featured service(s)'),
+			'name'				=> 'featured-lists',
+			'title'				=> __('Featured list(s)'),
+			'description'		=> __('Add featured list(s)'),
 			'render_callback'	=> 'magus_acf_block_render_callback',
 			'category'			=> 'magus-blocks',
 			'icon'				=> 'align-full-width',
 			'align' 			=> 'wide',
-			'keywords'			=> array( 'services, featured' ),
+			'keywords'			=> array( 'list, featured' ),
 		));
 		acf_register_block(array(
 			'name'				=> 'featured-team',
@@ -139,7 +139,7 @@ function magus_acf_blocks() {
 			'keywords'			=> array( 'form, contact' ),
 		));
 		acf_register_block(array(
-			'name'				=> 'highlighted-services',
+			'name'				=> 'highlighted-service',
 			'title'				=> __('Highlighted service'),
 			'description'		=> __('Add highlighted service'),
 			'render_callback'	=> 'magus_acf_block_render_callback',
@@ -197,16 +197,6 @@ function magus_acf_blocks() {
 			'icon'				=> 'calendar-alt',
 			'align' 			=> 'wide',
 			'keywords'			=> array( 'posts, blogs' ),
-		));
-		acf_register_block(array(
-			'name'				=> 'services',
-			'title'				=> __('Services'),
-			'description'		=> __('Add all services'),
-			'render_callback'	=> 'magus_acf_block_render_callback',
-			'category'			=> 'magus-blocks',
-			'icon'				=> 'align-full-width',
-			'align' 			=> 'wide',
-			'keywords'			=> array( 'services' ),
 		));
 		acf_register_block(array(
 			'name'				=> 'signup',
@@ -273,13 +263,13 @@ function magus_allowed_block_types( $allowed_blocks ) {
 		'acf/cta',
 		'acf/download',
 		'acf/featured-posts',
-		'acf/featured-services',
+		'acf/featured-lists',
+		'acf/highlighted-services',
 		'acf/highlighted-text',
 		'acf/link-list',
 		'acf/offices',
 		'acf/platforms',
 		'acf/posts',
-		'acf/services',
 		'acf/signup',
 		'acf/team',
 		'acf/testimonial',

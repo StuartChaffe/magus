@@ -91,6 +91,7 @@
 	visibility: hidden;
 	z-index: 1000;
 	color: var(--color-primary);
+	border: 1px solid var(--body-background-color);
 	&:hover {
 		cursor: pointer;
 		box-shadow: 0px 23px 120px rgba(0, 0, 0, 0.2);

@@ -674,6 +674,7 @@ pre {
   visibility: hidden;
   z-index: 1000;
   color: var(--color-primary);
+  border: 1px solid var(--body-background-color);
 }
 #button:hover {
   cursor: pointer;

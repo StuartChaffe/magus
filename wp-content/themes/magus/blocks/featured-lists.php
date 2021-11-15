@@ -1,6 +1,6 @@
 <?php
 /**
-* The template used for displaying featured services.
+* The template used for displaying featured lists.
 */
 
 ?>

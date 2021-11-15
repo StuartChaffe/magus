@@ -1,7 +1,49 @@
 {
     "key": "group_61896981961e7",
     "title": "Featured post(s)",
-    "fields": [],
+    "fields": [
+        {
+            "key": "field_6192706d18c16",
+            "label": "Title",
+            "name": "posts_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_61927021a00d6",
+            "label": "Featured posts",
+            "name": "select_posts",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "post"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "multiple": 1,
+            "return_format": "id",
+            "ui": 1
+        }
+    ],
     "location": [
         [
             {
@@ -19,5 +61,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1636395669
+    "modified": 1636987016
 }

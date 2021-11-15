@@ -1,10 +1,10 @@
 <?php
 /**
-* The template used for displaying a highlighted service(s).
+* The template used for displaying a highlighted service.
 */
 
 ?>
 
-<section class="service-list">
+<section class="service">
 	Services
 </section>
