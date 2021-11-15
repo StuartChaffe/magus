@@ -16,7 +16,7 @@ $intro = get_field('posts_intro');
 ?>
 
 <?php if ($posts->have_posts()) : ?>
-	<div class="container">
+<div class="container">
 	<section class="posts">
 	<?php if ( $title ) { ?>
 		<h1><?php echo $title ?></h1>
@@ -49,5 +49,5 @@ $intro = get_field('posts_intro');
 			<?php endwhile; wp_reset_query(); ?>
 		</div>
 	</section>
-	</div>
+</div>
 <?php endif; ?>

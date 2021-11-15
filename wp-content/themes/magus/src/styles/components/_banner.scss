@@ -9,30 +9,69 @@
 	}
 
 	&--image {
+		position: relative;
 		width: 100%;
-		height: 100vh;
-		min-height: 800px;
+		height: 90vh;
+		min-height: 600px;
 		overflow: hidden;
-
 		background-color: var(--color-primary);
 		background-size: cover;
 		background-position: center center;
+		@include mq($until: medium) {
+			// background-image: none !important;
+		}
+		@include mq(medium) {
+			height: 80vh;
+			min-height: 800px;
+			// background-attachment: fixed;
+		}
+		@include mq(large) {
+			height: 100vh;
+			min-height: 800px;
+			// background-attachment: fixed;
+		}
 
 		img {
-			display: none;
-			opacity: 0;
+			@include mq(medium) {
+				// display: none;
+				// opacity: 0;
+			}
+
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			// max-width: none;
+			// width: 100%;
+			min-width: calc(100% + 2px);
+			min-height: calc(100% + 2px);
+
+			@include mq($until: small) {
+				max-width: 100%;
+			}
+			
+			@include mq(medium) {
+				max-width: none;
+			}
 		}
 	}
 	&--title {
 		position: relative;
 		background: white;
 		box-shadow: 0px 23px 120px rgba(0, 0, 0, 0.2);
-		// max-width: 92%;
-		margin-right: 100px;
-		z-index: 9;
-		margin-top: -320px;
-		// margin-bottom: var(--spacing-m);
-		padding: var(--spacing-m) var(--spacing-l) var(--spacing-m) calc(var(--spacing-l) * 2);
+		margin-right: 50px;
+		z-index: 2;
+		margin-top: -140px;
+		padding: var(--spacing-sm) var(--spacing-sm) var(--spacing-sm) calc(var(--spacing-sm) * 2);
+		@include mq(medium) {
+			margin-right: 100px;
+			margin-top: -280px;
+			padding: var(--spacing-m) var(--spacing-l) var(--spacing-m) calc(var(--spacing-l) * 2);
+		}
+		@include mq(large) {
+			margin-top: -320px;
+			padding: var(--spacing-m) var(--spacing-l) var(--spacing-m) calc(var(--spacing-l) * 2);
+		}
 
 		h1 {
 			margin-bottom: 0;
@@ -41,11 +80,17 @@
 		&::before {
 			content: '';
 			position: absolute;
-			height: calc(90% - var(--spacing-m) * 2);
-			width: 10px;
+			height: calc(100% - var(--spacing-sm) * 2);
+			width: 8px;
 			background-color: var(--color-primary);
-			top: var(--spacing-m);
-			left: var(--spacing-l);
+			top: var(--spacing-sm);
+			left: var(--spacing-sm);
+			@include mq(medium) {
+				height: calc(100% - var(--spacing-l) * 2);
+				width: 10px;
+				top: var(--spacing-l);
+				left: var(--spacing-l);
+			}
 		}
 	}
 }

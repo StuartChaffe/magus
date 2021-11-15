@@ -84,7 +84,7 @@
 			outline: none !important;
 			display: block;
 			// margin-top: 7px;
-			z-index: 3;
+			z-index: 4;
 			padding: 0;
 			@media only screen and (min-width: 880px) {
 				display: none;
@@ -99,7 +99,7 @@
 			top: 0;
 			width: 100%;
 			height: 100vh;
-			z-index: 2;
+			z-index: 3;
 			background: transparent;
 			transition: all 0.2s ease-in-out;
 			display: block;

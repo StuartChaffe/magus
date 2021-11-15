@@ -15,6 +15,73 @@
 	// 	padding: calc(var(--spacing-xl) - 20px);
 	// }
 
+	&--featured {
+		&-item {
+			width: 100%;
+			margin: 0 0 var(--spacing) 0;
+			@include mq(medium) {
+				width: calc(100% / 2 - 20px);
+				margin: 10px;
+			}
+
+
+			&--image {
+				position: relative;
+				overflow: hidden;
+				width: 100%;
+				height: calc(100vw - 123px); 
+				@include mq(medium) {
+					height: calc(50vw - 30px); 
+					max-height: calc(var(--container) / 2);
+				}
+				img {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					max-width: none;
+					min-width: calc(100% + 2px);
+					min-height: calc(100% + 2px);
+	
+					@include mq($until: small) {
+						max-width: 100%;
+					}
+					
+					@include mq(medium) {
+						max-width: none;
+					}
+				}
+			}
+
+			&--content {
+				position: absolute;
+				padding: var(--spacing);
+				bottom: var(--spacing);
+				left: var(--spacing);
+				width: 50%;
+				background: white;
+
+				&-title {
+					position: relative;
+					// padding-bottom: var(--spacing);
+					padding-left: var(--spacing);
+					// min-height: 60px;
+					height: 100%;
+					&::before {
+						content: '';
+						position: absolute;
+						height: 100%;
+						width: 5px;
+						background-color: var(--color-primary);
+						top: 0;
+						left: 0;
+					}
+				}
+				
+			}
+		}
+	}
+
 	&--intro {
 		margin-bottom: var(--spacing);
 	}
@@ -67,6 +134,7 @@
 				left: 50%;
 				transform: translate(-50%, -50%);
 				max-width: none;
+				width: 100%;
 				min-width: calc(100% + 2px);
 				min-height: calc(100% + 2px);
 
@@ -102,7 +170,8 @@
 	}
 	&--button {
 		width: 100%;
+		justify-content: center;
 		display: flex;
-
+		margin-bottom: var(--spacing-xl);
 	}
 }
