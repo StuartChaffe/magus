@@ -3,16 +3,25 @@
 	position: relative;
 	background-color: var(--color-grey-dark);
 	margin-bottom: var(--spacing-m);
-	padding: var(--spacing-m) var(--spacing-l) var(--spacing-m) calc(var(--spacing-l) * 2);
-	margin-bottom: var(--spacing-xl);
+	padding: var(--spacing-sm) var(--spacing-sm) var(--spacing-sm) calc(var(--spacing-sm) * 2);
+	@include mq(medium) {
+		padding: var(--spacing-m) var(--spacing-l) var(--spacing-m) calc(var(--spacing-l) * 2);
+	}
+
 
 	&::before {
 		content: '';
 		position: absolute;
-		height: calc(98% - var(--spacing-m) * 2);
-		width: 10px;
+		height: calc(100% - var(--spacing-sm) * 2);
+		width: 8px;
 		background-color: white;
-		top: var(--spacing-m);
-		left: var(--spacing-l);
+		top: var(--spacing-sm);
+		left: var(--spacing-sm);
+		@include mq(medium) {
+			height: calc(100% - var(--spacing-l) * 2);
+			width: 10px;
+			top: var(--spacing-l);
+			left: var(--spacing-l);
+		}
 	}
 }

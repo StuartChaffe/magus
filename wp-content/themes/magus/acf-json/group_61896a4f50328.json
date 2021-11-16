@@ -1,7 +1,46 @@
 {
     "key": "group_61896a4f50328",
     "title": "Team",
-    "fields": [],
+    "fields": [
+        {
+            "key": "field_61938498dcd86",
+            "label": "Title",
+            "name": "teams_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_619384a0dcd87",
+            "label": "Intro",
+            "name": "teams_intro",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
+        }
+    ],
     "location": [
         [
             {
@@ -19,5 +58,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1636395607
+    "modified": 1637057803
 }

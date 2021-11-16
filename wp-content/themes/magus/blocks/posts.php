@@ -34,7 +34,7 @@ $intro = get_field('posts_intro');
 					$image = get_field('square_image', get_the_ID());
 				?>
 				<div class="link-list-item">
-					<a href="<?php esc_url( the_permalink() ); ?>" class="link-list-item--link" title="Permalink to <?php the_title(); ?>">
+					<a href="<?php esc_url( the_permalink() ); ?>" class="link-list-item--link" title="Article: <?php the_title(); ?>">
 						<div class="link-list-item--image">
 							<img loading="lazy" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 						</div>

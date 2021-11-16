@@ -1,0 +1,29 @@
+.team {
+	.link-list {
+		&-item {
+			width: calc(100% / 2 - 20px);
+			background-color: white;
+			@include mq(large) {
+				width: calc(100% / 4 - 20px);
+			}
+			&--image {
+
+				height: calc(50vw - 90px); 
+				max-height: 166px;
+				@include mq(medium) {
+					height: calc(50vw - 112px); 
+					max-height: 268px;
+				}
+				@include mq(large) {
+					height: calc(25vw - 130px); 
+					max-height: 250px;
+				}
+			}
+			&--content {
+				p {
+					margin: 0;
+				}
+			}
+		}
+	}
+}

@@ -214,7 +214,7 @@ function magus_acf_blocks() {
 			'description'		=> __('Add all team members'),
 			'render_callback'	=> 'magus_acf_block_render_callback',
 			'category'			=> 'magus-blocks',
-			'icon'				=> 'admin-users',
+			'icon'				=> 'groups',
 			'align' 			=> 'wide',
 			'keywords'			=> array( 'team, people' ),
 		));
@@ -264,6 +264,7 @@ function magus_allowed_block_types( $allowed_blocks ) {
 		'acf/download',
 		'acf/featured-posts',
 		'acf/featured-lists',
+		'acf/featured-team',
 		'acf/highlighted-services',
 		'acf/highlighted-text',
 		'acf/link-list',

@@ -3,11 +3,11 @@
 add_action('init', 'origin_cpts');
 
 function origin_cpts() {
-	$post_type_name		= "courses";
-	$single_name		= "Course";
-	$plural_name		= "Courses";
-	$icon				= "dashicons-controls-play";
-	$gutenberg_enabled	= true;
+	$post_type_name		= "team";
+	$single_name		= "Team";
+	$plural_name		= "Team";
+	$icon				= "dashicons-groups";
+	$gutenberg_enabled	= false;
 
 	$post_type_options = array(
 		'label'                 => $single_name,
@@ -36,7 +36,7 @@ function origin_cpts() {
 			'name'                  => $single_name,
 			'singular_name'         => $single_name,
 			'menu_name'             => $plural_name,
-			'add_new'               => 'Add ' . $single_name,
+			'add_new'               => 'Add ' . $single_name . ' Member',
 			'add_new_item'          => 'Add New ' . $single_name,
 			'edit'                  => 'Edit',
 			'edit_item'             => 'Edit ' . $single_name,
