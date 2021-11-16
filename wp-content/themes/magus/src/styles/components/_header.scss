@@ -62,12 +62,11 @@
 			}
 			.current-menu-item, .current_page_parent, .current-page-ancestor {
 				color: var(--color-primary);
-				font-weight: bold;
 				a {
 					color: var(--color-primary);
 					&:hover {
 						color: var(--color-primary);
-						background-color: white;
+						background-color: var(--body-background-color);
 					}
 				}
 			}
@@ -163,7 +162,6 @@ ul.menu {
 		
 		@include mq(medium) {
 			min-width: 220px;
-			background: red;
 			margin: 0 1rem;
 			position: absolute;
 			border-radius: 5px;
@@ -183,7 +181,6 @@ ul.menu {
 				top: 0;
 				left: 50%;
 				transform: translateX(-50%) translateY(-50%) rotate(45deg);
-				background: red;
 			}
 		}
 		li {

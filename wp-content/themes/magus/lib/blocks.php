@@ -110,11 +110,11 @@ function magus_acf_blocks() {
 		));
 		acf_register_block(array(
 			'name'				=> 'featured-lists',
-			'title'				=> __('Featured list(s)'),
-			'description'		=> __('Add featured list(s)'),
+			'title'				=> __('Featured lists'),
+			'description'		=> __('Add a featured list'),
 			'render_callback'	=> 'magus_acf_block_render_callback',
 			'category'			=> 'magus-blocks',
-			'icon'				=> 'align-full-width',
+			'icon'				=> 'screenoptions',
 			'align' 			=> 'wide',
 			'keywords'			=> array( 'list, featured' ),
 		));
@@ -265,7 +265,7 @@ function magus_allowed_block_types( $allowed_blocks ) {
 		'acf/featured-posts',
 		'acf/featured-lists',
 		'acf/featured-team',
-		'acf/highlighted-services',
+		'acf/highlighted-service',
 		'acf/highlighted-text',
 		'acf/link-list',
 		'acf/offices',

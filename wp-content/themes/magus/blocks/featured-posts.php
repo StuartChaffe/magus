@@ -40,9 +40,9 @@ $intro = get_field('posts_intro');
 			</div>
 		<?php endforeach; ?>
 		</div>
-	<div class="link-list--button">
-		<a href="/magus-thinking" class="btn btn--primary"><?php if ($button) { ?><?php echo $button ?><?php } else { ?>View More<?php } ?></a>
-	</div>
+		<div class="link-list--button">
+			<a href="/magus-thinking" class="btn btn--primary"><?php if ($button) { ?><?php echo $button ?><?php } else { ?>View More<?php } ?></a>
+		</div>
 	</section>
 </div>
 <?php } else { ?>

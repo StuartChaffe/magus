@@ -444,7 +444,7 @@ input[type=button]:focus {
 .content h4,
 .content h5 {
   margin-top: var(--spacing-l);
-  margin-bottom: 0;
+  margin-bottom: var(--spacing-l);
 }
 .content a {
   color: var(--link-color);
@@ -683,14 +683,13 @@ input[type=button]:focus {
 }
 .global-header--nav ul .current-menu-item, .global-header--nav ul .current_page_parent, .global-header--nav ul .current-page-ancestor {
   color: var(--color-primary);
-  font-weight: bold;
 }
 .global-header--nav ul .current-menu-item a, .global-header--nav ul .current_page_parent a, .global-header--nav ul .current-page-ancestor a {
   color: var(--color-primary);
 }
 .global-header--nav ul .current-menu-item a:hover, .global-header--nav ul .current_page_parent a:hover, .global-header--nav ul .current-page-ancestor a:hover {
   color: var(--color-primary);
-  background-color: white;
+  background-color: var(--body-background-color);
 }
 .global-header--nav ul .current-menu-item > a {
   position: relative;
@@ -766,7 +765,6 @@ ul.menu .sub-menu {
 @media (min-width: 50em) {
   ul.menu .sub-menu {
     min-width: 220px;
-    background: red;
     margin: 0 1rem;
     position: absolute;
     border-radius: 5px;
@@ -787,7 +785,6 @@ ul.menu .sub-menu {
     top: 0;
     left: 50%;
     transform: translateX(-50%) translateY(-50%) rotate(45deg);
-    background: red;
   }
 }
 ul.menu .sub-menu li {
@@ -1329,6 +1326,7 @@ body.nav-open {
 .link-list-item {
   width: calc(100% / 2 - 20px);
   margin: 10px;
+  flex-grow: 1;
 }
 @media (min-width: 50em) {
   .link-list-item {
@@ -1401,7 +1399,7 @@ body.nav-open {
 .link-list-item--content-title {
   position: relative;
   padding-left: calc(var(--spacing) / 2 + 5px);
-  min-height: 60px;
+  min-height: 58px;
   height: 100%;
 }
 @media (min-width: 50em) {
