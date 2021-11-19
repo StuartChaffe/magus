@@ -33,7 +33,7 @@ function magus_acf_blocks() {
 			'description'		=> __('Add an award block'),
 			'render_callback'	=> 'magus_acf_block_render_callback',
 			'category'			=> 'magus-blocks',
-			'icon'				=> 'screenoptions',
+			'icon'				=> 'awards',
 			'align' 			=> 'wide',
 			'keywords'			=> array( 'award' ),
 		));

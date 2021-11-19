@@ -18,7 +18,7 @@ $intro = get_field('teams_intro');
 <div class="container">
 	<section class="team">
 	<?php if ( $title ) { ?>
-		<h1><?php echo $title ?></h1>
+		<h2><?php echo $title ?></h2>
 	<?php } ?>
 	<?php if ( $intro ) { ?>
 		<div class="link-list--intro">

@@ -207,7 +207,7 @@ img.aligncenter {
   }
 }
 
-.text-white h1, .testimonial--inner h1, .highlighted-text h1, .highlighted-service h1, .cta h1, .text-white h2, .testimonial--inner h2, .highlighted-text h2, .highlighted-service h2, .cta h2, .text-white h3, .testimonial--inner h3, .highlighted-text h3, .highlighted-service h3, .cta h3, .text-white h4, .testimonial--inner h4, .highlighted-text h4, .highlighted-service h4, .cta h4, .text-white h5, .testimonial--inner h5, .highlighted-text h5, .highlighted-service h5, .cta h5, .text-white p, .testimonial--inner p, .highlighted-text p, .highlighted-service p, .cta p {
+.text-white h1, .testimonial--inner h1, .highlighted-text h1, .highlighted-service h1, .cta h1, .awards h1, .text-white h2, .testimonial--inner h2, .highlighted-text h2, .highlighted-service h2, .cta h2, .awards h2, .text-white h3, .testimonial--inner h3, .highlighted-text h3, .highlighted-service h3, .cta h3, .awards h3, .text-white h4, .testimonial--inner h4, .highlighted-text h4, .highlighted-service h4, .cta h4, .awards h4, .text-white h5, .testimonial--inner h5, .highlighted-text h5, .highlighted-service h5, .cta h5, .awards h5, .text-white p, .testimonial--inner p, .highlighted-text p, .highlighted-service p, .cta p, .awards p {
   color: white;
 }
 
@@ -431,6 +431,23 @@ pre {
 .global-alert p {
   color: white;
   margin: 0;
+}
+
+.awards {
+  background-color: var(--color-primary);
+  text-align: center;
+  padding: var(--spacing-l);
+}
+.awards--images {
+  margin: var(--spacing-l) 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.awards--images-item {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .banner {
@@ -1480,4 +1497,9 @@ body.nav-open {
 
 html, body {
   background-image: none !important;
+}
+
+/* Stop links being clickable in the block editor */
+.acf-block-preview a {
+  pointer-events: none !important;
 }

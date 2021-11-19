@@ -1,0 +1,18 @@
+.awards {
+	@extend .text-white;
+	background-color: var(--color-primary);
+	text-align: center;
+	padding: var(--spacing-l);
+
+	&--images {
+		margin: var(--spacing-l) 0;
+		display: flex;
+		flex-wrap: wrap;
+		&-item {
+			flex-grow: 1;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+}

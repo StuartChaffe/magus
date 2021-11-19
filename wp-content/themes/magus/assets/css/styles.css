@@ -1080,6 +1080,23 @@ body.nav-open {
   color: white;
 }
 
+.awards {
+  background-color: var(--color-primary);
+  text-align: center;
+  padding: var(--spacing-l);
+}
+.awards--images {
+  margin: var(--spacing-l) 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.awards--images-item {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .banner {
   position: relative;
   margin-bottom: var(--spacing-m);
@@ -1608,7 +1625,7 @@ img.aligncenter {
   }
 }
 
-.text-white h1, .cta h1, .highlighted-service h1, .highlighted-text h1, .testimonial--inner h1, .text-white h2, .cta h2, .highlighted-service h2, .highlighted-text h2, .testimonial--inner h2, .text-white h3, .cta h3, .highlighted-service h3, .highlighted-text h3, .testimonial--inner h3, .text-white h4, .cta h4, .highlighted-service h4, .highlighted-text h4, .testimonial--inner h4, .text-white h5, .cta h5, .highlighted-service h5, .highlighted-text h5, .testimonial--inner h5, .text-white p, .cta p, .highlighted-service p, .highlighted-text p, .testimonial--inner p {
+.text-white h1, .awards h1, .cta h1, .highlighted-service h1, .highlighted-text h1, .testimonial--inner h1, .text-white h2, .awards h2, .cta h2, .highlighted-service h2, .highlighted-text h2, .testimonial--inner h2, .text-white h3, .awards h3, .cta h3, .highlighted-service h3, .highlighted-text h3, .testimonial--inner h3, .text-white h4, .awards h4, .cta h4, .highlighted-service h4, .highlighted-text h4, .testimonial--inner h4, .text-white h5, .awards h5, .cta h5, .highlighted-service h5, .highlighted-text h5, .testimonial--inner h5, .text-white p, .awards p, .cta p, .highlighted-service p, .highlighted-text p, .testimonial--inner p {
   color: white;
 }
 
