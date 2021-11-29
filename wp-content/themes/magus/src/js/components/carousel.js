@@ -11,6 +11,19 @@ jQuery(document).ready(function($) {
 		dots: false,
 		adaptiveHeight: true,
 		pauseOnHover: false,
-		// fade: true
+		responsive: [
+			{
+				breakpoint: 640,
+				settings: {
+					slidesToShow: 2,
+				}
+			},
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 3,
+				}
+			}
+		]
 	});
 });

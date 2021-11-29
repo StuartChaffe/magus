@@ -1651,8 +1651,6 @@ body.nav-open {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 71px;
-  width: 27px;
   line-height: 0px;
   font-size: 0px;
   cursor: pointer;
@@ -1671,11 +1669,23 @@ body.nav-open {
   outline: none;
   transition: 0.2s transform ease-in-out;
 }
+.slick-prev:before,
+.slick-next:before {
+  height: 36px;
+  width: 14px;
+}
+@media only screen and (min-width: 1330px) {
+  .slick-prev:before,
+.slick-next:before {
+    height: 71px;
+    width: 27px;
+  }
+}
 
 .slick-prev {
-  left: 25px;
+  left: -20px;
 }
-@media (min-width: 50em) {
+@media only screen and (min-width: 1330px) {
   .slick-prev {
     left: -3rem;
   }
@@ -1691,9 +1701,9 @@ body.nav-open {
 }
 
 .slick-next {
-  right: 25px;
+  right: -20px;
 }
-@media (min-width: 50em) {
+@media only screen and (min-width: 1330px) {
   .slick-next {
     right: -3rem;
   }
