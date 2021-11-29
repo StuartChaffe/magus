@@ -5,7 +5,10 @@
 	margin-bottom: var(--spacing-l);
 	> li {
 		// border-bottom: 3px solid white
-		margin-bottom: 1.5rem;
+		margin-bottom: 1rem;
+		@include mq(medium) {
+			margin-bottom: 1.5rem;
+		}
 		button {
 			text-align: left;
 		}
@@ -17,20 +20,30 @@
 		border: none;
 		background: none;
 		outline: none;
-		padding: var(--spacing-l) 3rem var(--spacing-l) var(--spacing-l) ;
+		padding: var(--spacing) 3rem var(--spacing) var(--spacing) ;
 		width: 100%;
 		background-color: white;
-		// color: white;
 		transition: .3s background-color ease-in-out;
 		margin-bottom: 0;
+
+		@include mq(medium) {
+			padding: var(--spacing-l) 3rem var(--spacing-l) var(--spacing-l) ;
+		}
 		.icon {
 			color: var(--color-text-base);
 			position: absolute;
 			display: inline-flex;
-			right: calc(var(--spacing-l) * 2);
-			top: var(--spacing-l);
-			width: 30px;
-			height: 30px;
+			right: var(--spacing);
+			top: var(--spacing);
+			width: 20px;
+			height: 20px;
+			@include mq(medium) {
+				right: calc(var(--spacing-l) * 2);
+				top: var(--spacing-l);
+				width: 30px;
+				height: 30px;
+			}
+
 			&--close {
 				display: none;
 			}
@@ -40,7 +53,6 @@
 		}
 	}
 	.active {
-
 		.icon {
 			color: var(--color-text-base);
 			&--open {
@@ -59,8 +71,12 @@
 		display: flex;
 		background-color: white;
 		transition: .3s background-color ease-in-out;
-		padding: 0 var(--spacing-l)  var(--spacing-l) var(--spacing-l);
+		padding: 0 var(--spacing) var(--spacing) var(--spacing);
 		color: var(--color-text-base);
+		@include mq(medium) {
+			padding: 0 var(--spacing-l)  var(--spacing-l) var(--spacing-l);
+			margin-bottom: 1.5rem;
+		}
 
 		ul {
 			margin-top: 1.5em;
@@ -88,8 +104,11 @@
 			color: var(--color-text-base);
 		}
 		&-image {
-			width: 130px;
+			width: 80px;
 			margin-right: var(--spacing);
+			@include mq(medium) {
+				width: 130px;
+			}
 		}
 		&-text {
 			flex: 1;

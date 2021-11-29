@@ -434,7 +434,12 @@ pre {
   margin-bottom: var(--spacing-l);
 }
 .accordion > li {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+}
+@media (min-width: 50em) {
+  .accordion > li {
+    margin-bottom: 1.5rem;
+  }
 }
 .accordion > li button {
   text-align: left;
@@ -445,20 +450,33 @@ pre {
   border: none;
   background: none;
   outline: none;
-  padding: var(--spacing-l) 3rem var(--spacing-l) var(--spacing-l);
+  padding: var(--spacing) 3rem var(--spacing) var(--spacing);
   width: 100%;
   background-color: white;
   transition: 0.3s background-color ease-in-out;
   margin-bottom: 0;
 }
+@media (min-width: 50em) {
+  .accordion--title {
+    padding: var(--spacing-l) 3rem var(--spacing-l) var(--spacing-l);
+  }
+}
 .accordion--title .icon {
   color: var(--color-text-base);
   position: absolute;
   display: inline-flex;
-  right: calc(var(--spacing-l) * 2);
-  top: var(--spacing-l);
-  width: 30px;
-  height: 30px;
+  right: var(--spacing);
+  top: var(--spacing);
+  width: 20px;
+  height: 20px;
+}
+@media (min-width: 50em) {
+  .accordion--title .icon {
+    right: calc(var(--spacing-l) * 2);
+    top: var(--spacing-l);
+    width: 30px;
+    height: 30px;
+  }
 }
 .accordion--title .icon--close {
   display: none;
@@ -479,8 +497,14 @@ pre {
   display: flex;
   background-color: white;
   transition: 0.3s background-color ease-in-out;
-  padding: 0 var(--spacing-l) var(--spacing-l) var(--spacing-l);
+  padding: 0 var(--spacing) var(--spacing) var(--spacing);
   color: var(--color-text-base);
+}
+@media (min-width: 50em) {
+  .accordion--content {
+    padding: 0 var(--spacing-l) var(--spacing-l) var(--spacing-l);
+    margin-bottom: 1.5rem;
+  }
 }
 .accordion--content ul {
   margin-top: 1.5em;
@@ -503,8 +527,13 @@ pre {
   color: var(--color-text-base);
 }
 .accordion--content-image {
-  width: 130px;
+  width: 80px;
   margin-right: var(--spacing);
+}
+@media (min-width: 50em) {
+  .accordion--content-image {
+    width: 130px;
+  }
 }
 .accordion--content-text {
   flex: 1;
@@ -525,6 +554,7 @@ pre {
   background-color: var(--color-primary);
   text-align: center;
   padding: var(--spacing-l);
+  margin-bottom: var(--spacing-l);
 }
 .awards--images {
   margin: var(--spacing-l) 0;
