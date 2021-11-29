@@ -6,3 +6,4 @@ import './components/scroll';
 import './components/toggle';
 import './components/menu';
 import './components/accordion';
+import './components/carousel';

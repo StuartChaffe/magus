@@ -2,10 +2,10 @@
 .accordion {
 	padding: 0;
 	list-style: none;
-	margin-bottom: var(--spacing-l) !important;
+	margin-bottom: var(--spacing-l);
 	> li {
 		// border-bottom: 3px solid white
-		margin-bottom: 5px;
+		margin-bottom: 1.5rem;
 		button {
 			text-align: left;
 		}
@@ -71,7 +71,6 @@
 		li {
 			position: relative;
 			padding-left: 1.2rem;
-			margin-bottom: 0.3em;
 		}
 	
 		li p {
