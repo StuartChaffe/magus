@@ -41,6 +41,25 @@
                     "maxlength": ""
                 },
                 {
+                    "key": "field_61a50dc38b51e",
+                    "label": "Title (small)",
+                    "name": "accordion_title_small",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
                     "key": "field_61a4d7c42e978",
                     "label": "Content",
                     "name": "accordion_content",
@@ -104,5 +123,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1638194004
+    "modified": 1638206937
 }
