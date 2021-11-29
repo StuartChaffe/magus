@@ -91,6 +91,7 @@ body,
 h1,
 h2,
 h3,
+.accordion--title,
 h4,
 h5,
 p,
@@ -235,6 +236,7 @@ a:hover {
 h1,
 h2,
 h3,
+.accordion--title,
 h4,
 h5 {
   margin: 0;
@@ -254,7 +256,7 @@ h2, .heading-2 {
   font-size: var(--font-size-h2);
 }
 
-h3, .heading-3 {
+h3, .accordion--title, .heading-3 {
   font-size: var(--font-size-h3);
 }
 
@@ -441,6 +443,7 @@ input[type=button]:focus {
 }
 .content h2,
 .content h3,
+.content .accordion--title,
 .content h4,
 .content h5 {
   margin-top: var(--spacing-l);
@@ -1080,6 +1083,93 @@ body.nav-open {
   color: white;
 }
 
+.hide {
+  display: none;
+}
+
+.accordion {
+  padding: 0;
+  list-style: none;
+  margin-bottom: var(--spacing-l) !important;
+}
+.accordion > li {
+  margin-bottom: 5px;
+}
+.accordion > li button {
+  text-align: left;
+}
+.accordion--title {
+  position: relative;
+  display: flex;
+  border: none;
+  background: none;
+  outline: none;
+  padding: var(--spacing-l) 3rem var(--spacing-l) var(--spacing-l);
+  width: 100%;
+  background-color: white;
+  transition: 0.3s background-color ease-in-out;
+  margin-bottom: 0;
+}
+.accordion--title .icon {
+  color: var(--color-text-base);
+  position: absolute;
+  display: inline-flex;
+  right: calc(var(--spacing-l) * 2);
+  top: var(--spacing-l);
+  width: 30px;
+  height: 30px;
+}
+.accordion--title .icon--close {
+  display: none;
+}
+.accordion--title:hover {
+  cursor: pointer;
+}
+.accordion .active .icon {
+  color: var(--color-text-base);
+}
+.accordion .active .icon--open {
+  display: none;
+}
+.accordion .active .icon--close {
+  display: block;
+}
+.accordion--content {
+  display: flex;
+  background-color: white;
+  transition: 0.3s background-color ease-in-out;
+  padding: 0 var(--spacing-l) var(--spacing-l) var(--spacing-l);
+  color: var(--color-text-base);
+}
+.accordion--content ul {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  padding: 0;
+}
+.accordion--content li {
+  position: relative;
+  padding-left: 1.2rem;
+  margin-bottom: 0.3em;
+}
+.accordion--content li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.7rem;
+  line-height: 1;
+  font-weight: bold;
+  margin-right: 0.6em;
+  color: var(--color-text-base);
+}
+.accordion--content-image {
+  width: 130px;
+  margin-right: var(--spacing);
+}
+.accordion--content-text {
+  flex: 1;
+}
+
 .awards {
   background-color: var(--color-primary);
   text-align: center;
@@ -1443,6 +1533,7 @@ body.nav-open {
 .team .link-list-item {
   width: calc(100% / 2 - 20px);
   background-color: white;
+  flex-grow: 0;
 }
 @media (min-width: 70em) {
   .team .link-list-item {
@@ -1625,7 +1716,7 @@ img.aligncenter {
   }
 }
 
-.text-white h1, .awards h1, .cta h1, .highlighted-service h1, .highlighted-text h1, .testimonial--inner h1, .text-white h2, .awards h2, .cta h2, .highlighted-service h2, .highlighted-text h2, .testimonial--inner h2, .text-white h3, .awards h3, .cta h3, .highlighted-service h3, .highlighted-text h3, .testimonial--inner h3, .text-white h4, .awards h4, .cta h4, .highlighted-service h4, .highlighted-text h4, .testimonial--inner h4, .text-white h5, .awards h5, .cta h5, .highlighted-service h5, .highlighted-text h5, .testimonial--inner h5, .text-white p, .awards p, .cta p, .highlighted-service p, .highlighted-text p, .testimonial--inner p {
+.text-white h1, .awards h1, .cta h1, .highlighted-service h1, .highlighted-text h1, .testimonial--inner h1, .text-white h2, .awards h2, .cta h2, .highlighted-service h2, .highlighted-text h2, .testimonial--inner h2, .text-white h3, .awards h3, .cta h3, .highlighted-service h3, .highlighted-text h3, .testimonial--inner h3, .text-white .accordion--title, .awards .accordion--title, .cta .accordion--title, .highlighted-service .accordion--title, .highlighted-text .accordion--title, .testimonial--inner .accordion--title, .text-white h4, .awards h4, .cta h4, .highlighted-service h4, .highlighted-text h4, .testimonial--inner h4, .text-white h5, .awards h5, .cta h5, .highlighted-service h5, .highlighted-text h5, .testimonial--inner h5, .text-white p, .awards p, .cta p, .highlighted-service p, .highlighted-text p, .testimonial--inner p {
   color: white;
 }
 
