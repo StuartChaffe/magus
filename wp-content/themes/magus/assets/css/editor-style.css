@@ -1887,3 +1887,7 @@ html, body {
 .acf-block-preview a {
   pointer-events: none !important;
 }
+
+.login h1 a {
+  background-color: red;
+}
