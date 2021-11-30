@@ -69,6 +69,10 @@ function my_login_logo() { ?>
 			/* width: 370px !important; */
 			padding: 0 !important;
 		}
+		.login #nav,
+		.login #backtoblog {
+			padding: 0 !important;
+		}
 		#login input[type=text],
 		#login input[type=password] {
 			border-radius: 0 !important;
