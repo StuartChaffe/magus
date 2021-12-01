@@ -116,6 +116,9 @@
 		}
 		&-text {
 			flex: 1;
+			a {
+				color: var(--color-text-base);
+			}
 		}
 	}
 }

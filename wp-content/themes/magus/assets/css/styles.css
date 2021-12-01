@@ -1242,6 +1242,9 @@ body.nav-open {
 .accordion--content-text {
   flex: 1;
 }
+.accordion--content-text a {
+  color: var(--color-text-base);
+}
 
 .awards {
   background-color: var(--color-primary);

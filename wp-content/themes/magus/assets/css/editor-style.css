@@ -543,6 +543,9 @@ pre {
 .accordion--content-text {
   flex: 1;
 }
+.accordion--content-text a {
+  color: var(--color-text-base);
+}
 
 .global-alert {
   background: var(--color-primary);
