@@ -1976,3 +1976,8 @@ html, body {
 .login h1 a {
   background-color: red;
 }
+
+.carousel--slider-item {
+  width: 25%;
+  float: left;
+}
