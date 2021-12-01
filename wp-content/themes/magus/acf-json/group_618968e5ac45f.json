@@ -3,6 +3,25 @@
     "title": "Accordion",
     "fields": [
         {
+            "key": "field_61a778dbe26fe",
+            "label": "Title",
+            "name": "accordion_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_61a4d7722e976",
             "label": "Accordion",
             "name": "accordion",
@@ -123,5 +142,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1638206937
+    "modified": 1638365416
 }

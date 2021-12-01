@@ -2,10 +2,11 @@
 /**
 * The template used for displaying an accordion.
 */
-// TITLE? $content = get_field( 'accordion_content');
+$title = get_field( 'accordion_title');
 ?>
 <div class="container">
 	<section class="accordion">
+		<?php if ( $title ) { ?><?php echo $title ?><?php } ?>
 		<?php if( have_rows('accordion') ): ?>
 			<ul class="accordion">
 			<?php while( have_rows('accordion') ): the_row();
