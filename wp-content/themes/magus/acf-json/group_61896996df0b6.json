@@ -117,6 +117,25 @@
                         "id": ""
                     },
                     "return_format": "array"
+                },
+                {
+                    "key": "field_61a78316c2382",
+                    "label": "Full width?",
+                    "name": "list_item_full",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
                 }
             ]
         },
@@ -153,5 +172,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1637081900
+    "modified": 1638368076
 }

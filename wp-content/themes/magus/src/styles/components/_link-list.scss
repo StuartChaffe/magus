@@ -106,7 +106,9 @@
 	&-item {
 		width: calc(100% / 2 - 20px);
 		margin: 10px;
-		flex-grow: 1;
+		&__full {
+			flex-grow: 1;
+		}
 		
 		@include mq(medium) {
 			width: calc(100% / 3 - 20px);

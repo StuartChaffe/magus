@@ -1534,6 +1534,8 @@ body.nav-open {
 .link-list-item {
   width: calc(100% / 2 - 20px);
   margin: 10px;
+}
+.link-list-item__full {
   flex-grow: 1;
 }
 @media (min-width: 50em) {

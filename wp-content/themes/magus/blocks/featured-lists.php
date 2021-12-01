@@ -23,9 +23,10 @@ $button = get_field('button');
 			$image = get_sub_field('image');
 			$content = get_sub_field('content');
 			$link = get_sub_field('link');
+			$width = get_sub_field('list_item_full');
 		?>
 
-			<div class="link-list-item">
+			<div class="link-list-item<?php if ( $width  == 'false' ) { ?> link-list-item__full<?php } ?>">
 				<a href="<?php echo $link['url']; ?>" class="link-list-item--link" title="<?php echo $link['title']; ?>">
 					<div class="link-list-item--image">
 						<img loading="lazy" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
