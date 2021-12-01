@@ -1517,7 +1517,6 @@ ul.menu .sub-menu li a:after {
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: none;
-  width: 100%;
   min-width: calc(100% + 2px);
   min-height: calc(100% + 2px);
 }
@@ -1590,6 +1589,17 @@ body.nav-open {
 
 .mobile-menu.is-toggled {
   transform: translateZ(0);
+}
+
+.office-list .link-list-item {
+  background-color: white;
+}
+.office-list .link-list-item--content {
+  padding: var(--spacing-m);
+}
+.office-list .link-list-item--content a {
+  color: var(--color-text-base);
+  font-weight: var(--font-weight-normal);
 }
 
 /* Slider */
