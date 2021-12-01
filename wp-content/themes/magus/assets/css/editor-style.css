@@ -1488,10 +1488,10 @@ ul.menu .sub-menu li a:after {
 .link-list-item {
   width: calc(100% / 2 - 20px);
   margin: 10px;
-  flex-grow: 1;
+  flex-grow: 0;
 }
 .link-list-item__full {
-  flex-grow: 0;
+  flex-grow: 1;
 }
 @media (min-width: 50em) {
   .link-list-item {
