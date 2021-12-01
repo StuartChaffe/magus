@@ -481,6 +481,7 @@ input[type=button]:focus {
 .content ul {
   margin-top: 1.5em;
   padding: 0;
+  margin-left: 2rem;
 }
 .content li {
   position: relative;
@@ -494,8 +495,9 @@ input[type=button]:focus {
   content: "•";
   position: absolute;
   left: 0;
-  top: 0;
-  font-size: 1.7rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
   line-height: 1;
   font-weight: bold;
   margin-right: 0.6em;
