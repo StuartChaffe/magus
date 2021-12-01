@@ -1518,6 +1518,16 @@ body.nav-open {
 .link-list--intro {
   margin-bottom: var(--spacing);
 }
+.link-list-color .link-list-item {
+  background-color: var(--color-primary);
+}
+.link-list-color .link-list-item--content .btn {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.link-list-color .link-list-item--content p {
+  color: white;
+}
 .link-list-item {
   width: calc(100% / 2 - 20px);
   margin: 10px;
@@ -1626,6 +1636,31 @@ body.nav-open {
 .office-list .link-list-item--content a {
   color: var(--color-text-base);
   font-weight: var(--font-weight-normal);
+}
+
+.platforms {
+  background-color: var(--color-primary);
+  display: flex;
+  flex-wrap: wrap;
+  padding: calc(var(--spacing) / 2);
+}
+@media (min-width: 50em) {
+  .platforms {
+    padding: calc(var(--spacing) - 10px);
+  }
+}
+.platforms-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid white;
+  padding: var(--spacing);
+  width: calc(50% - 20px);
+  margin: 10px;
+  max-height: 125px;
+}
+.platforms-item img {
+  max-width: 80%;
 }
 
 /* Slider */

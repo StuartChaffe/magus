@@ -1,7 +1,63 @@
 {
     "key": "group_618969eeadf77",
     "title": "Link list",
-    "fields": [],
+    "fields": [
+        {
+            "key": "field_61a765168a5c9",
+            "label": "Links",
+            "name": "links",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "+ Add",
+            "sub_fields": [
+                {
+                    "key": "field_61a765328a5ca",
+                    "label": "Button",
+                    "name": "link_button",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array"
+                },
+                {
+                    "key": "field_61a765518a5cb",
+                    "label": "Content",
+                    "name": "link_content",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 0,
+                    "delay": 0
+                }
+            ]
+        }
+    ],
     "location": [
         [
             {
@@ -19,5 +75,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1636395519
+    "modified": 1638360512
 }

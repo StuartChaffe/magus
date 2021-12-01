@@ -88,6 +88,20 @@
 	&--intro {
 		margin-bottom: var(--spacing);
 	}
+	&-color {
+		.link-list-item {
+			background-color: var(--color-primary);
+			&--content {
+				.btn {
+					width: 100%;
+					margin-bottom: 1rem;
+				}
+				p {
+					color: white;
+				}
+			}
+		}
+	}
 
 	&-item {
 		width: calc(100% / 2 - 20px);
