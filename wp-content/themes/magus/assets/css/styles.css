@@ -441,13 +441,15 @@ input[type=button]:focus {
 .content {
   margin-bottom: var(--spacing-xl);
 }
-.content h2,
-.content h3,
-.content .accordion--title,
+.content h2 {
+  margin-top: var(--spacing-l);
+  margin-bottom: var(--spacing-l);
+}
+.content h3, .content .accordion--title,
 .content h4,
 .content h5 {
   margin-top: var(--spacing-l);
-  margin-bottom: var(--spacing-l);
+  margin-bottom: var(--spacing);
 }
 .content a {
   color: var(--link-color);

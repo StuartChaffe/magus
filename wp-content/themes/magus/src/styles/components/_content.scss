@@ -1,13 +1,17 @@
 .content {
 	@extend .container;
 	margin-bottom: var(--spacing-xl);
-	h2,
+	h2{
+		margin-top: var(--spacing-l);
+		margin-bottom: var(--spacing-l);
+	}
 	h3,
 	h4,
 	h5 {
 		margin-top: var(--spacing-l);
-		margin-bottom: var(--spacing-l);
+		margin-bottom: var(--spacing);
 	}
+
 
 	a {
 		color: var(--link-color);
