@@ -38,8 +38,8 @@
 
 		img {
 			@include mq(medium) {
-				// display: none;
-				// opacity: 0;
+				display: none;
+				opacity: 0;
 			}
 
 			position: absolute;

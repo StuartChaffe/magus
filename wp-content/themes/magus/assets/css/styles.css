@@ -1306,6 +1306,12 @@ body.nav-open {
   min-width: calc(100% + 2px);
   min-height: calc(100% + 2px);
 }
+@media (min-width: 50em) {
+  .banner--image img {
+    display: none;
+    opacity: 0;
+  }
+}
 @media (max-width: 29.99em) {
   .banner--image img {
     max-width: 100%;
