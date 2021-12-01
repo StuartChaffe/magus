@@ -572,6 +572,81 @@ input[type=button]:focus {
   color: white;
 }
 
+.cta-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: auto;
+  background-color: var(--color-primary);
+  width: 190px;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  padding: 1rem;
+  z-index: 1000;
+  color: white;
+  opacity: 0;
+  visibility: hidden;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s, box-shadow 0.1s ease-in-out;
+}
+.cta-button:hover {
+  cursor: pointer;
+  color: white;
+  box-shadow: 0px 23px 120px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  transition: box-shadow 0.2s ease-in-out;
+}
+.cta-button:active {
+  box-shadow: 0px 23px 120px rgba(0, 0, 0, 0.2);
+}
+.cta-button .icon {
+  width: 72px;
+  margin-bottom: 0.5rem;
+}
+.cta-button img {
+  margin-right: 1rem;
+}
+
+.cta-button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 1rem;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s, box-shadow 0.1s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  color: var(--color-primary);
+  border: 1px solid var(--body-background-color);
+}
+#button:hover {
+  cursor: pointer;
+  box-shadow: 0px 23px 120px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  transition: box-shadow 0.2s ease-in-out;
+}
+#button:active {
+  box-shadow: 0px 23px 120px rgba(0, 0, 0, 0.2);
+}
+#button .icon {
+  width: 72px;
+  margin-bottom: 0.5rem;
+}
+
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
 .global-alert {
   background: var(--color-primary);
   text-align: center;
@@ -1016,41 +1091,6 @@ body.nav-open {
 
 .global-footer p {
   color: white;
-}
-
-#button {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: white;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  padding: 1rem;
-  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s, box-shadow 0.1s ease-in-out;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 1000;
-  color: var(--color-primary);
-  border: 1px solid var(--body-background-color);
-}
-#button:hover {
-  cursor: pointer;
-  box-shadow: 0px 23px 120px rgba(0, 0, 0, 0.2);
-  text-decoration: none;
-  transition: box-shadow 0.2s ease-in-out;
-}
-#button:active {
-  box-shadow: 0px 23px 120px rgba(0, 0, 0, 0.2);
-}
-#button .icon {
-  width: 72px;
-  margin-bottom: 0.5rem;
-}
-
-#button.show {
-  opacity: 1;
-  visibility: visible;
 }
 
 .social-links {
