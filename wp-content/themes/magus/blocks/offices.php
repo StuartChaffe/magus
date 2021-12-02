@@ -12,7 +12,7 @@
 			$content = get_sub_field('office_content');
 		?>
 			<div class="link-list-item">
-				<div class="link-list-item--image">
+				<div class="link-list-item--image" style="background-image: url('<?php echo $image['url']; ?>')">
 					<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 				</div>
 				<div class="link-list-item--content">
