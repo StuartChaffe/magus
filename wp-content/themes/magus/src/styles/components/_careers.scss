@@ -1,0 +1,26 @@
+.careers {
+	&-item {
+		display: flex;
+		flex-direction: column;
+		background-color: var(--color-primary);
+		margin-bottom: var(--spacing);
+		padding: var(--spacing);
+		color: white;
+		&:last-of-type {
+			margin-bottom: var(--spacing-xl);
+		}
+
+		@include mq(medium) {
+			padding: var(--spacing-l);
+		}
+
+		span {
+			width: 140px;
+			display: inline-block;
+		}
+
+		.btn {
+			margin: var(--spacing-l) auto 0 auto;
+		}
+	} 
+}

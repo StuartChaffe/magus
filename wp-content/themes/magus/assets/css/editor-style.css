@@ -782,6 +782,30 @@ pre {
   visibility: visible;
 }
 
+.careers-item {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-primary);
+  margin-bottom: var(--spacing);
+  padding: var(--spacing);
+  color: white;
+}
+.careers-item:last-of-type {
+  margin-bottom: var(--spacing-xl);
+}
+@media (min-width: 50em) {
+  .careers-item {
+    padding: var(--spacing-l);
+  }
+}
+.careers-item span {
+  width: 140px;
+  display: inline-block;
+}
+.careers-item .btn {
+  margin: var(--spacing-l) auto 0 auto;
+}
+
 .carousel {
   margin-bottom: var(--spacing-l);
 }
