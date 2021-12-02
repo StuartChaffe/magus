@@ -32,7 +32,7 @@
   --color-text-dark: #181822;
   --color-text-reversed: #fff;
   --color-text-link: var(--color-text-base);
-  --color-text-hover: var(--color-primary);
+  --color-text-hover: black;
   --color-facebook: #3B5998;
   --color-twitter: #1DA1F2;
   --color-instagram: #262626;
@@ -816,7 +816,7 @@ pre {
           text-decoration-color: var(--link-hover-color);
 }
 .content a:hover {
-  color: var(--link-hover-color);
+  color: var(--color-primary);
   text-decoration: underline;
 }
 .content blockquote {
