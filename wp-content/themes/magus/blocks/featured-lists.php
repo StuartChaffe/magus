@@ -28,7 +28,7 @@ $button = get_field('button');
 
 			<div class="link-list-item<?php if ( $width  == 'true' ) { ?> link-list-item__full<?php } ?>">
 				<a href="<?php echo $link['url']; ?>" class="link-list-item--link" title="<?php echo $link['title']; ?>">
-					<div class="link-list-item--image">
+					<div class="link-list-item--image" style="background-image: url('<?php echo $image['url']; ?>')">
 						<img loading="lazy" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 					</div>
 					<div class="link-list-item--content">

@@ -36,7 +36,7 @@ $intro = get_field('teams_intro');
 				// $categories = get_filter_classes( 'maguscategories' );
 			?>
 			<div class="mix <?php echo $categories; ?> link-list-item" data-title="<?php the_title(); ?>">
-				<div class="link-list-item--image">
+				<div class="link-list-item--image" style="background-image: url('<?php echo $image['url']; ?>')">
 					<img loading="lazy" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 				</div>
 				<div class="link-list-item--content">

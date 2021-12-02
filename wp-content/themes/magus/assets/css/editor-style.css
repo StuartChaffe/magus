@@ -1523,6 +1523,7 @@ ul.menu .sub-menu li a:after {
   overflow: hidden;
   width: 100%;
   height: calc(50vw - 44px);
+  background-size: cover;
 }
 @media (min-width: 50em) {
   .link-list-item--image {
@@ -1537,6 +1538,8 @@ ul.menu .sub-menu li a:after {
   }
 }
 .link-list-item--image img {
+  display: none;
+  opacity: 0;
   position: absolute;
   top: 50%;
   left: 50%;

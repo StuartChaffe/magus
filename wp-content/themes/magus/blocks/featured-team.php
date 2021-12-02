@@ -26,7 +26,7 @@ $intro = get_field('posts_intro');
 				$image = get_field('team_image', $featuredpost);
 			?>
 			<div class="link-list-item">
-				<div class="link-list-item--image">
+				<div class="link-list-item--image" style="background-image: url('<?php echo $image['url']; ?>')">
 					<img loading="lazy" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 				</div>
 				<div class="link-list-item--content">
