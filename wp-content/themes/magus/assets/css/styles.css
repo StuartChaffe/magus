@@ -1676,6 +1676,7 @@ body.nav-open {
 
 .office-list .link-list-item {
   background-color: white;
+  flex-grow: 1;
 }
 .office-list .link-list-item--content {
   padding: var(--spacing-m);

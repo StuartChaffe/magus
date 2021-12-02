@@ -1,6 +1,7 @@
 .office-list {
 	.link-list-item {
 		background-color: white;
+		flex-grow: 1;
 		&--content {
 			padding: var(--spacing-m);
 			a {

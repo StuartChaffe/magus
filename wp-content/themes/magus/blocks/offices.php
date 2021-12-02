@@ -2,7 +2,6 @@
 /**
 * The template used for displaying offices.
 */
-
 ?>
 <div class="container">
 	<section class="office-list">
