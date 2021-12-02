@@ -35,7 +35,7 @@ $intro = get_field('posts_intro');
 				?>
 				<div class="link-list-item">
 					<a href="<?php esc_url( the_permalink() ); ?>" class="link-list-item--link" title="Article: <?php the_title(); ?>">
-						<div class="link-list-item--image">
+						<div class="link-list-item--image" style="background-image: url('<?php echo $image['url']; ?>')">
 							<img loading="lazy" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 						</div>
 						<div class="link-list-item--content">
