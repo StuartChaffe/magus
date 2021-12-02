@@ -91,6 +91,7 @@
 	&-color {
 		.link-list-item {
 			background-color: var(--color-primary);
+			flex-grow: 1;
 			&--content {
 				.btn {
 					width: 100%;

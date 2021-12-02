@@ -1561,6 +1561,7 @@ body.nav-open {
 }
 .link-list-color .link-list-item {
   background-color: var(--color-primary);
+  flex-grow: 1;
 }
 .link-list-color .link-list-item--content .btn {
   width: 100%;
