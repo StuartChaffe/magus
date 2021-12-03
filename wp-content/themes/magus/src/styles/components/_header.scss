@@ -42,6 +42,12 @@
 				&:last-of-type {
 					margin-right: 0;
 				}
+
+				&:hover > a,
+				&:focus > a {
+					background-color: var(--color-primary);
+    				color: white;
+				}
 				a {
 					color: var(--color-text-base);
 					font-weight: var(--font-weight-normal);

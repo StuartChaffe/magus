@@ -1052,6 +1052,10 @@ pre {
 .global-header--nav ul li:last-of-type {
   margin-right: 0;
 }
+.global-header--nav ul li:hover > a, .global-header--nav ul li:focus > a {
+  background-color: var(--color-primary);
+  color: white;
+}
 .global-header--nav ul li a {
   color: var(--color-text-base);
   font-weight: var(--font-weight-normal);
