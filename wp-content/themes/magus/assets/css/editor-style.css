@@ -675,7 +675,8 @@ pre {
   }
 }
 
-.btn {
+.btn,
+input[type=submit], input[type=reset], input[type=button] {
   display: inline-block;
   border-radius: 0;
   padding: 0.5rem 1.5rem;
@@ -688,19 +689,24 @@ pre {
   transition: all 0.2s ease-in-out;
   text-align: center;
 }
-.btn:hover, .btn:focus {
+.btn:hover, .btn:focus,
+input[type=submit]:hover,
+input[type=submit]:focus, input[type=reset]:hover, input[type=reset]:focus, input[type=button]:hover, input[type=button]:focus {
   outline: 0;
   color: var(--color-primary);
   background-color: white;
   text-decoration: none;
 }
 
-.btn--primary {
+.btn--primary,
+input[type=submit], input[type=reset], input[type=button] {
   background-color: transparent;
   border-color: var(--color-primary);
   color: var(--color-primary);
 }
-.btn--primary:hover, .btn--primary:focus {
+.btn--primary:hover, .btn--primary:focus,
+input[type=submit]:hover,
+input[type=submit]:focus, input[type=reset]:hover, input[type=reset]:focus, input[type=button]:hover, input[type=button]:focus {
   background-color: var(--color-primary);
   color: white;
 }

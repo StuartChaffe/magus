@@ -265,6 +265,7 @@ function magus_allowed_block_types( $allowed_blocks ) {
 		'acf/featured-posts',
 		'acf/featured-lists',
 		'acf/featured-team',
+		'acf/form',
 		// 'acf/highlighted-service',
 		'acf/highlighted-text',
 		'acf/link-list',
