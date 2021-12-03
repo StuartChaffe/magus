@@ -1073,16 +1073,6 @@ pre {
   color: white;
   transition: all 0.1s ease-in-out;
 }
-.global-header--nav ul .current-menu-item, .global-header--nav ul .current_page_parent, .global-header--nav ul .current-page-ancestor {
-  color: var(--color-primary);
-}
-.global-header--nav ul .current-menu-item a, .global-header--nav ul .current_page_parent a, .global-header--nav ul .current-page-ancestor a {
-  color: var(--color-primary);
-}
-.global-header--nav ul .current-menu-item a:hover, .global-header--nav ul .current_page_parent a:hover, .global-header--nav ul .current-page-ancestor a:hover {
-  color: var(--color-primary);
-  background-color: var(--body-background-color);
-}
 .global-header--nav ul .current-menu-item > a {
   position: relative;
 }
