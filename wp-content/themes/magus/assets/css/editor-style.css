@@ -1160,7 +1160,7 @@ ul.menu .sub-menu {
 }
 @media (min-width: 50em) {
   ul.menu .sub-menu {
-    min-width: 250px;
+    min-width: 300px;
     margin: 0 1rem;
     position: absolute;
     transform: translateY(0px) translateX(-50%);
