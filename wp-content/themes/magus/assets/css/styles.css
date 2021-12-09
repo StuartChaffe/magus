@@ -131,7 +131,7 @@ body {
 }
 
 strong {
-  font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-medium);
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
