@@ -1,7 +1,27 @@
 {
     "key": "group_618969b9386d0",
     "title": "Form",
-    "fields": [],
+    "fields": [
+        {
+            "key": "field_61b273f3e48b6",
+            "label": "Content",
+            "name": "form_content",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "full",
+            "delay": 0
+        }
+    ],
     "location": [
         [
             {
@@ -19,5 +39,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1636395458
+    "show_in_rest": 0,
+    "modified": 1639085087
 }

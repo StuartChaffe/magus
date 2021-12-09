@@ -2,6 +2,14 @@
 	.link-list-item {
 		background-color: white;
 		flex-grow: 1;
+		@include mq($until: medium) {
+			width: 100%;
+		}
+		&--image {
+			@include mq($until: medium) {
+				height: calc(50vw + 76px) !important;	
+			}
+		}
 		&--content {
 			padding: var(--spacing-m);
 			a {

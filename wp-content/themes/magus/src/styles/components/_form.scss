@@ -1,0 +1,31 @@
+.form {
+	margin-bottom: var(--spacing-l);
+}
+.form-fields {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 100%;
+	margin: 0 auto;
+	@include mq(medium) {
+		margin: 0 auto 2rem auto;
+	}
+	&--half {
+		margin-bottom: 0.5rem;
+		width: 100%;
+		@include mq(medium) {
+			width: 50%;
+			padding-left: 0.25rem;
+		}
+		&:nth-child(odd) {
+			@include mq(medium) {
+				padding-left: 0;
+				padding-right: 0.25rem;
+			}
+		}
+	}
+	&--full {
+		margin-bottom: 0.2rem;
+		width: 100%;
+        margin-bottom: 0.5rem;
+	}
+}

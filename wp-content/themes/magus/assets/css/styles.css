@@ -342,13 +342,13 @@ input[type=url],
 input[type=password],
 textarea,
 select {
-  height: 38px;
-  padding: 6px 10px;
+  padding: 1rem 1rem;
   background-color: #fff;
-  border: 1px solid #D1D1D1;
-  border-radius: 4px;
+  border: 1px solid #EAEAEB;
+  border-radius: 0;
   box-shadow: none;
   box-sizing: border-box;
+  width: 100%;
 }
 
 input[type=email],
@@ -385,7 +385,6 @@ select:focus {
 label {
   display: block;
   margin: 0.5em 0;
-  font-weight: 600;
 }
 
 input[type=checkbox],
@@ -423,8 +422,43 @@ input[type=button]:focus {
   color: #fff;
 }
 
-.required {
-  color: #BF5D58;
+fieldset {
+  border: 0;
+  padding: 0;
+  font-weight: var(--font-weight-normal);
+}
+fieldset input {
+  font-weight: var(--font-weight-normal);
+}
+
+::-moz-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--color-text-base);
+  font-weight: var(--font-weight-normal);
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--color-text-base);
+  font-weight: var(--font-weight-normal);
+  opacity: 1;
+  /* Firefox */
+}
+
+::placeholder,
+select,
+option {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--color-text-base);
+  font-weight: var(--font-weight-normal);
+  opacity: 1;
+  /* Firefox */
+}
+
+.mc-field-group label.hidden {
+  display: none;
 }
 
 .global-container {
@@ -1429,6 +1463,43 @@ body.nav-open {
   margin-bottom: var(--spacing-xl);
 }
 
+.form {
+  margin-bottom: var(--spacing-l);
+}
+
+.form-fields {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 50em) {
+  .form-fields {
+    margin: 0 auto 2rem auto;
+  }
+}
+.form-fields--half {
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+@media (min-width: 50em) {
+  .form-fields--half {
+    width: 50%;
+    padding-left: 0.25rem;
+  }
+}
+@media (min-width: 50em) {
+  .form-fields--half:nth-child(odd) {
+    padding-left: 0;
+    padding-right: 0.25rem;
+  }
+}
+.form-fields--full {
+  margin-bottom: 0.2rem;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
 .highlighted-service {
   position: relative;
   background-color: var(--color-grey-dark);
@@ -1682,6 +1753,16 @@ body.nav-open {
 .office-list .link-list-item {
   background-color: white;
   flex-grow: 1;
+}
+@media (max-width: 49.99em) {
+  .office-list .link-list-item {
+    width: 100%;
+  }
+}
+@media (max-width: 49.99em) {
+  .office-list .link-list-item--image {
+    height: calc(50vw + 76px) !important;
+  }
 }
 .office-list .link-list-item--content {
   padding: var(--spacing-m);

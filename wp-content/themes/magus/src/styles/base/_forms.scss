@@ -7,13 +7,14 @@ input[type="url"],
 input[type="password"],
 textarea,
 select {
-	height: 38px;
-	padding: 6px 10px;
+	// height: 38px;
+	padding: 1rem 1rem;
 	background-color: #fff;
-	border: 1px solid #D1D1D1;
-	border-radius: 4px;
+	border: 1px solid #EAEAEB;
+	border-radius: 0;
 	box-shadow: none;
 	box-sizing: border-box;
+	width: 100%;
 }
 
 input[type="email"],
@@ -50,7 +51,6 @@ select:focus {
 label {
 	display: block;
 	margin: .5em 0;
-	font-weight: 600;
 }
 
 input[type="checkbox"],
@@ -87,7 +87,28 @@ input[type="button"]:focus {
 	text-decoration: none;
 	color: #fff;
 }
+fieldset {
+	border: 0;
+	padding: 0;
+	font-weight: var(--font-weight-normal);
+	input {
+		font-weight: var(--font-weight-normal);
+	}
+}
 
  .required {
-	 color: #BF5D58;
+	// color: #BF5D58;
  }
+::placeholder,
+select,
+option { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: var(--color-text-base);
+	font-weight: var(--font-weight-normal);
+	opacity: 1; /* Firefox */
+}
+
+.mc-field-group {
+	label.hidden {
+		display: none;
+	}
+}
