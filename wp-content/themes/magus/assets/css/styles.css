@@ -349,6 +349,7 @@ select {
   box-shadow: none;
   box-sizing: border-box;
   width: 100%;
+  font-weight: var(--font-weight-normal);
 }
 
 input[type=email],
@@ -425,16 +426,16 @@ input[type=button]:focus {
 fieldset {
   border: 0;
   padding: 0;
-  font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-light);
 }
 fieldset input {
-  font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-light);
 }
 
 ::-moz-placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: var(--color-text-base);
-  font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-light);
   opacity: 1;
   /* Firefox */
 }
@@ -442,7 +443,7 @@ fieldset input {
 :-ms-input-placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: var(--color-text-base);
-  font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-light);
   opacity: 1;
   /* Firefox */
 }
@@ -452,7 +453,7 @@ select,
 option {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: var(--color-text-base);
-  font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-light);
   opacity: 1;
   /* Firefox */
 }
