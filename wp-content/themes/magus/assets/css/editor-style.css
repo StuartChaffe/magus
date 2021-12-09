@@ -1,14 +1,20 @@
 @charset "UTF-8";
 @font-face {
   font-family: "MagusFont";
+  src: url("../fonts/MagusThin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MagusFont";
   src: url("../fonts/MagusLight.ttf") format("truetype");
   font-weight: 200;
   font-style: normal;
 }
 @font-face {
   font-family: "MagusFont";
-  src: url("../fonts/MagusThin.ttf") format("truetype");
-  font-weight: 100;
+  src: url("../fonts/MagusMedium.ttf") format("truetype");
+  font-weight: 400;
   font-style: normal;
 }
 :root {
@@ -16,6 +22,7 @@
   --display-family: "MagusFont", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-weight-light: 100;
   --font-weight-normal: 200;
+  --font-weight-medium: 400;
   --font-weight-bold: 700;
   --font-weight-heavy: 900;
   --font-weight-heavy: var(--font-weight-bold);
@@ -656,6 +663,7 @@ pre {
 }
 .banner--title h1 {
   margin-bottom: 0;
+  font-weight: var(--font-weight-medium);
 }
 .banner--title::before {
   content: "";
