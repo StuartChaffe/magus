@@ -24,6 +24,11 @@
 				p {
 					margin: 0;
 				}
+				&-title {
+					&:before {
+						max-height: 59px;
+					}
+				}
 			}
 		}
 	}

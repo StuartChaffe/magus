@@ -1992,6 +1992,9 @@ body.nav-open {
 .team .link-list-item--content p {
   margin: 0;
 }
+.team .link-list-item--content-title:before {
+  max-height: 59px;
+}
 
 .testimonial {
   text-align: center;
