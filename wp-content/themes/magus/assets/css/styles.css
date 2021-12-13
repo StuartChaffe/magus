@@ -1311,7 +1311,6 @@ body.nav-open {
   }
 }
 .awards--images-item {
-  flex-grow: 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1324,6 +1323,9 @@ body.nav-open {
   padding-right: 0;
 }
 @media (min-width: 50em) {
+  .awards--images-item {
+    flex-grow: 1;
+  }
   .awards--images-item:first-child {
     padding-left: 0;
   }
