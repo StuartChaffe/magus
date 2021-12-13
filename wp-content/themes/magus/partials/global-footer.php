@@ -32,7 +32,7 @@ $rqlogo = get_field('footer_rq_logo', 'options');
 		<?php if ( $rqlogo ) { ?><img src="<?php echo $rqlogo['url']; ?>" alt="<?php echo $rqlogo['alt']; ?>" /><?php } ?>
 
 		<div class="global-footer--foot">
-			<p>Copyright &copy; <?php echo date('Y'); ?> Magus Wealth Limited. All rights reserved.</p>
+			<p>Copyright &copy; <?php echo date('Y'); ?> Magus Private Wealth Ltd. All rights reserved.</p>
 
 			<?php if ( $copyright ) { ?><?php echo $copyright ?><?php } ?>
 
