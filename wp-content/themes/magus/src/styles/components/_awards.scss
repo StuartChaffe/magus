@@ -17,11 +17,13 @@
 			align-items: center;
 			justify-content: center;
 			padding: 0 1rem;
-			&:nth-child(odd) {
-				padding-left: 0;
-			}
-			&:nth-child(even) {
-				padding-right: 0;
+			@include mq($until: medium) {
+				&:nth-child(odd) {
+					padding-left: 0;
+				}
+				&:nth-child(even) {
+					padding-right: 0;
+				}
 			}
 			@include mq(medium) {
 				flex-grow: 1;

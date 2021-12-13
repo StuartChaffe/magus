@@ -1316,11 +1316,13 @@ body.nav-open {
   justify-content: center;
   padding: 0 1rem;
 }
-.awards--images-item:nth-child(odd) {
-  padding-left: 0;
-}
-.awards--images-item:nth-child(even) {
-  padding-right: 0;
+@media (max-width: 49.99em) {
+  .awards--images-item:nth-child(odd) {
+    padding-left: 0;
+  }
+  .awards--images-item:nth-child(even) {
+    padding-right: 0;
+  }
 }
 @media (min-width: 50em) {
   .awards--images-item {
