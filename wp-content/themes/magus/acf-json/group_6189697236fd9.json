@@ -1,7 +1,71 @@
 {
     "key": "group_6189697236fd9",
     "title": "Download",
-    "fields": [],
+    "fields": [
+        {
+            "key": "field_61bc691890989",
+            "label": "Title",
+            "name": "download_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_61bc69299098a",
+            "label": "Image",
+            "name": "download_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "default_value": ""
+        },
+        {
+            "key": "field_61bc69429098b",
+            "label": "Form",
+            "name": "download_form",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "full",
+            "delay": 0
+        }
+    ],
     "location": [
         [
             {
@@ -19,5 +83,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1636395389
+    "show_in_rest": 0,
+    "modified": 1639737698
 }

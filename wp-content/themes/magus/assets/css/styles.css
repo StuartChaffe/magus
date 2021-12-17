@@ -1495,6 +1495,18 @@ body.nav-open {
   margin-bottom: var(--spacing-xl);
 }
 
+.download {
+  margin-bottom: var(--spacing-xl);
+}
+.download .link-list-item {
+  margin: 0;
+  width: 100%;
+  background-color: white;
+}
+.download .link-list-item img {
+  width: 100%;
+}
+
 .form {
   margin-bottom: var(--spacing-l);
 }
@@ -1509,6 +1521,9 @@ body.nav-open {
   .form-fields {
     margin: 0 auto 2rem auto;
   }
+}
+.form-fields form {
+  width: 100%;
 }
 .form-fields--half {
   margin-bottom: 0.5rem;

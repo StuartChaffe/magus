@@ -275,7 +275,8 @@ function magus_allowed_block_types( $allowed_blocks ) {
 		'acf/signup',
 		'acf/team',
 		'acf/testimonial',
-		'acf/video'
+		'acf/video',
+		// 'core/mailchimp'
 	);
  
 }
