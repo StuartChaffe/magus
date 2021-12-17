@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title><?php wp_title(''); ?></title>
 <link rel="icon" href="/favicon.ico"><!-- 32×32 -->
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png"><!-- 180×180 -->
 <?php wp_head(); ?>
 </head>
