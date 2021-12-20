@@ -12,13 +12,18 @@
 		align-items: center;
 		justify-content: center;
 		border: 3px solid white;
-		padding: var(--spacing);
+		padding: var(--spacing-s) var(--spacing-xs);
 		width: calc(50% - 20px);
 		margin: 10px;
 		max-height: 125px;
+		@include mq(medium) {
+			padding: calc(var(--spacing) - 10px);
+		}
 		img {
-			max-width: 80%;
 			height: 100%;
+			@include mq(medium) {
+				max-width: 80%;
+			}
 		}
 	}
 }

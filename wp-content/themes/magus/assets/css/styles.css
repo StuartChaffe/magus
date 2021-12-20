@@ -597,14 +597,21 @@ input[type=submit], input[type=reset], input[type=button] {
   display: inline-block;
   border-radius: 0;
   padding: 0.5rem 1.5rem;
-  border: 5px solid white;
+  border: 3px solid white;
   color: white;
   font-family: var(--display-family);
   font-weight: var(--font-weight-normal);
-  font-size: var(--font-size-lead);
+  font-size: var(--font-size);
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-align: center;
+}
+@media (min-width: 50em) {
+  .btn,
+input[type=submit], input[type=reset], input[type=button] {
+    border: 5px solid white;
+    font-size: var(--font-size-lead);
+  }
 }
 .btn:hover, .btn:focus,
 input[type=submit]:hover,
@@ -634,16 +641,23 @@ input[type=submit]:focus, input[type=reset]:hover, input[type=reset]:focus, inpu
   align-items: center;
   margin-left: auto;
   background-color: var(--color-primary);
-  width: 190px;
+  width: 145px;
   position: fixed;
-  top: 30px;
-  right: 30px;
+  top: 10px;
+  right: 10px;
   padding: 1rem;
   z-index: 1000;
   color: white;
   opacity: 0;
   visibility: hidden;
   transition: background-color 0.3s, opacity 0.5s, visibility 0.5s, box-shadow 0.1s ease-in-out;
+}
+@media (min-width: 50em) {
+  .cta-button {
+    width: 190px;
+    top: 30px;
+    right: 30px;
+  }
 }
 .cta-button:hover {
   cursor: pointer;
@@ -661,6 +675,12 @@ input[type=submit]:focus, input[type=reset]:hover, input[type=reset]:focus, inpu
 }
 .cta-button img {
   margin-right: 1rem;
+  width: 44px;
+}
+@media (min-width: 50em) {
+  .cta-button img {
+    width: 74px;
+  }
 }
 
 .cta-button.show {
@@ -674,8 +694,8 @@ input[type=submit]:focus, input[type=reset]:hover, input[type=reset]:focus, inpu
   align-items: center;
   background-color: white;
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 10px;
+  right: 10px;
   padding: 1rem;
   transition: background-color 0.3s, opacity 0.5s, visibility 0.5s, box-shadow 0.1s ease-in-out;
   opacity: 0;
@@ -683,6 +703,12 @@ input[type=submit]:focus, input[type=reset]:hover, input[type=reset]:focus, inpu
   z-index: 1000;
   color: var(--color-primary);
   border: 1px solid var(--body-background-color);
+}
+@media (min-width: 50em) {
+  #button {
+    bottom: 30px;
+    right: 30px;
+  }
 }
 #button:hover {
   cursor: pointer;
@@ -1086,8 +1112,12 @@ body.nav-open {
 }
 .global-footer--logo {
   z-index: 1;
-  width: 447px;
   margin-bottom: var(--spacing-m);
+}
+@media (min-width: 50em) {
+  .global-footer--logo {
+    width: 447px;
+  }
 }
 .global-footer--logo a {
   display: block;
@@ -1681,9 +1711,22 @@ body.nav-open {
 .link-list--intro {
   margin-bottom: var(--spacing);
 }
+.link-list-color .link-list {
+  flex-direction: column;
+}
+@media (min-width: 50em) {
+  .link-list-color .link-list {
+    flex-direction: row;
+  }
+}
 .link-list-color .link-list-item {
   background-color: var(--color-primary);
   flex-grow: 1;
+}
+@media (max-width: 49.99em) {
+  .link-list-color .link-list-item {
+    width: calc(100% - 20px);
+  }
 }
 .link-list-color .link-list-item--content .btn {
   width: 100%;
@@ -1835,14 +1878,23 @@ body.nav-open {
   align-items: center;
   justify-content: center;
   border: 3px solid white;
-  padding: var(--spacing);
+  padding: var(--spacing-s) var(--spacing-xs);
   width: calc(50% - 20px);
   margin: 10px;
   max-height: 125px;
 }
+@media (min-width: 50em) {
+  .platforms-item {
+    padding: calc(var(--spacing) - 10px);
+  }
+}
 .platforms-item img {
-  max-width: 80%;
   height: 100%;
+}
+@media (min-width: 50em) {
+  .platforms-item img {
+    max-width: 80%;
+  }
 }
 
 /* Slider */
