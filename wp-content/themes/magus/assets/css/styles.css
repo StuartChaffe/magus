@@ -1097,8 +1097,12 @@ body.nav-open {
 }
 .global-footer--logo {
   z-index: 1;
-  width: 447px;
   margin-bottom: var(--spacing-m);
+}
+@media (min-width: 50em) {
+  .global-footer--logo {
+    width: 447px;
+  }
 }
 .global-footer--logo a {
   display: block;
