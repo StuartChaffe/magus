@@ -1753,9 +1753,22 @@ ul.menu .sub-menu li a:after {
 .link-list--intro {
   margin-bottom: var(--spacing);
 }
+.link-list-color .link-list {
+  flex-direction: column;
+}
+@media (min-width: 50em) {
+  .link-list-color .link-list {
+    flex-direction: row;
+  }
+}
 .link-list-color .link-list-item {
   background-color: var(--color-primary);
   flex-grow: 1;
+}
+@media (max-width: 49.99em) {
+  .link-list-color .link-list-item {
+    width: calc(100% - 20px);
+  }
 }
 .link-list-color .link-list-item--content .btn {
   width: 100%;

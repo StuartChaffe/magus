@@ -89,9 +89,18 @@
 		margin-bottom: var(--spacing);
 	}
 	&-color {
+		.link-list {
+			flex-direction: column;
+			@include mq(medium) {
+				flex-direction: row;
+			}
+		}
 		.link-list-item {
 			background-color: var(--color-primary);
 			flex-grow: 1;
+			@include mq($until: medium) {
+				width: calc(100% - 20px);
+			}
 			&--content {
 				.btn {
 					width: 100%;
