@@ -848,14 +848,21 @@ input[type=submit], input[type=reset], input[type=button] {
   display: inline-block;
   border-radius: 0;
   padding: 0.5rem 1.5rem;
-  border: 5px solid white;
+  border: 3px solid white;
   color: white;
   font-family: var(--display-family);
   font-weight: var(--font-weight-normal);
-  font-size: var(--font-size-lead);
+  font-size: var(--font-size);
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-align: center;
+}
+@media (min-width: 50em) {
+  .btn,
+input[type=submit], input[type=reset], input[type=button] {
+    border: 5px solid white;
+    font-size: var(--font-size-lead);
+  }
 }
 .btn:hover, .btn:focus,
 input[type=submit]:hover,
@@ -887,8 +894,8 @@ input[type=submit]:focus, input[type=reset]:hover, input[type=reset]:focus, inpu
   background-color: var(--color-primary);
   width: 145px;
   position: fixed;
-  top: 30px;
-  right: 30px;
+  top: 10px;
+  right: 10px;
   padding: 1rem;
   z-index: 1000;
   color: white;
@@ -899,6 +906,8 @@ input[type=submit]:focus, input[type=reset]:hover, input[type=reset]:focus, inpu
 @media (min-width: 50em) {
   .cta-button {
     width: 190px;
+    top: 30px;
+    right: 30px;
   }
 }
 .cta-button:hover {
@@ -936,8 +945,8 @@ input[type=submit]:focus, input[type=reset]:hover, input[type=reset]:focus, inpu
   align-items: center;
   background-color: white;
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 10px;
+  right: 10px;
   padding: 1rem;
   transition: background-color 0.3s, opacity 0.5s, visibility 0.5s, box-shadow 0.1s ease-in-out;
   opacity: 0;
@@ -945,6 +954,12 @@ input[type=submit]:focus, input[type=reset]:hover, input[type=reset]:focus, inpu
   z-index: 1000;
   color: var(--color-primary);
   border: 1px solid var(--body-background-color);
+}
+@media (min-width: 50em) {
+  #button {
+    bottom: 30px;
+    right: 30px;
+  }
 }
 #button:hover {
   cursor: pointer;
