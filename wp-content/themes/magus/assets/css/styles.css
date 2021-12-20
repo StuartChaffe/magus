@@ -1878,14 +1878,23 @@ body.nav-open {
   align-items: center;
   justify-content: center;
   border: 3px solid white;
-  padding: var(--spacing);
+  padding: var(--spacing-s) var(--spacing-xs);
   width: calc(50% - 20px);
   margin: 10px;
   max-height: 125px;
 }
+@media (min-width: 50em) {
+  .platforms-item {
+    padding: calc(var(--spacing) - 10px);
+  }
+}
 .platforms-item img {
-  max-width: 80%;
   height: 100%;
+}
+@media (min-width: 50em) {
+  .platforms-item img {
+    max-width: 80%;
+  }
 }
 
 /* Slider */
