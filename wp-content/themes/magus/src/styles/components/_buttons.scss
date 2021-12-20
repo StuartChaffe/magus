@@ -39,7 +39,7 @@ input[type=submit], input[type=reset], input[type=button]  {
 	background-color: var(--color-primary);
 	// width: 50px;
 	// height: 50px;
-	width: 190px;
+	width: 145px;
 	position: fixed;
 	top: 30px;
 	right: 30px;
@@ -50,6 +50,9 @@ input[type=submit], input[type=reset], input[type=button]  {
 	visibility: hidden;
 	transition: background-color .3s, 
 	opacity .5s, visibility .5s, box-shadow .1s ease-in-out;
+	@include mq(medium) {
+		width: 190px;
+	}
 	&:hover {
 		cursor: pointer;
 		color: white;
@@ -66,6 +69,10 @@ input[type=submit], input[type=reset], input[type=button]  {
 	}
 	img {
 		margin-right: 1rem;
+		width: 44px;
+		@include mq(medium) {
+			width: 74px;
+		}
 	}
 }
 
@@ -92,6 +99,7 @@ input[type=submit], input[type=reset], input[type=button]  {
 	z-index: 1000;
 	color: var(--color-primary);
 	border: 1px solid var(--body-background-color);
+	
 	&:hover {
 		cursor: pointer;
 		box-shadow: 0px 23px 120px rgba(0, 0, 0, 0.2);

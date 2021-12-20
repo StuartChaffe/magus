@@ -634,7 +634,7 @@ input[type=submit]:focus, input[type=reset]:hover, input[type=reset]:focus, inpu
   align-items: center;
   margin-left: auto;
   background-color: var(--color-primary);
-  width: 190px;
+  width: 145px;
   position: fixed;
   top: 30px;
   right: 30px;
@@ -644,6 +644,11 @@ input[type=submit]:focus, input[type=reset]:hover, input[type=reset]:focus, inpu
   opacity: 0;
   visibility: hidden;
   transition: background-color 0.3s, opacity 0.5s, visibility 0.5s, box-shadow 0.1s ease-in-out;
+}
+@media (min-width: 50em) {
+  .cta-button {
+    width: 190px;
+  }
 }
 .cta-button:hover {
   cursor: pointer;
@@ -661,6 +666,12 @@ input[type=submit]:focus, input[type=reset]:hover, input[type=reset]:focus, inpu
 }
 .cta-button img {
   margin-right: 1rem;
+  width: 44px;
+}
+@media (min-width: 50em) {
+  .cta-button img {
+    width: 74px;
+  }
 }
 
 .cta-button.show {
