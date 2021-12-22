@@ -2183,8 +2183,14 @@ body.nav-open {
   display: flex;
   flex-direction: column;
   background-color: var(--color-primary);
-  padding: var(--spacing-l);
-  margin-bottom: var(--spacing-xl);
+  padding: var(--spacing);
+  margin-bottom: var(--spacing-l);
+}
+@media (min-width: 50em) {
+  .testimonial--inner {
+    padding: var(--spacing-l);
+    margin-bottom: var(--spacing-xl);
+  }
 }
 .testimonial--author {
   margin-left: auto;
