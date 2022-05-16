@@ -63,8 +63,10 @@
 	}
 
 	li:before {
-		content: "•";
+		content: url('../../src/images/li-image.png');
 		position: absolute;
+		width: 15px;
+		height: 15px;
 		left: 0;
 		top: 4px;
 		// transform: translateY(-50%);
