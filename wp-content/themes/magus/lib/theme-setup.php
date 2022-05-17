@@ -57,3 +57,29 @@ function origin_clean_body_classes( $classes ) {
     return array_intersect( $classes, $allowed_classes );
 }
 add_filter( 'body_class', 'origin_clean_body_classes', 20 );
+
+
+/**
+ * Editor formats
+ */
+function add_style_select_buttons( $buttons ) {
+	array_unshift( $buttons, 'styleselect' );
+	return $buttons;
+}
+add_filter( 'mce_buttons_2', 'add_style_select_buttons' );
+function my_custom_styles( $init_array ) {  
+	$style_formats = array(  
+		array(  
+			'title' => 'List style',  
+			'selector' => 'ul',  
+			'classes' => 'li-style',
+		),  
+	);  
+	// Insert the array, JSON ENCODED, into 'style_formats'
+	$init_array['style_formats'] = json_encode( $style_formats );  
+
+	return $init_array;  
+
+	} 
+// Attach callback to 'tiny_mce_before_init' 
+add_filter( 'tiny_mce_before_init', 'my_custom_styles' );

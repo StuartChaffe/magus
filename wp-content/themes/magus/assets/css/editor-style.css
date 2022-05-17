@@ -1078,6 +1078,20 @@ input[type=submit]:focus, input[type=reset]:hover, input[type=reset]:focus, inpu
   display: inline;
 }
 .content li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: bold;
+  margin-right: 0.6em;
+  color: var(--color-text-dark);
+}
+.content .li-style {
+  margin-bottom: 1.5rem;
+}
+.content .li-style li:before {
   content: url("../../src/images/li-image.png");
   position: absolute;
   width: 15px;
