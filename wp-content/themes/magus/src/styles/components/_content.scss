@@ -54,7 +54,7 @@
 
 	li {
 		position: relative;
-		padding-left: 1.2rem;
+		padding-left: 1.5rem;
 		margin-bottom: 0.3em;
 	}
 
@@ -63,7 +63,7 @@
 	}
 
 	li:before {
-		content: "•";
+		content: '•';
 		position: absolute;
 		left: 0;
 		top: 4px;
@@ -73,5 +73,22 @@
 		font-weight: bold;
 		margin-right: 0.6em;
 		color: var(--color-text-dark);
+	}
+	.li-style {
+		margin-bottom: 1.5rem;
+		li:before {
+			content: url('../../src/images/li-image.png');
+			position: absolute;
+			width: 15px;
+			height: 15px;
+			left: 0;
+			top: 4px;
+			// transform: translateY(-50%);
+			font-size: 1rem;
+			line-height: 1;
+			font-weight: bold;
+			margin-right: 0.6em;
+			color: var(--color-text-dark);
+		}
 	}
 }
