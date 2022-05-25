@@ -20,7 +20,7 @@
 		background: white;
 		display: flex;
 		flex-direction: column;
-		align-items: center;
+		align-items: flex-start;
 		padding: var(--spacing-l);
 		top: 50%;
 		transform: translateY(-50%);
@@ -31,10 +31,10 @@
 
 		img {
 			width: 250px;
-			margin-bottom: 2rem;
+			margin-bottom: 3rem;
 		}
 		.btn {
-			margin-top: 1rem;
+			margin-top: 2rem;
 			font-size: 22px;
 		}
 
@@ -46,6 +46,9 @@
 			position: absolute;
 			right: 1rem;
 			top: 1rem;
+			background-color: transparent;
+			border: none;
+			cursor: pointer;
 		}
 	}
 }
