@@ -3,6 +3,7 @@
 $logo = get_field('footer_logo', 'options');
 $copyright = get_field('footer_copyright', 'options');
 $rqlogo = get_field('footer_rq_logo', 'options');
+$popup = get_field('show_popup');
 ?>
 <a href="/contact-us" id="cta-button" class="cta-button"><img src="<?php echo get_template_directory_uri(); ?>/src/images/logo-icon-white.png" alt="Magus icon" /> <p>Get in touch</p></a>
 <a id="button"><svg class="icon icon--arrow"><use xlink:href="#arrow"></use></svg> <p>Back to the top</p></a>
@@ -43,6 +44,16 @@ $rqlogo = get_field('footer_rq_logo', 'options');
 
 		</div>
 	</div>
-
-	
 </footer>
+<?php if ( $popup  == '1' ) { ?>
+	<div class="modal consultation">
+		<div class="modal--inner">
+			<button class="modal--close" aria-label="Close">✕</button>
+			<img src="<?php echo get_template_directory_uri(); ?>/src/images/logo.png" alt="Magus logo" />
+			<h3>Get absolute clarity on your financial circumstances</h3>
+			<p>What are you waiting for?
+				<br />Book your FREE consultation with one of our experienced financial planners</p>
+			<a href="/contact" class="btn btn--primary">Book now</a>
+		</div>
+	</div>
+	<?php } ?>

@@ -29,3 +29,21 @@ jQuery(document).ready(function($) {
 	}
 	});
 });
+
+
+jQuery(document).ready(function($) {
+
+	var btn = $('.modal');
+
+	$(window).scroll(function() {
+	if ($(window).scrollTop() > 900) {
+		btn.addClass('show');
+	}
+	});
+});
+
+jQuery(document).ready(function($) {
+	$('.modal--close').click(function() {
+		$('.modal').addClass('noshow');
+	});
+});

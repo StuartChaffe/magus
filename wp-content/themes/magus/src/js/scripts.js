@@ -7,4 +7,3 @@ import './components/toggle';
 import './components/menu';
 import './components/accordion';
 import './components/carousel';
-import './components/modal';
