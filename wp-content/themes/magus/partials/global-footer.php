@@ -43,4 +43,6 @@ $rqlogo = get_field('footer_rq_logo', 'options');
 
 		</div>
 	</div>
+
+	
 </footer>
