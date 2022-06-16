@@ -1963,7 +1963,7 @@ body.nav-open {
   .modal--inner {
     padding: var(--spacing-l);
     padding-top: 1.5rem;
-    width: 50%;
+    width: 60%;
   }
 }
 .modal--inner .logo {
@@ -1978,8 +1978,13 @@ body.nav-open {
   margin-top: 1rem;
   font-size: 22px;
 }
+.modal--inner h3, .modal--inner .accordion--title {
+  font-size: 1.2rem;
+  font-weight: var(--font-weight-bold);
+}
 .modal--inner p {
   color: var(--color-text-base);
+  font-size: 1rem;
   margin-bottom: 1rem;
 }
 .modal--inner button {
