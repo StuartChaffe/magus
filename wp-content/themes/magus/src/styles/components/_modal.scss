@@ -24,12 +24,14 @@
 		align-items: flex-start;
 		padding: var(--spacing);
 		padding-top: 1.5rem;
-		top: 50%;
-		transform: translateY(-50%);
+		top: 20px;
+		// transform: translateY(-50%);
 		width: 90%;
 		max-width: 600px;
 		margin: 0 auto;
 		color: var(--color-text-base);
+		overflow: auto;
+    	height: 100%;
 		@include mq(medium) {
 			padding: var(--spacing-l);
 			padding-top: 1.5rem;
