@@ -1873,6 +1873,7 @@ body.nav-open {
 @media (min-width: 50em) {
   .modal {
     padding: var(--spacing-l);
+    padding-top: 1.5rem;
   }
 }
 .modal--inner {
@@ -1882,6 +1883,7 @@ body.nav-open {
   flex-direction: column;
   align-items: flex-start;
   padding: var(--spacing);
+  padding-top: 1.5rem;
   top: 50%;
   transform: translateY(-50%);
   width: 90%;
@@ -1892,12 +1894,17 @@ body.nav-open {
 @media (min-width: 50em) {
   .modal--inner {
     padding: var(--spacing-l);
+    padding-top: 1.5rem;
     width: 50%;
   }
 }
-.modal--inner img {
+.modal--inner .logo {
   width: 250px;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
+}
+.modal--inner img, .modal--inner .size-full {
+  width: 100%;
+  margin: 0 0 1rem 0;
 }
 .modal--inner .btn {
   margin-top: 1rem;
@@ -1905,6 +1912,7 @@ body.nav-open {
 }
 .modal--inner p {
   color: var(--color-text-base);
+  margin-bottom: 1rem;
 }
 .modal--inner button {
   position: absolute;

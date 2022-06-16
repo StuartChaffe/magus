@@ -13,6 +13,7 @@
 	transition: all .3s ease-in-out;
 	@include mq(medium) {
 		padding: var(--spacing-l);
+		padding-top: 1.5rem;
 	}
 
 	&--inner {
@@ -22,6 +23,7 @@
 		flex-direction: column;
 		align-items: flex-start;
 		padding: var(--spacing);
+		padding-top: 1.5rem;
 		top: 50%;
 		transform: translateY(-50%);
 		width: 90%;
@@ -30,12 +32,17 @@
 		color: var(--color-text-base);
 		@include mq(medium) {
 			padding: var(--spacing-l);
+			padding-top: 1.5rem;
 			width: 50%;
 		}
-
-		img {
+		.logo {
 			width: 250px;
-			margin-bottom: 3rem;
+			margin-bottom: 1rem;
+		}
+
+		img, .size-full {
+			width: 100%;
+			margin: 0 0 1rem 0;
 		}
 		.btn {
 			margin-top: 1rem;
@@ -44,6 +51,7 @@
 
 		p {
 			color: var(--color-text-base);
+			margin-bottom: 1rem;
 		}
 
 		button {

@@ -50,7 +50,7 @@ $popupcontent = get_field('modal_content', 'options');
 	<div class="modal consultation">
 		<div class="modal--inner">
 			<button class="modal--close" aria-label="Close">✕</button>
-			<img src="<?php echo get_template_directory_uri(); ?>/src/images/logo.png" alt="Magus logo" />
+			<img class="logo" src="<?php echo get_template_directory_uri(); ?>/src/images/logo.png" alt="Magus logo" />
 			<?php echo $popupcontent ?>
 		</div>
 	</div>
