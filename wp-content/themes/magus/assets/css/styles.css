@@ -1890,7 +1890,7 @@ body.nav-open {
   margin: 0 auto;
   color: var(--color-text-base);
   overflow: auto;
-  height: 100%;
+  height: calc(100% - 40px);
 }
 @media (min-width: 50em) {
   .modal--inner {

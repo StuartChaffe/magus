@@ -31,7 +31,7 @@
 		margin: 0 auto;
 		color: var(--color-text-base);
 		overflow: auto;
-    	height: 100%;
+    	height: calc(100% - 40px);
 		@include mq(medium) {
 			padding: var(--spacing-l);
 			padding-top: 1.5rem;
