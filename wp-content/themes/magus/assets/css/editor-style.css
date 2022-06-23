@@ -343,6 +343,14 @@ option {
   /* Firefox */
 }
 
+.mc-field-group {
+  font-size: var(--font-size-p);
+  color: var(--color-text-base);
+}
+.mc-field-group label {
+  font-size: var(--font-size-p);
+  color: var(--color-text-base);
+}
 .mc-field-group label.hidden {
   display: none;
 }
