@@ -1819,10 +1819,6 @@ ul.menu .sub-menu li a:after {
   z-index: 1;
   font-weight: var(--font-weight-normal);
 }
-.link-list-item--link:hover {
-  text-decoration: none;
-  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
-}
 .link-list-item--image {
   position: relative;
   overflow: hidden;
@@ -1896,6 +1892,12 @@ ul.menu .sub-menu li a:after {
   justify-content: center;
   display: flex;
   margin-bottom: var(--spacing-xl);
+}
+
+a.link-list-item--link:hover {
+  background-color: red;
+  text-decoration: none;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
 }
 
 body.nav-open {

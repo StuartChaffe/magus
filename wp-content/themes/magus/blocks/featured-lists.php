@@ -27,7 +27,11 @@ $button = get_field('button');
 		?>
 
 			<div class="link-list-item<?php if ( $width  == 'true' ) { ?> link-list-item__full<?php } ?>">
-				<a href="<?php echo $link['url']; ?>" class="link-list-item--link" title="<?php echo $link['title']; ?>">
+				<?php if ( $link ) { ?>
+					<a href="<?php echo $link['url']; ?>" class="link-list-item--link" title="<?php echo $link['title']; ?>">
+				<?php } else { ?>
+					<div class="link-list-item--link">
+				<?php } ?>
 					<div class="link-list-item--image" style="background-image: url('<?php echo $image['url']; ?>')">
 						<img loading="lazy" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 					</div>
@@ -36,7 +40,11 @@ $button = get_field('button');
 							<?php echo $content; ?>
 						</div>
 					</div>
-				</a>
+				<?php if ( $link ) { ?>
+					</a>
+				<?php } else { ?>
+					</div>
+				<?php } ?>
 			</div>
 		<?php endwhile; ?>
 
