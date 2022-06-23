@@ -896,7 +896,8 @@ input[type=submit]:focus, input[type=reset]:hover, input[type=reset]:focus, inpu
   color: white;
 }
 
-.cta-button {
+.cta-button,
+.consultation-button {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -914,37 +915,96 @@ input[type=submit]:focus, input[type=reset]:hover, input[type=reset]:focus, inpu
   transition: background-color 0.3s, opacity 0.5s, visibility 0.5s, box-shadow 0.1s ease-in-out;
 }
 @media (min-width: 50em) {
-  .cta-button {
+  .cta-button,
+.consultation-button {
     width: 190px;
     top: 30px;
     right: 30px;
   }
 }
-.cta-button:hover {
+.cta-button:hover,
+.consultation-button:hover {
   cursor: pointer;
   color: white;
   box-shadow: 0px 23px 120px rgba(0, 0, 0, 0.2);
   text-decoration: none;
   transition: box-shadow 0.2s ease-in-out;
 }
-.cta-button:active {
+.cta-button:active,
+.consultation-button:active {
   box-shadow: 0px 23px 120px rgba(0, 0, 0, 0.2);
 }
-.cta-button .icon {
+.cta-button .icon,
+.consultation-button .icon {
   width: 72px;
   margin-bottom: 0.5rem;
 }
-.cta-button img {
+.cta-button img,
+.consultation-button img {
   margin-right: 1rem;
   width: 44px;
 }
 @media (min-width: 50em) {
-  .cta-button img {
-    width: 74px;
+  .cta-button img,
+.consultation-button img {
+    width: 44px;
   }
 }
 
 .cta-button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.consultation-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: auto;
+  background-color: var(--color-primary);
+  width: 145px;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 1rem;
+  z-index: 1000;
+  color: white;
+  opacity: 0;
+  visibility: hidden;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s, box-shadow 0.1s ease-in-out;
+}
+@media (min-width: 50em) {
+  .consultation-button {
+    width: 190px;
+    top: 130px;
+    right: 30px;
+  }
+}
+.consultation-button:hover {
+  cursor: pointer;
+  color: white;
+  box-shadow: 0px 23px 120px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  transition: box-shadow 0.2s ease-in-out;
+}
+.consultation-button:active {
+  box-shadow: 0px 23px 120px rgba(0, 0, 0, 0.2);
+}
+.consultation-button .icon {
+  width: 72px;
+  margin-bottom: 0.5rem;
+}
+.consultation-button img {
+  margin-right: 1rem;
+  width: 44px;
+}
+@media (min-width: 50em) {
+  .consultation-button img {
+    width: 74px;
+  }
+}
+
+.consultation-button.show {
   opacity: 1;
   visibility: visible;
 }

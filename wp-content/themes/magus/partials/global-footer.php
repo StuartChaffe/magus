@@ -7,6 +7,7 @@ $popup = get_field('show_popup');
 $popupcontent = get_field('modal_content', 'options');
 ?>
 <a href="/contact-us" id="cta-button" class="cta-button"><img src="<?php echo get_template_directory_uri(); ?>/src/images/logo-icon-white.png" alt="Magus icon" /> <p>Get in touch</p></a>
+<a href="/free-consultation" id="consultation-button" class="consultation-button"> <p>Book my <strong>FREE</strong> consultation</p></a>
 <a id="button"><svg class="icon icon--arrow"><use xlink:href="#arrow"></use></svg> <p>Back to the top</p></a>
 <footer class="global-footer">
 	<div class="global-footer--inner">

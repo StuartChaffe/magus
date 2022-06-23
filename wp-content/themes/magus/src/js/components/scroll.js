@@ -30,6 +30,19 @@ jQuery(document).ready(function($) {
 	});
 });
 
+jQuery(document).ready(function($) {
+
+	var btn = $('#consultation-button');
+
+	$(window).scroll(function() {
+	if ($(window).scrollTop() > 900) {
+		btn.addClass('show');
+	} else {
+		btn.removeClass('show');
+	}
+	});
+});
+
 
 jQuery(document).ready(function($) {
 
