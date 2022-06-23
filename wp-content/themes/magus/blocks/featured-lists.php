@@ -5,6 +5,7 @@
 $title = get_field( 'list_title' );
 $intro = get_field('list_intro');
 $button = get_field('button');
+$stack = get_field('list_items_stack');
 ?>
 
 <div class="container">
@@ -18,7 +19,7 @@ $button = get_field('button');
 		</div>
 	<?php } ?>
 
-		<div class="link-list">
+		<div class="link-list<?php if ( $stack  == 'true' ) { ?> link-list__stack<?php } ?>">
 		<?php while( have_rows('list_items') ): the_row();
 			$image = get_sub_field('image');
 			$content = get_sub_field('content');

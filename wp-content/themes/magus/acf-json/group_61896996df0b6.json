@@ -166,6 +166,25 @@
             ]
         },
         {
+            "key": "field_62b46994249bc",
+            "label": "Stack?",
+            "name": "list_items_stack",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
             "key": "field_6193e1abffd7a",
             "label": "Button",
             "name": "button",
@@ -199,5 +218,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1655990198
+    "modified": 1655990702
 }

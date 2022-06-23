@@ -1730,6 +1730,25 @@ ul.menu .sub-menu li a:after {
     margin: 0 -10px var(--spacing-xl) -10px;
   }
 }
+.link-list__stack .link-list-item {
+  background-color: red;
+  width: 100%;
+  margin: 0 10px var(--spacing) 10px;
+}
+@media (min-width: 50em) {
+  .link-list__stack .link-list-item {
+    width: calc(100% / 2 - 20px);
+    margin: 10px;
+  }
+}
+.link-list__stack .link-list-item--image {
+  height: 55vw;
+}
+@media (min-width: 50em) {
+  .link-list__stack .link-list-item--image {
+    height: calc(50vw - 30px);
+  }
+}
 .link-list--featured-item {
   width: calc(100% / 2 - 20px);
   margin: 0 10px var(--spacing) 10px;
