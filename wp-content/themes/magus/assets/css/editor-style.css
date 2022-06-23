@@ -1937,6 +1937,16 @@ a.link-list-item--link:hover {
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
 }
 
+.border__small::before {
+  height: 50px;
+}
+.border__none {
+  padding-left: 0;
+}
+.border__none::before {
+  display: none;
+}
+
 body.nav-open {
   overflow: hidden;
 }

@@ -54,6 +54,32 @@
                     "toolbar": "full",
                     "media_upload": 0,
                     "delay": 0
+                },
+                {
+                    "key": "field_62b466edf04c2",
+                    "label": "Border",
+                    "name": "link_border",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "border__none": "None",
+                        "border__small": "Small",
+                        "border__full": "Full"
+                    },
+                    "default_value": false,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
                 }
             ]
         }
@@ -75,5 +101,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1638360512
+    "show_in_rest": 0,
+    "modified": 1655990085
 }

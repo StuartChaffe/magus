@@ -226,3 +226,17 @@ a.link-list-item--link {
 		box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
 	}
 }
+
+.border {
+	&__small {
+		&::before {
+			height: 50px;
+		}
+	}
+	&__none {
+		padding-left: 0;
+		&::before {
+			display: none;
+		}
+	}
+}

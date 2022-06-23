@@ -136,6 +136,32 @@
                     "ui": 1,
                     "ui_on_text": "",
                     "ui_off_text": ""
+                },
+                {
+                    "key": "field_62b467a5beeba",
+                    "label": "Border",
+                    "name": "link_border",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "border__none": "None",
+                        "border__small": "Small",
+                        "border__full": "Full"
+                    },
+                    "default_value": "border__full",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
                 }
             ]
         },
@@ -172,5 +198,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1638372644
+    "show_in_rest": 0,
+    "modified": 1655990198
 }
