@@ -964,7 +964,7 @@ input[type=submit]:focus, input[type=reset]:hover, input[type=reset]:focus, inpu
   background-color: var(--color-primary);
   width: 145px;
   position: fixed;
-  top: 10px;
+  top: 100px;
   right: 10px;
   padding: 1rem;
   z-index: 1000;
