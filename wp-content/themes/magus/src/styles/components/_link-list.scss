@@ -16,19 +16,13 @@
 	// }
 
 	&__stack {
-		.link-list-item {
-			background-color: red;
-			width: 100%;
-			margin: 0 10px var(--spacing) 10px;
-			@include mq(medium) {
-				width: calc(100% / 2 - 20px);
-				margin: 10px;
-			}
-
-			&--image {
-				height: 55vw; 
-				@include mq(medium) {
-					height: calc(50vw - 30px); 
+		@include mq($until: medium) {
+			.link-list-item {
+				width: 100%;
+				margin: 0 10px var(--spacing) 10px;
+			
+				&--image {
+					height: 55vw; 
 				}
 			}
 		}

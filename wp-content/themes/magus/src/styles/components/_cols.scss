@@ -1,0 +1,37 @@
+.cols {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: var(--spacing-l);
+	@include mq(medium) {
+		margin-bottom: var(--spacing-xxl);
+	}
+
+	&-item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		width: calc(100% / 2 - 20px);
+		margin: 0 10px var(--spacing) 10px;
+		@include mq(medium) {
+			width: calc(100% / 2 - 20px);
+			margin: 10px;
+		}
+
+		&--image {
+			margin-bottom: 1rem;
+			max-height: 75px;
+
+			img {
+				height: 100%;
+			}
+		}
+
+		&--content {
+			padding: 1rem;
+			p {
+				font-size: 95%;
+			}
+		}
+	}
+}

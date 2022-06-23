@@ -79,6 +79,16 @@ function magus_acf_blocks() {
 			'keywords'			=> array( 'content' ),
 		));
 		acf_register_block(array(
+			'name'				=> 'cols',
+			'title'				=> __('Columns'),
+			'description'		=> __('Add a column block'),
+			'render_callback'	=> 'magus_acf_block_render_callback',
+			'category'			=> 'magus-blocks',
+			'icon'				=> 'ellipsis',
+			'align' 			=> 'wide',
+			'keywords'			=> array( 'cols, columns' ),
+		));
+		acf_register_block(array(
 			'name'				=> 'cta',
 			'title'				=> __('Call to action'),
 			'description'		=> __('Add a CTA block'),
@@ -260,6 +270,7 @@ function magus_allowed_block_types( $allowed_blocks ) {
 		'acf/careers',
 		'acf/carousel',
 		'acf/content',
+		'acf/cols',
 		'acf/cta',
 		'acf/download',
 		'acf/featured-posts',
