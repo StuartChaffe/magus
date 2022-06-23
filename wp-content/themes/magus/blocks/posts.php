@@ -4,6 +4,7 @@
 */
 $title = get_field('posts_title');
 $intro = get_field('posts_intro');
+$category = get_field('posts_category');
 
 ?>
 <?php
@@ -12,6 +13,7 @@ $intro = get_field('posts_intro');
 		'posts_per_page' => -1,
 		'orderby' => 'date',
 		'order' => 'DESC',
+		'cat' => $category,
 	));
 ?>
 

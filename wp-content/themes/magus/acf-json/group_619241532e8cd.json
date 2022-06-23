@@ -39,6 +39,28 @@
             "toolbar": "full",
             "media_upload": 0,
             "delay": 0
+        },
+        {
+            "key": "field_62b481d9cc803",
+            "label": "Category",
+            "name": "posts_category",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "category",
+            "field_type": "multi_select",
+            "allow_null": 0,
+            "add_term": 1,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "multiple": 0
         }
     ],
     "location": [
@@ -58,5 +80,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1636981131
+    "show_in_rest": 0,
+    "modified": 1655997974
 }
