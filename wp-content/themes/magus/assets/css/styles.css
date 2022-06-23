@@ -461,10 +461,12 @@ option {
 .mc-field-group {
   font-size: var(--font-size-p);
   color: var(--color-text-base);
+  -webkit-font-smoothing: antialiased;
 }
 .mc-field-group label {
   font-size: var(--font-size-p);
   color: var(--color-text-base);
+  -webkit-font-smoothing: antialiased;
 }
 .mc-field-group label.hidden {
   display: none;

@@ -111,9 +111,11 @@ option { /* Chrome, Firefox, Opera, Safari 10.1+ */
 .mc-field-group {
 	font-size: var(--font-size-p);
 	color: var(--color-text-base);
+	-webkit-font-smoothing: antialiased;
 	label {
 		font-size: var(--font-size-p);
 		color: var(--color-text-base);
+		-webkit-font-smoothing: antialiased;
 	}
 	label.hidden {
 		display: none;
