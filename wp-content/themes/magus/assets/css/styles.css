@@ -568,7 +568,17 @@ option {
   color: var(--color-text-dark);
 }
 
-li:before {
+.link-list-item--content-title ul {
+  margin-top: 1.5em;
+  padding: 0;
+  margin-left: 2rem;
+}
+.link-list-item--content-title li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.3em;
+}
+.link-list-item--content-title li:before {
   content: "•";
   position: absolute;
   left: 0;
@@ -579,11 +589,10 @@ li:before {
   margin-right: 0.6em;
   color: var(--color-text-dark);
 }
-
-.li-style {
+.link-list-item--content-title .li-style {
   margin-bottom: 1.5rem;
 }
-.li-style li:before {
+.link-list-item--content-title .li-style li:before {
   content: url("../../src/images/li-image.png");
   position: absolute;
   width: 15px;
