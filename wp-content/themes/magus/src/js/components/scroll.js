@@ -31,8 +31,8 @@ jQuery(document).ready(function($) {
 });
 
 jQuery(document).ready(function($) {
+	var btn = $('#cta-button-2');
 
-	var btn = $('#consultation-button');
 	$(window).scroll(function() {
 	if ($(window).scrollTop() > 900) {
 		btn.addClass('show');
