@@ -32,7 +32,7 @@ jQuery(document).ready(function($) {
 
 jQuery(document).ready(function($) {
 
-	var btn = $('#consultation-button');
+	var btn = $('#cta-button-2');
 
 	$(window).scroll(function() {
 	if ($(window).scrollTop() > 900) {
