@@ -4,10 +4,13 @@ $logo = get_field('footer_logo', 'options');
 $copyright = get_field('footer_copyright', 'options');
 $rqlogo = get_field('footer_rq_logo', 'options');
 $popup = get_field('show_popup');
+$links = get_field('show_links');
 $popupcontent = get_field('modal_content', 'options');
 ?>
+<?php if ( $links  == '0' ) { ?><div class="hide"><?php } ?>
 <a href="/contact-us" id="cta-button" class="cta-button"><img src="<?php echo get_template_directory_uri(); ?>/src/images/logo-icon-white.png" alt="Magus icon" /> <p>Get in touch</p></a>
 <a href="/free-consultation" id="cta-button-2" class="consultation-button"> <p>Book my <strong>FREE</strong> consultation</p></a>
+<?php if ( $links  == '0' ) { ?></div><?php } ?>
 <a id="button"><svg class="icon icon--arrow"><use xlink:href="#arrow"></use></svg> <p>Back to the top</p></a>
 <footer class="global-footer">
 	<div class="global-footer--inner">
@@ -55,4 +58,4 @@ $popupcontent = get_field('modal_content', 'options');
 			<?php echo $popupcontent ?>
 		</div>
 	</div>
-	<?php } ?>
+<?php } ?>

@@ -202,6 +202,10 @@ img.aligncenter {
   border: 0;
 }
 
+.hide {
+  display: none;
+}
+
 @media (max-width: 49.99em) {
   .hidemobile {
     display: none !important;
