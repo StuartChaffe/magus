@@ -46,11 +46,23 @@ jQuery(document).ready(function($) {
 
 	var btn = $('.modal');
 
-	$(window).scroll(function() {
-	if ($(window).scrollTop() > 900) {
-		btn.addClass('show');
+	if (sessionStorage.getItem('advertOnce') !== 'true') {
+
+		$(window).scroll(function() {
+		if ($(window).scrollTop() > 900) {
+			btn.addClass('show');
+			sessionStorage.setItem('advertOnce','true');
+			console.log('yes');
+		}
+		});
 	}
-	});
+
+	// $(window).scroll(function() {
+	// if ($(window).scrollTop() > 900) {
+	// 	btn.addClass('show');
+	// }
+	// });
+
 });
 
 jQuery(document).ready(function($) {
@@ -58,3 +70,4 @@ jQuery(document).ready(function($) {
 		$('.modal').addClass('noshow');
 	});
 });
+
