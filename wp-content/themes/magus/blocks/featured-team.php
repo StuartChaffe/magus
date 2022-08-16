@@ -25,7 +25,7 @@ $intro = get_field('posts_intro');
 				$job = get_field('job_title', $featuredpost);
 				$image = get_field('team_image', $featuredpost);
 			?>
-			<a class=" link-list-item" href="<?php esc_url( the_permalink($featuredpost) ); ?>" title="Article: <?php the_title(); ?>">
+			<div class="link-list-item">
 				<div class="link-list-item--image" style="background-image: url('<?php echo $image['url']; ?>')">
 					<img loading="lazy" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 				</div>
@@ -35,7 +35,7 @@ $intro = get_field('posts_intro');
 						<p><?php echo $job; ?></p>
 					</div>
 				</div>
-			</a>
+			</div>
 		<?php endforeach; ?>
 		</div>
 		<div class="link-list--button">
