@@ -30,6 +30,53 @@
 					}
 				}
 			}
+			&:hover {
+				text-decoration: none;
+				box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
+			}
+		}
+	}
+
+	&-contact {
+		width: 100%;
+		margin-top: var(--spacing-xl);
+		background-color: white;
+		display: flex;
+		&--text {
+			width: 50%;
+			padding: var(--spacing);
+			.social-links {
+				justify-content: flex-start;
+				&__item {
+					a {
+						border-radius: 0;
+						border: 0;
+						background-color: var(--color-primary);
+						padding: 1rem;
+						color: white;
+						&:hover {
+							color: white;
+							box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
+							svg {
+								fill: white;
+							}
+						}
+					}
+				}
+			}
+
+			li {
+				padding-left: 0;
+				&:before {
+					display: none;
+				}
+			}
+		}
+		&--image {
+			width: 50%;
+			img {
+				width: 100%;
+			}
 		}
 	}
 }

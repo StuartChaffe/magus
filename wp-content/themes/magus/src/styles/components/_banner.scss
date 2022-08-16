@@ -35,6 +35,13 @@
 			min-height: 800px;
 			// background-attachment: fixed;
 		}
+		&__team {
+			img {
+				@include mq($until: medium) {
+					max-width: none;
+				}
+			}
+		}
 
 		img {
 			@include mq(medium) {
