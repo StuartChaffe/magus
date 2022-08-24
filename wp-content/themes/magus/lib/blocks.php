@@ -179,6 +179,16 @@ function magus_acf_blocks() {
 			'keywords'			=> array( 'link list, links' ),
 		));
 		acf_register_block(array(
+			'name'				=> 'link-image',
+			'title'				=> __('Link image'),
+			'description'		=> __('Add link with image block'),
+			'render_callback'	=> 'magus_acf_block_render_callback',
+			'category'			=> 'magus-blocks',
+			'icon'				=> 'columns',
+			'align' 			=> 'wide',
+			'keywords'			=> array( 'link list, image' ),
+		));
+		acf_register_block(array(
 			'name'				=> 'offices',
 			'title'				=> __('Office list'),
 			'description'		=> __('Add office list'),
@@ -279,6 +289,7 @@ function magus_allowed_block_types( $allowed_blocks ) {
 		'acf/form',
 		// 'acf/highlighted-service',
 		'acf/highlighted-text',
+		'acf/link-image',
 		'acf/link-list',
 		'acf/offices',
 		'acf/platforms',

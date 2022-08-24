@@ -2047,6 +2047,66 @@ a.link-list-item--link:hover {
   display: none;
 }
 
+.link-image {
+  background-color: white;
+  margin-bottom: var(--spacing-xl);
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 50em) {
+  .link-image {
+    flex-direction: row;
+  }
+}
+.link-image--text {
+  width: 100%;
+  padding: var(--spacing-l);
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+@media (min-width: 50em) {
+  .link-image--text {
+    width: 40%;
+  }
+}
+.link-image--text span {
+  position: relative;
+  padding-left: 2rem;
+}
+.link-image--text span::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 8px;
+  background-color: var(--color-primary);
+  top: 0;
+  left: 0;
+}
+@media (min-width: 50em) {
+  .link-image--text span::before {
+    width: 10px;
+  }
+}
+.link-image--text .btn {
+  margin-top: 2rem;
+  font-size: var(--font-size-small);
+}
+.link-image--image {
+  width: 100%;
+  display: none;
+}
+@media (min-width: 50em) {
+  .link-image--image {
+    width: 60%;
+    display: block;
+  }
+}
+.link-image--image img {
+  width: 100%;
+}
+
 .modal {
   padding: var(--spacing-xs);
   position: fixed;
