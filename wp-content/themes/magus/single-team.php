@@ -34,26 +34,50 @@
 <section class="content">
 	<?php echo $bio; ?>
 
-	<div class="team-contact">
-		<div class="team-contact--text">
-			<h3 class="heading-2"><?php echo $contact['title']; ?></h3>
+	<h3><?php echo $contact['title']; ?></h3>
 
-			<ul class="social-links">
-				<?php if ( $contact['email'] ) { ?>
-					<li class="social-links__item"><a href="mailto:<?php echo $contact['email']; ?>" class="social-links__link"><?php echo get_icon('email'); ?></a></li>
-				<?php } ?>
-				<?php if ( $contact['linkedin'] ) { ?>
-					<li class="social-links__item"><a href="<?php echo $contact['linkedin']; ?>" class="social-links__link"><?php echo get_icon('linkedin'); ?></a></li>
-				<?php } ?>
-				<?php if ( $contact['telephone'] ) { ?>
-					<li class="social-links__item"><a href="tel:<?php echo $contact['telephone']; ?>" class="social-links__link"><?php echo get_icon('telephone'); ?></a></li>
-				<?php } ?>
-			</ul>
-		</div>
+	<div class="team-contact">
+
 		<div class="team-contact--image">
 			<img loading="lazy" src="<?php echo $profileimage['url']; ?>" alt="<?php echo $profileimage['alt']; ?>" />
 		</div>
+		
+		<div class="team-contact--text">
+			
+			<ul class="social-links">
+				<?php if ( $contact['email'] ) { ?>
+					<li class="social-links__item"><a href="mailto:<?php echo $contact['email']; ?>" class="social-links__link"><span class="icon-item"><?php echo get_icon('email'); ?></span> <?php echo $contact['email']; ?></a></li>
+				<?php } ?>
+				<?php if ( $contact['linkedin'] ) { ?>
+					<li class="social-links__item"><a href="<?php echo $contact['linkedin']; ?>" class="social-links__link"><span class="icon-item"><?php echo get_icon('linkedin'); ?></span> <?php echo $contact['linkedin']; ?></a></li>
+				<?php } ?>
+				<?php if ( $contact['telephone'] ) { ?>
+					<li class="social-links__item"><a href="tel:<?php echo $contact['telephone']; ?>" class="social-links__link"><span class="icon-item"><?php echo get_icon('telephone'); ?></span> <?php echo $contact['telephone']; ?></a></li>
+				<?php } ?>
+			</ul>
+		</div>
 
+	</div>
+
+
+	<?php
+		$image = get_field('link-image');
+		$link = $image['link-link'];
+		$title = get_sub_field('title');
+	?>
+
+	<div class="link-image">
+		<div class="link-image--text">
+			<span>
+				<h3><?php echo $link['title']; ?></h3>
+				<p><?php echo $link['excert']; ?></p>
+			</span>
+			
+			<?php if ( $link['link'] ) { ?><a class="btn btn--secondary" target="<?php echo $link['link']['target']; ?>" href="<?php echo $link['link']['url']; ?>"><?php echo $link['link']['title']; ?></a><?php } ?>
+		</div>
+		<div class="link-image--image">
+			<img loading="lazy" src="<?php echo $image['link_image']['url']; ?>" alt="<?php echo $image['link_image']['alt']; ?>" />
+		</div>
 	</div>
 
 </section>

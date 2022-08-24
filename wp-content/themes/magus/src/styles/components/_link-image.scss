@@ -1,0 +1,57 @@
+.link-image {
+    background-color: white;
+    margin-bottom: var(--spacing-xl);
+    display: flex;
+    flex-direction: column;
+
+    @include mq(medium) {
+        flex-direction: row;
+    }
+
+    &--text {
+        width: 100%;
+        padding: var(--spacing-l);
+        align-items: flex-start;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        @include mq(medium) {
+            width: 40%;
+        }
+
+        span {
+            position: relative;
+            padding-left: 2rem;
+            &::before {
+                content: '';
+                position: absolute;
+                height: 100%;
+                width: 8px;
+                background-color: var(--color-primary);
+                top: 0;
+                left: 0;
+                @include mq(medium) {
+                    width: 10px;
+                }
+            }
+        }
+
+        .btn {
+            margin-top: 2rem;
+            font-size: var(--font-size-small);
+            // display: block;
+            // float: left;
+        }
+    }
+    &--image {
+        width: 100%;
+        display: none;
+        @include mq(medium) {
+            width: 60%;
+            display: block;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}
