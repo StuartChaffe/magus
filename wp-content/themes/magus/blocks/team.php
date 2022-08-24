@@ -35,7 +35,7 @@ $intro = get_field('teams_intro');
 				$job = get_field('job_title', get_the_ID());
 				// $categories = get_filter_classes( 'maguscategories' );
 			?>
-			<a class="mix <?php echo $categories; ?> link-list-item" href="<?php esc_url( the_permalink($featuredpost) ); ?>" title="Article: <?php the_title(); ?>" data-title="<?php the_title(); ?>">
+			<a class="mix <?php echo $categories; ?> link-list-item" href="<?php esc_url( the_permalink($team) ); ?>" title="Article: <?php the_title(); ?>" data-title="<?php the_title(); ?>">
 				<div class="link-list-item--image" style="background-image: url('<?php echo $image['url']; ?>')">
 					<img loading="lazy" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 				</div>
