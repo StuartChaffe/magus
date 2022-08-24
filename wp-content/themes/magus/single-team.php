@@ -34,24 +34,27 @@
 <section class="content">
 	<?php echo $bio; ?>
 
-	<div class="team-contact">
-		<div class="team-contact--text">
-			<h3 class="heading-2"><?php echo $contact['title']; ?></h3>
+	<h3><?php echo $contact['title']; ?></h3>
 
-			<ul class="social-links">
-				<?php if ( $contact['email'] ) { ?>
-					<li class="social-links__item"><a href="mailto:<?php echo $contact['email']; ?>" class="social-links__link"><?php echo get_icon('email'); ?></a></li>
-				<?php } ?>
-				<?php if ( $contact['linkedin'] ) { ?>
-					<li class="social-links__item"><a href="<?php echo $contact['linkedin']; ?>" class="social-links__link"><?php echo get_icon('linkedin'); ?></a></li>
-				<?php } ?>
-				<?php if ( $contact['telephone'] ) { ?>
-					<li class="social-links__item"><a href="tel:<?php echo $contact['telephone']; ?>" class="social-links__link"><?php echo get_icon('telephone'); ?></a></li>
-				<?php } ?>
-			</ul>
-		</div>
+	<div class="team-contact">
+
 		<div class="team-contact--image">
 			<img loading="lazy" src="<?php echo $profileimage['url']; ?>" alt="<?php echo $profileimage['alt']; ?>" />
+		</div>
+		
+		<div class="team-contact--text">
+			
+			<ul class="social-links">
+				<?php if ( $contact['email'] ) { ?>
+					<li class="social-links__item"><a href="mailto:<?php echo $contact['email']; ?>" class="social-links__link"><span class="icon-item"><?php echo get_icon('email'); ?></span> <?php echo $contact['email']; ?></a></li>
+				<?php } ?>
+				<?php if ( $contact['linkedin'] ) { ?>
+					<li class="social-links__item"><a href="<?php echo $contact['linkedin']; ?>" class="social-links__link"><span class="icon-item"><?php echo get_icon('linkedin'); ?></span> <?php echo $contact['linkedin']; ?></a></li>
+				<?php } ?>
+				<?php if ( $contact['telephone'] ) { ?>
+					<li class="social-links__item"><a href="tel:<?php echo $contact['telephone']; ?>" class="social-links__link"><span class="icon-item"><?php echo get_icon('telephone'); ?></span> <?php echo $contact['telephone']; ?></a></li>
+				<?php } ?>
+			</ul>
 		</div>
 
 	</div>
