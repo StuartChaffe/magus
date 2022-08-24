@@ -2475,13 +2475,24 @@ a.link-list-item--link:hover {
   margin-top: var(--spacing-s);
   background-color: white;
   display: flex;
+  flex-direction: column;
+}
+@media (min-width: 50em) {
+  .team-contact {
+    flex-direction: row;
+  }
 }
 .team-contact--text {
-  width: 60%;
+  width: 100%;
   padding: var(--spacing);
   align-items: center;
   display: flex;
   justify-content: center;
+}
+@media (min-width: 50em) {
+  .team-contact--text {
+    width: 60%;
+  }
 }
 .team-contact--text .social-links {
   justify-content: flex-start;
@@ -2516,6 +2527,7 @@ a.link-list-item--link:hover {
   margin-right: 1rem;
 }
 .team-contact--text .social-links__item a {
+  border: 0;
   color: var(--color-text-base);
   text-decoration: none;
   padding: 0;
@@ -2527,7 +2539,12 @@ a.link-list-item--link:hover {
   display: none;
 }
 .team-contact--image {
-  width: 40%;
+  width: 100%;
+}
+@media (min-width: 50em) {
+  .team-contact--image {
+    width: 40%;
+  }
 }
 .team-contact--image img {
   width: 100%;
