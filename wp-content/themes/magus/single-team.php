@@ -59,6 +59,27 @@
 
 	</div>
 
+
+	<?php
+		$image = get_field('link-image');
+		$link = $image['link-link'];
+		$title = get_sub_field('title');
+	?>
+
+	<div class="link-image">
+		<div class="link-image--text">
+			<span>
+				<h3><?php echo $link['title']; ?></h3>
+				<p><?php echo $link['excert']; ?></p>
+			</span>
+			
+			<?php if ( $link['link'] ) { ?><a class="btn btn--secondary" target="<?php echo $link['link']['target']; ?>" href="<?php echo $link['link']['url']; ?>"><?php echo $link['link']['title']; ?></a><?php } ?>
+		</div>
+		<div class="link-image--image">
+			<img loading="lazy" src="<?php echo $image['link_image']['url']; ?>" alt="<?php echo $image['link_image']['alt']; ?>" />
+		</div>
+	</div>
+
 </section>
 
 <?php } ?>

@@ -2049,7 +2049,7 @@ a.link-list-item--link:hover {
 
 .link-image {
   background-color: white;
-  margin-bottom: var(--spacing-xl);
+  margin-top: var(--spacing-xl);
   display: flex;
   flex-direction: column;
 }
