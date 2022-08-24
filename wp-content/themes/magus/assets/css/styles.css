@@ -2472,7 +2472,7 @@ a.link-list-item--link:hover {
 }
 .team-contact {
   width: 100%;
-  margin-top: var(--spacing-xl);
+  margin-top: var(--spacing-s);
   background-color: white;
   display: flex;
 }

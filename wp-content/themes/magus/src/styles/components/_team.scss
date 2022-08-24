@@ -39,15 +39,15 @@
 
 	&-contact {
 		width: 100%;
-		margin-top: var(--spacing-xl);
+		margin-top: var(--spacing-s);
 		background-color: white;
 		display: flex;
 		&--text {
 			width: 60%;
 			padding: var(--spacing);
 			align-items: center;
-    display: flex;
-    justify-content: center;
+		display: flex;
+		justify-content: center;
 			.social-links {
 				justify-content: flex-start;
 				display: flex;
