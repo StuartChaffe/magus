@@ -2049,7 +2049,6 @@ a.link-list-item--link:hover {
 
 .link-image {
   background-color: white;
-  margin-top: var(--spacing-xl);
   margin-bottom: var(--spacing-xl);
   display: flex;
   flex-direction: column;
@@ -2534,6 +2533,7 @@ a.link-list-item--link:hover {
 .team-contact {
   width: 100%;
   margin-top: var(--spacing-s);
+  margin-bottom: var(--spacing-xl);
   background-color: white;
   display: flex;
   flex-direction: column;
