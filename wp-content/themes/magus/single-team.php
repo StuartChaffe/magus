@@ -66,6 +66,7 @@
 		$title = get_sub_field('title');
 	?>
 
+	<?php if ( $link || $title ) { ?>
 	<div class="link-image">
 		<div class="link-image--text">
 			<span>
@@ -79,6 +80,7 @@
 			<img loading="lazy" src="<?php echo $image['link_image']['url']; ?>" alt="<?php echo $image['link_image']['alt']; ?>" />
 		</div>
 	</div>
+	<?php } ?>
 
 </section>
 
