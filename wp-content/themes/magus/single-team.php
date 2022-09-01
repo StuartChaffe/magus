@@ -66,7 +66,7 @@
 		$title = get_sub_field('title');
 	?>
 
-	<?php if ( $link || $title ) { ?>
+	<?php if ( $image || $title ) { ?>
 	<div class="link-image">
 		<div class="link-image--text">
 			<span>
