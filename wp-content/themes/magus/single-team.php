@@ -51,7 +51,7 @@
 					<li class="social-links__item"><a href="mailto:<?php echo $contact['email']; ?>" class="social-links__link"><span class="icon-item"><?php echo get_icon('email'); ?></span> <?php echo $contact['email']; ?></a></li>
 				<?php } ?>
 				<?php if ( $contact['linkedin'] ) { ?>
-					<li class="social-links__item"><a href="<?php echo $contact['linkedin']; ?>" class="social-links__link"><span class="icon-item"><?php echo get_icon('linkedin'); ?></span> <?php echo $contact['linkedin']; ?></a></li>
+					<li class="social-links__item"><a href="<?php echo $contact['linkedin']; ?>" class="social-links__link"><span class="icon-item"><?php echo get_icon('linkedin'); ?></span> View on Linkedin</a></li>
 				<?php } ?>
 				<?php if ( $contact['telephone'] ) { ?>
 					<li class="social-links__item"><a href="tel:<?php echo $contact['telephone']; ?>" class="social-links__link"><span class="icon-item"><?php echo get_icon('telephone'); ?></span> <?php echo $contact['telephone']; ?></a></li>
