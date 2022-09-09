@@ -27,6 +27,8 @@
 		</div>
 	</div>
 </section>
+
+<?php } ?>
 <section class="content mb-0">
 	<a href="/about-us/the-team/" class="btn btn--secondary alignright">Back to team</a>
 </section>
@@ -66,6 +68,7 @@
 		$title = get_sub_field('title');
 	?>
 
+	<?php if ( $link['link'] ) { ?>
 	<div class="link-image">
 		<div class="link-image--text">
 			<span>
@@ -78,11 +81,9 @@
 		<div class="link-image--image">
 			<img loading="lazy" src="<?php echo $image['link_image']['url']; ?>" alt="<?php echo $image['link_image']['alt']; ?>" />
 		</div>
-	</div>
+		<?php } ?>
 
 </section>
-
-<?php } ?>
 
 <?php the_content(); ?>
 
