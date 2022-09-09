@@ -2560,9 +2560,11 @@ a.link-list-item--link:hover {
   display: flex;
   flex-direction: column;
   margin-top: 0 !important;
+  width: 100%;
 }
 .team-contact--text .social-links__link {
   align-items: center;
+  flex-wrap: wrap;
 }
 .team-contact--text .social-links__item {
   display: flex;
