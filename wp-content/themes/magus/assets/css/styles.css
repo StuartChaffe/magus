@@ -1581,11 +1581,11 @@ body.nav-open {
 .banner--title {
   position: relative;
   z-index: 2;
-  margin-top: -140px;
+  margin-top: 40px;
 }
 @media (min-width: 50em) {
   .banner--title {
-    margin-top: -280px;
+    margin-top: 100px;
   }
 }
 .banner--title h1 {
