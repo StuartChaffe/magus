@@ -1,0 +1,23 @@
+.media-text {
+	background: white;
+	display: flex;
+	margin-bottom: var(--spacing-xl);
+
+	&--media {
+		width: 45%;
+		iframe {
+			margin-bottom: -6px;
+		}
+		&__right {
+			.media-text--media {
+				order: 2;
+			}
+		}
+	}
+	&--text {
+		display: flex;
+		flex-direction: column;
+		width: 55%;
+		padding: var(--spacing-m);
+	}
+}

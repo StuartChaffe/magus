@@ -2080,6 +2080,27 @@ a.link-list-item--link:hover {
   width: 100%;
 }
 
+.media-text {
+  background: white;
+  display: flex;
+  margin-bottom: var(--spacing-xl);
+}
+.media-text--media {
+  width: 45%;
+}
+.media-text--media iframe {
+  margin-bottom: -6px;
+}
+.media-text--media__right .media-text--media {
+  order: 2;
+}
+.media-text--text {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  padding: var(--spacing-m);
+}
+
 .modal {
   padding: var(--spacing-xs);
   position: fixed;
