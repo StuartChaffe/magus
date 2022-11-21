@@ -2083,10 +2083,21 @@ a.link-list-item--link:hover {
 .media-text {
   background: white;
   display: flex;
+  flex-direction: column;
   margin-bottom: var(--spacing-xl);
 }
+@media (min-width: 50em) {
+  .media-text {
+    flex-direction: row;
+  }
+}
 .media-text--media {
-  width: 45%;
+  width: 100%;
+}
+@media (min-width: 50em) {
+  .media-text--media {
+    width: 45%;
+  }
 }
 .media-text--media iframe {
   margin-bottom: -6px;
@@ -2097,8 +2108,13 @@ a.link-list-item--link:hover {
 .media-text--text {
   display: flex;
   flex-direction: column;
-  width: 55%;
+  width: 100%;
   padding: var(--spacing-m);
+}
+@media (min-width: 50em) {
+  .media-text--text {
+    width: 55%;
+  }
 }
 
 .modal {
