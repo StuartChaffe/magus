@@ -275,6 +275,10 @@ h5, .heading-5 {
   font-size: var(--font-size-h5);
 }
 
+.small, .global-footer--foot p {
+  font-size: calc(2.3rem + 0.2vw);
+}
+
 code {
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 0.75em;
@@ -1588,7 +1592,7 @@ body.nav-open {
     margin-top: 100px;
   }
 }
-.banner--title h1 {
+.banner--title h1, .banner--title h2, .banner--title h3, .banner--title .accordion--title, .banner--title h4, .banner--title p {
   margin-bottom: 0;
   color: white;
 }
