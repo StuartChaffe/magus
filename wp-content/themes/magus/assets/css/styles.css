@@ -276,7 +276,12 @@ h5, .heading-5 {
 }
 
 h1.small {
-  font-size: calc(2.3rem + 0.2vw);
+  font-size: calc(1.8rem + 0.2vw);
+}
+@media (min-width: 70em) {
+  h1.small {
+    font-size: calc(2.3rem + 0.2vw);
+  }
 }
 
 code {
