@@ -275,7 +275,7 @@ h5, .heading-5 {
   font-size: var(--font-size-h5);
 }
 
-.small, .global-footer--foot p {
+h1.small {
   font-size: calc(2.3rem + 0.2vw);
 }
 
