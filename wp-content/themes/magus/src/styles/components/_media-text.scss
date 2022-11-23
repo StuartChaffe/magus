@@ -1,0 +1,33 @@
+.media-text {
+	background: white;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: var(--spacing-xl);
+	@include mq(medium) {
+		flex-direction: row;
+	}
+
+	&--media {
+		width: 100%;
+		@include mq(medium) {
+			width: 45%;
+		}
+		iframe {
+			margin-bottom: -6px;
+		}
+		&__right {
+			.media-text--media {
+				order: 2;
+			}
+		}
+	}
+	&--text {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		@include mq(medium) {
+			width: 55%;
+		}
+		padding: var(--spacing-m);
+	}
+}

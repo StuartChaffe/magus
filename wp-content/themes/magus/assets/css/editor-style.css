@@ -560,6 +560,10 @@ h5, .heading-5 {
   font-size: var(--font-size-h5);
 }
 
+.small, .global-footer--foot p {
+  font-size: calc(2.3rem + 0.2vw);
+}
+
 code {
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 0.75em;
@@ -826,44 +830,17 @@ pre {
 }
 .banner--title {
   position: relative;
-  background: white;
-  box-shadow: 0px 23px 120px rgba(0, 0, 0, 0.2);
   z-index: 2;
-  margin-top: -140px;
-  padding: var(--spacing-sm) var(--spacing-sm) var(--spacing-sm) calc(var(--spacing-sm) * 2);
+  margin-top: 40px;
 }
 @media (min-width: 50em) {
   .banner--title {
-    margin-top: -280px;
-    padding: var(--spacing-m) var(--spacing-l) var(--spacing-m) calc(var(--spacing-l) * 2);
+    margin-top: 100px;
   }
 }
-@media (min-width: 70em) {
-  .banner--title {
-    margin-top: -320px;
-    padding: var(--spacing-m) var(--spacing-l) var(--spacing-m) calc(var(--spacing-l) * 2);
-  }
-}
-.banner--title h1 {
+.banner--title h1, .banner--title h2, .banner--title h3, .banner--title .accordion--title, .banner--title h4, .banner--title p {
   margin-bottom: 0;
-  font-weight: var(--font-weight-medium);
-}
-.banner--title::before {
-  content: "";
-  position: absolute;
-  height: calc(100% - var(--spacing-sm) * 2);
-  width: 8px;
-  background-color: var(--color-primary);
-  top: var(--spacing-sm);
-  left: var(--spacing-sm);
-}
-@media (min-width: 50em) {
-  .banner--title::before {
-    height: calc(100% - var(--spacing-l) * 2);
-    width: 10px;
-    top: var(--spacing-l);
-    left: var(--spacing-l);
-  }
+  color: white;
 }
 
 .btn,
@@ -2155,6 +2132,43 @@ a.link-list-item--link:hover {
 }
 .border__none::before {
   display: none;
+}
+
+.media-text {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--spacing-xl);
+}
+@media (min-width: 50em) {
+  .media-text {
+    flex-direction: row;
+  }
+}
+.media-text--media {
+  width: 100%;
+}
+@media (min-width: 50em) {
+  .media-text--media {
+    width: 45%;
+  }
+}
+.media-text--media iframe {
+  margin-bottom: -6px;
+}
+.media-text--media__right .media-text--media {
+  order: 2;
+}
+.media-text--text {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: var(--spacing-m);
+}
+@media (min-width: 50em) {
+  .media-text--text {
+    width: 55%;
+  }
 }
 
 body.nav-open {

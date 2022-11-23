@@ -11,12 +11,14 @@ $title = get_field('banner_title', false, false);
 	<div class="banner--image" style="background-image: url('<?php echo $image['url']; ?>')">
 		<img loading="lazy" class="hidemobile" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 		<?php if ( $imagemobile ) { ?><img loading="lazy" class="hidedesktop" src="<?php echo $imagemobile['url']; ?>" alt="<?php echo $imagemobile['alt']; ?>" /><?php } ?>
-	</div>
-	<?php if ( $title ) { ?>
-	<div class="container">
-		<div class="banner--title">
-			<h1><?php echo $title ?></h1>
+
+		<?php if ( $title ) { ?>
+		<div class="container">
+			<div class="banner--title">
+				<h1><?php echo $title ?></h1>
+			</div>
 		</div>
+		<?php } ?>
 	</div>
-	<?php } ?>
+	
 </section>

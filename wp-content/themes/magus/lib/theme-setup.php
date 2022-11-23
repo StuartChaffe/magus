@@ -73,6 +73,12 @@ function my_custom_styles( $init_array ) {
 			'title' => 'List style',  
 			'selector' => 'ul',  
 			'classes' => 'li-style',
+		), 
+		array(  
+			'title' => 'Small font',  
+			'block' => 'h1',  
+			'classes' => 'small',
+			'wrapper' => false,
 		),  
 	);  
 	// Insert the array, JSON ENCODED, into 'style_formats'
