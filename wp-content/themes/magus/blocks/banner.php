@@ -14,7 +14,7 @@ $title = get_field('banner_title', false, false);
 
 		<?php if ( $title ) { ?>
 		<div class="container">
-			<div class="banner--title">
+			<div class="banner--title text-white">
 				<h1><?php echo $title ?></h1>
 			</div>
 		</div>
