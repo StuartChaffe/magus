@@ -2018,6 +2018,7 @@ ul.menu .sub-menu li a:after {
 .link-list-color .link-list-item--content .btn {
   width: 100%;
   margin-bottom: 1rem;
+  min-height: 174px;
 }
 .link-list-color .link-list-item--content p {
   color: white;
