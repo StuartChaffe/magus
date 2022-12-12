@@ -2019,6 +2019,9 @@ ul.menu .sub-menu li a:after {
   width: 100%;
   margin-bottom: 1rem;
   min-height: 174px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 .link-list-color .link-list-item--content p {
   color: white;
