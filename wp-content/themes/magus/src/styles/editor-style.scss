@@ -28,3 +28,8 @@ html, body  {
 	width: 25%;
 	float: left;
 }
+.mce-content-body {
+	ul, ol {
+		list-style: disc;
+	}
+}

@@ -560,6 +560,14 @@ option {
   padding-left: 1.5rem;
   margin-bottom: 0.3em;
 }
+.content li ul {
+  margin-top: 0.3em;
+  margin-bottom: 1em;
+  margin-left: 1rem;
+}
+.content li ul li:before {
+  content: "º";
+}
 .content li p {
   display: inline;
 }
