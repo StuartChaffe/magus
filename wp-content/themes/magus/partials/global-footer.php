@@ -32,6 +32,9 @@ $popupcontent = get_field('modal_content', 'options');
 		<?php if(get_field('twitter', 'options')): ?>
 			<li class="social-links__item"><a href="<?php the_field('twitter', 'options'); ?>" class="social-links__link"><?php echo get_icon('twitter'); ?></a></li>
 		<?php endif; ?>
+		<?php if(get_field('linkedin', 'options')): ?>
+			<li class="social-links__item"><a href="<?php the_field('linkedin', 'options'); ?>" class="social-links__link"><?php echo get_icon('linkedin'); ?></a></li>
+		<?php endif; ?>
 		
 		</ul>
 
