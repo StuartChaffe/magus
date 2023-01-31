@@ -1942,7 +1942,6 @@ body.nav-open {
 .link-list-item--link {
   position: relative;
   background: white;
-  height: 100%;
   color: var(--color-text-base);
   z-index: 1;
   transition: all 0.1s ease-in-out;
