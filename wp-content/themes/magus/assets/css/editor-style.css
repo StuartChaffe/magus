@@ -2025,6 +2025,7 @@ ul.menu .sub-menu li a:after {
 }
 .link-list-color .link-list-item--content .btn {
   width: 100%;
+  height: 100%;
   margin-bottom: 1rem;
   min-height: 174px;
   align-items: center;
@@ -2102,6 +2103,7 @@ ul.menu .sub-menu li a:after {
 }
 .link-list-item--content {
   padding: calc(var(--spacing) / 2);
+  height: 100%;
 }
 @media (min-width: 50em) {
   .link-list-item--content {
