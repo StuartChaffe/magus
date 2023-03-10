@@ -26,7 +26,7 @@
 				<p><span>Location:</span><?php echo $location; ?></p>
 				<p><span>Description:</span><?php echo $description; ?></p>
 
-				<a class="btn" href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>">View Job Specifications</a>
+				<a class="btn" href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>">View job specification</a>
 			</div>
 
 			<?php endwhile; wp_reset_query(); ?>
