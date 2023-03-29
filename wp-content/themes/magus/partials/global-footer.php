@@ -3,6 +3,7 @@
 $logo = get_field('footer_logo', 'options');
 $copyright = get_field('footer_copyright', 'options');
 $rqlogo = get_field('footer_rq_logo', 'options');
+$iframelogo = get_field('footer_iframe', 'options');
 $popup = get_field('show_popup');
 $links = get_field('show_links');
 $popupcontent = get_field('modal_content', 'options');
@@ -38,7 +39,10 @@ $popupcontent = get_field('modal_content', 'options');
 		
 		</ul>
 
-		<?php if ( $rqlogo ) { ?><img src="<?php echo $rqlogo['url']; ?>" alt="<?php echo $rqlogo['alt']; ?>" /><?php } ?>
+		<div class="global-footer--logos">
+			<?php if ( $rqlogo ) { ?><img src="<?php echo $rqlogo['url']; ?>" alt="<?php echo $rqlogo['alt']; ?>" /><?php } ?>
+			<?php if ( $iframelogo ) { ?><?php echo $iframelogo ?><?php } ?>
+		</div>
 
 		<div class="global-footer--foot">
 			<p>Copyright &copy; <?php echo date('Y'); ?> Magus Private Wealth Ltd. All rights reserved.</p>

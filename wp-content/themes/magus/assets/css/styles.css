@@ -1291,6 +1291,12 @@ body.nav-open {
     font-size: var(--font-size-p);
   }
 }
+.global-footer--logos {
+  display: flex;
+}
+.global-footer--logos img, .global-footer--logos iframe {
+  margin: 0 1rem;
+}
 .global-footer--foot {
   border-top: 1px solid white;
   margin-top: var(--spacing-m);

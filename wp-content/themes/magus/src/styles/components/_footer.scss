@@ -24,6 +24,12 @@
 			}
 		}
 	}
+	&--logos {
+		display: flex;
+		img, iframe {
+			margin: 0 1rem;
+		}
+	}
 	&--foot {
 		border-top: 1px solid white;
 		margin-top: var(--spacing-m);
