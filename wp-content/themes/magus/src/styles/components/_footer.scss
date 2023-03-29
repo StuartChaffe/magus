@@ -28,6 +28,10 @@
 		display: flex;
 		img, iframe {
 			margin: 0 1rem;
+
+			html, body {
+				background-color: red;
+			}
 		}
 	}
 	&--foot {
