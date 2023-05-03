@@ -1950,6 +1950,7 @@ body.nav-open {
 .link-list-item--link {
   position: relative;
   background: white;
+  height: 100%;
   color: var(--color-text-base);
   z-index: 1;
   transition: all 0.1s ease-in-out;
@@ -2000,7 +2001,6 @@ body.nav-open {
 }
 .link-list-item--content {
   padding: calc(var(--spacing) / 2);
-  height: 100%;
 }
 @media (min-width: 50em) {
   .link-list-item--content {
