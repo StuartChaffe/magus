@@ -1291,6 +1291,15 @@ body.nav-open {
     font-size: var(--font-size-p);
   }
 }
+.global-footer--logos {
+  display: flex;
+}
+.global-footer--logos img, .global-footer--logos iframe {
+  margin: 0 1rem;
+}
+.global-footer--logos img html, .global-footer--logos img body, .global-footer--logos iframe html, .global-footer--logos iframe body {
+  background-color: red;
+}
 .global-footer--foot {
   border-top: 1px solid white;
   margin-top: var(--spacing-m);
@@ -1941,6 +1950,7 @@ body.nav-open {
 .link-list-item--link {
   position: relative;
   background: white;
+  height: 100%;
   color: var(--color-text-base);
   z-index: 1;
   transition: all 0.1s ease-in-out;
@@ -1991,7 +2001,6 @@ body.nav-open {
 }
 .link-list-item--content {
   padding: calc(var(--spacing) / 2);
-  height: 100%;
 }
 @media (min-width: 50em) {
   .link-list-item--content {
